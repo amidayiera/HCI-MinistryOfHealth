@@ -166,7 +166,7 @@
                 </video></div>
             <div class="u-center-text u-margin-bottom-small">
                 <h2 class="heading-secondary">
-                    We make peole genuinely happy
+                    We make people genuinely happy
                 </h2>
             </div>
 

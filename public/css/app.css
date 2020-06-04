@@ -312,24 +312,24 @@ body {
 
 .btn-text:link,
 .btn-text:visited {
-  color: #55c57a;
+  color: #2998ff;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 0.1rem solid #55c57a;
+  border-bottom: 0.1rem solid #2998ff;
   padding: 0.3rem;
   font-size: 1.6rem;
   transition: all 0.2s;
 }
 
 .btn-text:hover {
-  background-color: #55c57a;
+  background-color: #2998ff;
   color: #fff;
-  box-shadow: 0 1rem 2rem rgba(40, 180, 133, 0.15);
+  box-shadow: 0 1rem 2rem rgba(15, 82, 186, 0.15);
   transform: translateY(-0.2rem);
 }
 
 .btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(40, 180, 133, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(15, 82, 186, 0.15);
   transform: translateY(0);
 }
 
@@ -364,7 +364,7 @@ body {
 }
 
 .composition__photo:hover {
-  outline: 1.5rem solid #55c57a;
+  outline: 1.5rem solid #2998ff;
   transform: scale(1.05) translateX(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(41, 152, 255, 0.5);
   z-index: 20;
@@ -372,6 +372,24 @@ body {
 
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .story {

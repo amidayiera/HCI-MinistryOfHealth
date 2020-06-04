@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 use App\Application;
-use App\Task;
+use App\Vacancy;
 use Illuminate\Http\Request;
 
 class vacanciesController extends Controller
 {
     public function index()
     {
-        $vacancies=Task::orderBy('created_at','asc')->paginate(3);
+        $vacancies=Vacancy::orderBy('created_at','asc')->paginate(3);
 
          return view('vacancies.vacancies')->with('vacancies',$vacancies);
     }
@@ -51,7 +51,7 @@ class vacanciesController extends Controller
     $application=new Application;
     $application->username=$request->input('username');
     $application->email=$request->input('email');
-    $application->task_id=$request->input('dropdown');
+    $application->Vacancy_id=$request->input('dropdown');
     $application->CVfile=$fileNameToStore;
     $application->save();
     return redirect('/')->with('success','application submitted');
