@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::resource('/', 'vacanciesController');
+Route::get('/Cevents','CeventsController@index');
+Route::get('/Cevents','CeventsController@allevents');
