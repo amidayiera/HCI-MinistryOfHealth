@@ -41,11 +41,16 @@ return [
     |
     */
 
-    'disks' => [
+   // 'disks' => [
 
+      //  'local' => [
+         //   'driver' => 'local',
+         //   'root' => storage_path('app'),
+      //  ],
+      'disks' => [
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            'root'   => 'C:\xampp\htdocs\MOHEvents-1\public\cvs',
         ],
 
         'public' => [

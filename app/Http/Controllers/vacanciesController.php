@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Application;
 use App\Vacancy;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Response;
 
 class vacanciesController extends Controller
 {
@@ -41,6 +43,8 @@ class vacanciesController extends Controller
     //handle fie upload
     if($request->hasFile('cv'))
     {
+
+       
         $filenameWithExt=$request->file('cv')->getClientOriginalName();
 
         $filename=pathinfo($filenameWithExt,PATHINFO_FILENAME);
@@ -52,6 +56,7 @@ class vacanciesController extends Controller
     $application->username=$request->input('username');
     $application->email=$request->input('email');
     $application->Vacancy_id=$request->input('dropdown');
+   
     $application->CVfile=$fileNameToStore;
     $application->save();
     return redirect('/')->with('success','application submitted');
