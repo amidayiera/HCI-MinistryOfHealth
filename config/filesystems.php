@@ -41,17 +41,17 @@ return [
     |
     */
 
-   // 'disks' => [
+   'disks' => [
 
-      //  'local' => [
-         //   'driver' => 'local',
-         //   'root' => storage_path('app'),
-      //  ],
-      'disks' => [
-        'local' => [
-            'driver' => 'local',
-            'root'   => 'C:\xampp\htdocs\MOHEvents-1\public\cvs',
-        ],
+       'local' => [
+           'driver' => 'local',
+           'root' => storage_path('app'),
+       ],
+    //   'disks' => [
+    //     'local' => [
+    //         'driver' => 'local',
+    //         'root'   => 'C:\xampp\htdocs\Laravel\MOHEvents\public\cvs\public\cvs',
+    //     ],
 
         'public' => [
             'driver' => 'local',

@@ -43,21 +43,25 @@ class vacanciesController extends Controller
     //handle fie upload
     if($request->hasFile('cv'))
     {
+        $file = $request->file('cv');
 
-       
-        $filenameWithExt=$request->file('cv')->getClientOriginalName();
+        // Get the contents of the file
+        $contents = $file->openFile()->fread($file->getSize());
 
-        $filename=pathinfo($filenameWithExt,PATHINFO_FILENAME);
-        $extension=$request->file('cv')->getClientOriginalExtension();
-        $fileNameToStore=$filename.'_'.time().'.'.$extension;
-        $path=$request->file('cv')->storeAs('public/cvs',$fileNameToStore);
+
+        // $filenameWithExt=$request->file('cv')->getClientOriginalName();
+
+        // $filename=pathinfo($filenameWithExt,PATHINFO_FILENAME);
+        // $extension=$request->file('cv')->getClientOriginalExtension();
+        // $fileNameToStore=$filename.'_'.time().'.'.$extension;
+        // $path=$request->file('cv')->storeAs('public/cvs',$fileNameToStore);
     }
     $application=new Application;
     $application->username=$request->input('username');
     $application->email=$request->input('email');
     $application->Vacancy_id=$request->input('dropdown');
-   
-    $application->CVfile=$fileNameToStore;
+
+    $application->CVfile=$contents;
     $application->save();
     return redirect('/')->with('success','application submitted');
 
