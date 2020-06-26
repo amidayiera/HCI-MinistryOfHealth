@@ -76,69 +76,13 @@ Whether you present or not at a conference, you still have the upper hand of adv
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->locaion}}</h3>
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->time}}</h3>
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->date}}</h3>
-                
+
                 </div>
                 @endforeach
                 @endif
                 </section>
-        <section class="section-book">
 
-            @if (session('status'))
-            <div class="alert alert-success">
-                {{ session('status') }}
-            </div>
-        @endif
-            
-        </div>
-             
-            <div class="u-center-text u-margin-bottom-small">
-                <h2 class="heading-secondary">
-                   Testimonials
-                </h2>
-            </div>
-
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-8.jpg" alt="person on a tour" class="story__image">
-                        <figcaption class="story__caption">
-                            Mary Smith
-
-                        </figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary">
-                           Living the dream
-                        </h3>
-                        <p>
-                            Perfect!!!just perfect! Just at the click of button I am living the dream best.<br>
-                            I cannot believe how easy and seemless it was for me to apply for job.
-                            The response time by the support is unbelievable, response only took 2 days.
-                        </p>
-                    </div>
-                </div>
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="person on a tour" class="story__image">
-                        <figcaption class="story__caption">
-
-                            just brian
-
-                        </figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary">
-                            OH! My, I got it
-                        </h3>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non rerum quis at deleniti, ex provident iure odio ullam? Minus ducimus asperiores reiciendis corporis! Eligendi nobis quod ducimus officiis laboriosam fugit.
-                        </p>
-                    </div>
-                </div>
-                <div class="u-center-text u-margin-bottom-small">
-                    <a href="#" class="btn-text">See more &rarr;</a>
-                </div>
-        </section>
+                
     </main>
 </html>
 
