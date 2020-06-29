@@ -12,10 +12,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landingPage'); 
+Route::get('/', "NewsController@index");
 
-});
 
 Route::get('aboutUs', function () {
     return view('aboutUs');
@@ -28,3 +26,5 @@ Route::get('feedback', function () {
 
 Route::resource('feedback','FeedbackController');
 Route::post('feedback','FeedbackController@store');
+
+//Route::get('/','NewsController@index');
