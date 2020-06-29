@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/sendemail', 'SendEmailController@index');
 Route::post('/sendemail/send', 'SendEmailController@send');
+Route::get('/','PagesController@index') ;
+Route::get('/news','PagesController@news') ;
+Route::get('/about','PagesController@about') ;
+Route::get('/healthcarelocations','PagesController@healthcarelocations');

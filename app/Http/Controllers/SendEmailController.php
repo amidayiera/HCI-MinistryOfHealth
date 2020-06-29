@@ -15,6 +15,7 @@ class SendEmailController extends Controller
     }
 
 
+
     function send(Request $request)
     {
      $this->validate($request, [

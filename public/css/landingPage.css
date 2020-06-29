@@ -1,0 +1,90 @@
+.backgroundImage{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);*/
+    url('/images/health2.jpg');
+  background-size: cover;
+  height: 84vh;
+}
+body {
+    background-color: #f7f7f7 !important;
+
+}
+
+.landingPageTitle {
+    font-size: 60px;
+    word-spacing: 100vw;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 2px;
+    /* left: 20px; */
+    margin: 0;
+  }
+  .bg-light {
+      background-color: #f7f7f7 !important;
+  }
+
+li.nav-item {
+    font-size: 24px;
+    padding: 0 2px 0 20px;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+a.nav-link {
+    color: black;
+}
+
+.navbar-brand {
+    color: #000;
+}
+hr {
+    margin: 0.2em 0;
+}
+hr.black {
+    border-top: 2px solid black;
+}
+hr.red {
+    border-top: 2px solid #f80606;
+}
+hr.green {
+    border-top: 2px solid #0ac019;
+}
+
+.card-deck {
+    margin: 50px 0 20px 0;
+}
+.card {
+    border: none;
+}
+
+.card-title{
+    text-transform: uppercase;
+}
+.card-text{
+    font-size: 18px;
+}
+
+.footer-titles{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+.footer-details{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.col {
+    text-align: center;
+}
