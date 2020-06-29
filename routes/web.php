@@ -27,4 +27,4 @@ Route::get('feedback', function () {
 Route::resource('feedback','FeedbackController');
 Route::post('feedback','FeedbackController@store');
 
-//Route::get('/','NewsController@index');
+
