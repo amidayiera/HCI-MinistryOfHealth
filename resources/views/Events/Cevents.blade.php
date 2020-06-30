@@ -71,18 +71,19 @@ Whether you present or not at a conference, you still have the upper hand of adv
 
 
                 <div class="row ">
-                <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->image }}
+
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->description }} <br> Event posted on {{ $events->created_at}}</h3><br>
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->locaion}}</h3>
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->time}}</h3>
                     <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->date}}</h3>
+                    <h3><a href= " {{ route('file-download',[$events->id]) }}" class="btn btn-info btn-sm">More details</a></h3>
 
                 </div>
                 @endforeach
                 @endif
                 </section>
 
-                
+
     </main>
 </html>
 

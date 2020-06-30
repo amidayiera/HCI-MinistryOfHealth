@@ -20,4 +20,4 @@ Route::get('/Cevents','CeventsController@index');
 Route::get('/Cevents','CeventsController@allevents');
 Route::get('/resources', 'PostsController@index');
 
-
+Route::get('{id}/file-download',['as'=>'file-download','uses'=>'CeventsController@download']);
