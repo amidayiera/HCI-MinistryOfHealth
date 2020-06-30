@@ -113,7 +113,7 @@
 							Lets Talk
 						</span>
 
-						<span class="txt3">
+						<span class="txt2">
 							+254(0)746764503
 						</span>
 					</div>
@@ -129,7 +129,7 @@
 							General Support
 						</span>
 
-						<span class="txt3">
+						<span class="txt2">
 							contact@example.com
 						</span>
 					</div>
