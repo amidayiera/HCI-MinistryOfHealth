@@ -53,7 +53,7 @@
                     <a class="nav-link" href="">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="public/healthcare">Health care</a>
+                    <a class="nav-link" href="/healthcarelocations">Health care</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/aboutUs">About Us</a>

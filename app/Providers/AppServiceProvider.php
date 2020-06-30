@@ -3,11 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
 
-=======
->>>>>>> Contact_form
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,9 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-<<<<<<< HEAD
         Schema::defaultStringLength(191);
-=======
->>>>>>> Contact_form
     }
 }

@@ -42,10 +42,7 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
-<<<<<<< HEAD
-=======
             'auth_mode' => null,
->>>>>>> Contact_form
         ],
 
         'ses' => [

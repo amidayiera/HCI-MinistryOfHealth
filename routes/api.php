@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-<<<<<<< HEAD
 
 //List News articles
 
@@ -40,5 +39,3 @@ Route::delete('news/{id}','NewsController@destroy');
 Route::get('clear','NewsController@truncate');
 
 
-=======
->>>>>>> Contact_form
