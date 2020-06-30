@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,9 @@ Route::resource('feedback','FeedbackController');
 Route::post('feedback','FeedbackController@store');
 
 
+Route::get('/sendemail', 'SendEmailController@index');
+Route::post('/sendemail/send', 'SendEmailController@send');
+// Route::get('/','PagesController@index') ;
+Route::get('/news','PagesController@news') ;
+Route::get('/about','PagesController@about') ;
+Route::get('/healthcarelocations','PagesController@healthcarelocations');

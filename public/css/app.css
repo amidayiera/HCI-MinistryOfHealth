@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+<<<<<<< HEAD
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -10933,3 +10934,44 @@ a.text-dark:focus {
   }
 }
 
+=======
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+
+.home{
+  background-color: #fcfcfc;
+}
+.home img{
+  height: 790px;
+}
+.callToAction a {
+  font-size:20px; 
+  margin: 20px 0;
+  /* text-align: center; */
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+}
+.callToAction {
+  margin-top: 20px      ;
+  font-size: 30px;
+  /* text-align: center; */
+}
+.navbar{
+  text-transform: uppercase;
+}
+.navbar li {
+  padding: 0 5px;
+  font-size: 27px;
+}
+a.navbar-brand{
+  font-size: 28px;
+  font-weight: bolder;
+}
+h4{
+  color:rgb(90, 90, 90);
+}
+p{
+  border-bottom: 1px solid;
+  border-bottom-color:rgb(121, 120, 120);
+}
+>>>>>>> Contact_form

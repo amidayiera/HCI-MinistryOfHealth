@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #ffffff !important;
 }
@@ -43,11 +44,36 @@ body {
    /* top: 50%;
     */
     left: 45%;
+=======
+.backgroundImage{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);*/
+    url('/images/health2.jpg');
+  background-size: cover;
+  height: 84vh;
+}
+body {
+    background-color: #f7f7f7 !important;
+
+}
+
+.landingPageTitle {
+    font-size: 60px;
+    word-spacing: 100vw;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+>>>>>>> Contact_form
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
     position: absolute;
     bottom: 2px;
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
    /* left: 20px;
     */
@@ -59,6 +85,15 @@ body {
 .navbar {
     padding: 0px 16px;
 }
+=======
+    /* left: 20px; */
+    margin: 0;
+  }
+  .bg-light {
+      background-color: #f7f7f7 !important;
+  }
+
+>>>>>>> Contact_form
 li.nav-item {
     font-size: 24px;
     padding: 0 2px 0 20px;
@@ -71,6 +106,10 @@ li.nav-item {
 a.nav-link {
     color: black;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
 .navbar-brand {
     color: #000;
 }
@@ -86,18 +125,30 @@ hr.red {
 hr.green {
     border-top: 2px solid #0ac019;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
 .card-deck {
     margin: 50px 0 20px 0;
 }
 .card {
     border: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
 .card-title{
     text-transform: uppercase;
 }
 .card-text{
     font-size: 18px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
 .footer-titles{
     text-transform: uppercase;
     font-weight: 600;
@@ -110,4 +161,8 @@ hr.green {
 }
 .col {
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Contact_form
