@@ -15,11 +15,11 @@
 
      }
  </style>
- <script>
+ {{-- <script>
      $('.carousel').carousel({
          interval: 5000
      })
- </script>
+ </script> --}}
   <div id="demo" class="carousel slide" data-ride="carousel">
   <!-- The slideshow -->
  <div class="carousel-inner">

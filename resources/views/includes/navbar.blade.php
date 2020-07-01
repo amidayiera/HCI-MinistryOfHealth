@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="../css/util.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" >
-	<link rel="stylesheet" type="text/css" href="assets('css/main.css')">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS >
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -30,8 +30,8 @@
         
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         {{-- <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/landingPage.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         
 
     </head>
@@ -47,16 +47,19 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item acitve">
-                    <a class="nav-link" href="/index">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">News</a>
+                    <a class="nav-link" href="/">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/healthcarelocations">Health care</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/aboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feedback">Feedback</a>
                 </li>
             </ul>
         </div>

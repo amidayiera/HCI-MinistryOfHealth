@@ -21,9 +21,9 @@ Route::get('aboutUs', function () {
 
 });
 
-Route::get('feedback', function () {
-    return view('feedback');
-});
+// Route::get('feedback', function () {
+//     return view('feedback');
+// });
 
 Route::resource('feedback','FeedbackController');
 Route::post('feedback','FeedbackController@store');
