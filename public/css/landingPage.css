@@ -1,5 +1,9 @@
-body {
+/* body {
     background-color: #ffffff !important;
+} */
+body {
+    background-color: #f7f7f7 !important;
+
 }
 .backgroundImage {
     -webkit-background-size: cover;
@@ -54,10 +58,6 @@ body {
     url('/images/health2.jpg');
   background-size: cover;
   height: 84vh;
-}
-body {
-    background-color: #f7f7f7 !important;
-
 }
 
 .landingPageTitle {
@@ -120,16 +120,20 @@ hr.green {
 
 .card-deck {
     margin: 50px 0 20px 0;
+    border: none;
 }
 .card {
     border: none;
 }
-
+.card-body {
+    border:none;
+}
 .card-title{
     text-transform: uppercase;
 }
 .card-text{
-    font-size: 18px;
+    font-size: 16px;
+    border-bottom: none;
 }
 
 .footer-titles{
@@ -144,4 +148,7 @@ hr.green {
 }
 .col {
     text-align: center;
+}
+.img-top {
+    width: 10px;
 }

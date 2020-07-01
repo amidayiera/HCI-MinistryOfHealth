@@ -15,7 +15,6 @@
               </thead>
               <tbody id="myTable">
                         @foreach($body as $bodies)
-
                         <tr>
                             <td>{{ date('d-m-Y', strtotime($bodies['Date'])) }}</td>
 
