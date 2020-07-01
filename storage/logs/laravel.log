@@ -4121,3 +4121,191 @@ LINE 1: select * from \"news\"
 #55 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/server.php(21): require_once('/Applications/M...')
 #56 {main}
 "} 
+[2020-07-01 09:01:31] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (SQL: drop table if exists `users`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (SQL: drop table if exists `users`) at C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
+[stacktrace]
+#0 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('drop table if e...', Array, Object(Closure))
+#1 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(465): Illuminate\\Database\\Connection->run('drop table if e...', Array, Object(Closure))
+#2 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(102): Illuminate\\Database\\Connection->statement('drop table if e...')
+#3 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(290): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(193): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Database\\Schema\\Builder->dropIfExists('users')
+#6 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\database\\migrations\\2014_10_12_000000_create_users_table.php(34): Illuminate\\Support\\Facades\\Facade::__callStatic('dropIfExists', Array)
+#7 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(392): CreateUsersTable->down()
+#8 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(401): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(363): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'down')
+#10 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(284): Illuminate\\Database\\Migrations\\Migrator->runDown('C:\\\
+ewxampp\\\\htd...', Object(stdClass), false)
+#11 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(334): Illuminate\\Database\\Migrations\\Migrator->rollbackMigrations(Array, Array, Array)
+#12 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(313): Illuminate\\Database\\Migrations\\Migrator->resetMigrations(Array, Array, false)
+#13 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\ResetCommand.php(67): Illuminate\\Database\\Migrations\\Migrator->reset(Array, false)
+#14 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\ResetCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#15 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\ResetCommand.php(69): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#16 [internal function]: Illuminate\\Database\\Console\\Migrations\\ResetCommand->handle()
+#17 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(33): call_user_func_array(Array, Array)
+#18 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#20 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#21 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#22 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#23 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Command\\Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#24 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#25 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\CallsCommands.php(56): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#26 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('migrate:reset', Array, Object(Illuminate\\Console\\OutputStyle))
+#27 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(102): Illuminate\\Console\\Command->call('migrate:reset', Array)
+#28 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(53): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->runReset(NULL, Array)
+#29 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#30 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(33): call_user_func_array(Array, Array)
+#31 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#32 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#33 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#34 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#35 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#36 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Command\\Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#37 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#38 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#40 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#41 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#42 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#43 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails at C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:464)
+[stacktrace]
+#0 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(464): PDOStatement->execute()
+#1 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(664): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('drop table if e...', Array)
+#2 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('drop table if e...', Array, Object(Closure))
+#3 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(465): Illuminate\\Database\\Connection->run('drop table if e...', Array, Object(Closure))
+#4 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(102): Illuminate\\Database\\Connection->statement('drop table if e...')
+#5 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(290): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#6 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(193): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#7 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Database\\Schema\\Builder->dropIfExists('users')
+#8 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\database\\migrations\\2014_10_12_000000_create_users_table.php(34): Illuminate\\Support\\Facades\\Facade::__callStatic('dropIfExists', Array)
+#9 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(392): CreateUsersTable->down()
+#10 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(401): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#11 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(363): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateUsersTable), 'down')
+#12 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(284): Illuminate\\Database\\Migrations\\Migrator->runDown('C:\\\
+ewxampp\\\\htd...', Object(stdClass), false)
+#13 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(334): Illuminate\\Database\\Migrations\\Migrator->rollbackMigrations(Array, Array, Array)
+#14 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(313): Illuminate\\Database\\Migrations\\Migrator->resetMigrations(Array, Array, false)
+#15 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\ResetCommand.php(67): Illuminate\\Database\\Migrations\\Migrator->reset(Array, false)
+#16 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(541): Illuminate\\Database\\Console\\Migrations\\ResetCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#17 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\ResetCommand.php(69): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#18 [internal function]: Illuminate\\Database\\Console\\Migrations\\ResetCommand->handle()
+#19 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(33): call_user_func_array(Array, Array)
+#20 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#25 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Command\\Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#26 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#27 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\CallsCommands.php(56): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#28 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('migrate:reset', Array, Object(Illuminate\\Console\\OutputStyle))
+#29 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(102): Illuminate\\Console\\Command->call('migrate:reset', Array)
+#30 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\RefreshCommand.php(53): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->runReset(NULL, Array)
+#31 [internal function]: Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#32 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(33): call_user_func_array(Array, Array)
+#33 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#34 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#35 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#36 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(592): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#37 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(134): Illuminate\\Container\\Container->call(Array)
+#38 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Command\\Command.php(258): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#39 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#40 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(911): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#41 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#42 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#43 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#45 C:\
+ewxampp\\htdocs\\MinistryOfHealth\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#46 {main}
+"} 

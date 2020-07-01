@@ -35,3 +35,7 @@ Route::post('/sendemail/send', 'SendEmailController@send');
 Route::get('/news','PagesController@news') ;
 Route::get('/about','PagesController@about') ;
 Route::get('/healthcarelocations','PagesController@healthcarelocations');
+
+//Covid Tracker
+
+Route::get('/covidTracker', 'covidTrackerController@index');
