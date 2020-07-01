@@ -31,9 +31,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         
         <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css" >
-        <link href="<?php echo e(asset('css/landingPage.css')); ?>" rel="stylesheet" type="text/css" >
         <link href="<?php echo e(asset('css/aboutUs.css')); ?>" rel="stylesheet" type="text/css">
         <link href="<?php echo e(asset('css/feedback.css')); ?>" rel="stylesheet" type="text/css">
+        <link href="<?php echo e(asset('css/landingPage.css')); ?>" rel="stylesheet" type="text/css" >
 
         
 

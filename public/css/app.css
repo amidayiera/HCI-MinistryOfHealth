@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-<<<<<<< HEAD
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -10934,7 +10933,6 @@ a.text-dark:focus {
   }
 }
 
-=======
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
 
 .home{
@@ -10974,4 +10972,3 @@ p{
   border-bottom: 1px solid;
   border-bottom-color:rgb(121, 120, 120);
 }
->>>>>>> Contact_form
