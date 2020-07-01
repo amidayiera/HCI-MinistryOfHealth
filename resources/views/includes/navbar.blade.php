@@ -30,8 +30,11 @@
         
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         {{-- <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
-        <link href="{{ asset('css/landingPage.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/landingPage.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/aboutUs.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/feedback.css')}}" rel="stylesheet" type="text/css">
+
         
 
     </head>
