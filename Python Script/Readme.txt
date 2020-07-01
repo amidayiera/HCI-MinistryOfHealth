@@ -1,10 +1,12 @@
 For the Script to work python 3.8 should be installed and all the libraries installed in the python interpreter.
 
+run the command (pip install -r requirements.txt) inside the Python scripts directory to install all the necessary requirements for the script to run
+
 Once all is setup the laravel server can be started(php artisan serve) and then the script can be run using python scrapper.py
 
-The script will scrape news information in two websites and return the necessary data i.e the news headline,the news link(which in this case is an external link and the image src link
+The script will scrape news information in two websites and return the necessary data i.e the news headline,the news link(which in this case is an external link) and the image src link
 
-It will then pass the data to the api(which we intergrated with the main project for ease and then send the data to the database
+It will then pass the data to the api(which we intergrated with the main project for ease) and then send the data to the database
 
 From the database the data is then added to the carousel
 
