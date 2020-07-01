@@ -1,0 +1,168 @@
+<<<<<<< HEAD
+body {
+    background-color: #ffffff !important;
+}
+.backgroundImage {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.landingPageImage{
+    background-image: 
+   /* linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), */
+   /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);
+   */
+    url('/images/landingPage_background7.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+}
+
+ /* Make the image fully responsive */
+ .carousel-inner img {
+   /* width: 100%;
+    height: 50%;*/
+    margin: 10px;
+    background-size: cover;
+    height: 88vh;
+    width: 100%;
+   
+  }
+
+.py-4 {
+    padding-top: 0.5em !important;
+}
+.landingPageTitle {
+    font-size: 70px;
+    word-spacing: 100vw;
+   /* top: 50%;
+    */
+    left: 45%;
+=======
+.backgroundImage{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);*/
+    url('/images/health2.jpg');
+  background-size: cover;
+  height: 84vh;
+}
+body {
+    background-color: #f7f7f7 !important;
+
+}
+
+.landingPageTitle {
+    font-size: 60px;
+    word-spacing: 100vw;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+>>>>>>> Contact_form
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 2px;
+<<<<<<< HEAD
+    font-family: Arial, Helvetica, sans-serif;
+   /* left: 20px;
+    */
+    margin: 0;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+.navbar {
+    padding: 0px 16px;
+}
+=======
+    /* left: 20px; */
+    margin: 0;
+  }
+  .bg-light {
+      background-color: #f7f7f7 !important;
+  }
+
+>>>>>>> Contact_form
+li.nav-item {
+    font-size: 24px;
+    padding: 0 2px 0 20px;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+a.nav-link {
+    color: black;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
+.navbar-brand {
+    color: #000;
+}
+hr {
+    margin: 0.2em 0;
+}
+hr.black {
+    border-top: 2px solid black;
+}
+hr.red {
+    border-top: 2px solid #f80606;
+}
+hr.green {
+    border-top: 2px solid #0ac019;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
+.card-deck {
+    margin: 50px 0 20px 0;
+}
+.card {
+    border: none;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
+.card-title{
+    text-transform: uppercase;
+}
+.card-text{
+    font-size: 18px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Contact_form
+.footer-titles{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+.footer-details{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.col {
+    text-align: center;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> Contact_form

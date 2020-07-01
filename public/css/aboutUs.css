@@ -1,0 +1,60 @@
+.container-fluid {
+  position: relative;
+  width: 100% !important;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.aboutUsImage {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), 
+ /* url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);
+  */
+  url('/images/landingPage_background4.jpg') ;
+  background-size: cover;
+  height: 88vh;
+}
+.background {
+  width: 100%;
+  height: 500px;
+  margin:0px;
+ /*background-position-x: 100%;
+ */
+ /* opacity: 0.6;
+  */
+}
+.card-deck{
+ /* border-block-color: white !important;
+  */
+  background-position-x: 100%;
+  background-attachment: fixed;
+  border: none;
+}
+.management{
+  margin-top: 30px;
+  text-align: center;
+  color: darkblue;
+}
+.departments, .feedback{
+  margin-top: 40px;
+  text-align: center;
+  color: darkblue;
+}
+.cardset2 , .mastfoot{
+  margin-top: 20px;
+}
+.accordion{
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.card-title{
+  color: darkblue;
+  text-align: center;
+}
+.my-4{
+  color:black;
+  border-width: 2px;
+}
