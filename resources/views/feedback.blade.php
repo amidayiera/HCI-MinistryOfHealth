@@ -1,4 +1,4 @@
-@extends('includes.navBar')
+@extends('includes.navbar')
 
 @section('content')
         
