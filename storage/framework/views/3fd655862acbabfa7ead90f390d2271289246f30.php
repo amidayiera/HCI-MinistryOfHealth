@@ -16,7 +16,7 @@
  <script>
      $('.carousel').carousel({
          interval: 5000
-     });
+     })
  </script>
   <div id="demo" class="carousel slide" data-ride="carousel">
   <!-- The slideshow -->
