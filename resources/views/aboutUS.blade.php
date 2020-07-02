@@ -5,8 +5,7 @@
 {{-- <div class="jumbotron  jumbotron-fluid" >
 <div class="container-fluid">
   <img class="background" src="{{ url('/images/health3.jpg') }}" alt="Health" width="1000" height="300">
-  <div class="bottomleft">
-      <h3><b>About The Ministry</b></h3>
+  <div class="bottom-cente    <h3><b>About The Ministry</b></h3>
       <h4 style="color:#fff;"><b>REPUBLIC OF KENYA</b></h4>
     </div>
     </div>
@@ -23,7 +22,7 @@
   <div class="row justify-content-center">
         <div class="col-auto mb-3">
  
-  <div class="card" style="width: 20rem;">
+  <div class="card" style="width: 15rem;">
     <img src="{{ url('/images/vision1.jpg') }}" class="card-img-top" alt="vision">
     <div class="card-body">
       <h5 class="card-title" style="text-align: center;">VISION</h5>
@@ -33,7 +32,7 @@
   </div>
   <div class="col-auto mb-3">
 
-  <div class="card" style="width: 20rem;">
+  <div class="card" style="width: 15rem;">
   <img src="{{ url('/images/mission1.png') }}" class="card-img-top" alt="mission">
     <div class="card-body">
       <h5 class="card-title"style="text-align: center;">MISSION</h5>
@@ -42,7 +41,7 @@
   </div>
   </div>
   <div class="col-auto mb-3">
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 15rem;">
     <img src="{{ url('/images/goal4.jpg') }}" class="card-img-top" alt="goals">
       <div class="card-body">
         <h5 class="card-title" style="text-align: center;">GOAL</h5>
@@ -52,7 +51,7 @@
   </div>
 
   <div class="col-auto mb-3">
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 15rem;">
     <img src="{{ url('/images/mandate1.png') }}" class="card-img-top" alt="mandate">
       <div class="card-body">
         <h5 class="card-title" style="text-align: center;">MANDATE</h5>
@@ -70,7 +69,7 @@
   </div>
 
   <div class="col-auto mb-3">
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 15rem;">
     <img src="{{ url('/images/core4.jpg') }}" class="card-img-top" alt="values">
       <div class="card-body">
         <h5 class="card-title" style="text-align: center;">CORE VALUES</h5>
@@ -143,16 +142,16 @@
 <div class="accordion" id="accordionExample">
   {{-- <div class ="container"> --}}
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header accordionTitle" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="text-uppercase btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         <b> A. </b>Department of Preventive and Promotive Health.
         </button>
       </h2>
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
        <p>
        <ul>
        <li>Division of Strategic National Public Health Programs </li>
@@ -167,15 +166,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingTwo">
+    <div class="card-header accordionTitle" id="headingTwo">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <b> B. </b>Department of Curative and Rehabilitation Health Services.
         </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
       <p>
        <ul>
         <li>Division of National Referral Health Facilities </li>
@@ -189,15 +188,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingThree">
+    <div class="card-header accordionTitle" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <b> C. </b> Department of Standards and Quality Assurance and Regulations.
         </button>
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
       <p>
        <ul>
         <li>Division of Quality Assurance</li>
@@ -209,15 +208,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingFour">
+    <div class="card-header accordionTitle" id="headingFour">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <button class="  text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         <b> D. </b> Department of Policy Planning and Health Financing.
         </button>
       </h2>
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
       <p>
        <ul>
         <li>Division of Health Policy and Planning </li>
@@ -229,15 +228,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingFive">
+    <div class="card-header accordionTitle" id="headingFive">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <button class=" text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <b> E. </b> Department of Health Sector Coordination and Inter Governmental Affairs.
         </button>
       </h2>
     </div>
     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
       <p>
        <ul>
         <li>Division of Health Sector Coordination </li>
@@ -248,15 +247,15 @@
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingSix">
+    <div class="card-header accordionTitle " id="headingSix">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <button class="text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
         <b> F. </b> Department of Administrative Services.
         </button>
       </h2>
     </div>
     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body text-center">
       <p>
        <ul>
         <li>Division of General Administration </li>

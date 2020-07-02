@@ -26,13 +26,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script-->
 
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
         
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         
-        <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css" >
         <link href="<?php echo e(asset('css/feedback.css')); ?>" rel="stylesheet" type="text/css">
         <link href="<?php echo e(asset('css/aboutUs.css')); ?>" rel="stylesheet" type="text/css">
         <link href="<?php echo e(asset('css/landingPage.css')); ?>" rel="stylesheet" type="text/css" >
+        <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css" >
 
     </head>
     
@@ -51,6 +52,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/covidTracker">Covid 19</a>
+                </li> <li class="nav-item">
+                    <a class="nav-link" href="/vacancies">Vacancies</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/healthcarelocations">Health care</a>

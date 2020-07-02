@@ -41,7 +41,7 @@ Route::get('/healthcarelocations','PagesController@healthcarelocations');
 
 Route::get('/covidTracker', 'covidTrackerController@index');
 
-Route::resource('/', 'vacanciesController');
+Route::resource('/vacancies', 'vacanciesController');
 Route::get('/Cevents','CeventsController@index');
 Route::get('/Cevents','CeventsController@allevents');
 Route::get('/resources', 'PostsController@index');

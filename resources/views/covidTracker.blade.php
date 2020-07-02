@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="content">
-<div class="container-fluid">
+<div class="container">
 <div class="card-body">
         <div class="table-responsive">
             <table class="table">

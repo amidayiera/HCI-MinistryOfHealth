@@ -57,4 +57,4 @@
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('includes.navBar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/feedback.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('includes.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/feedback.blade.php ENDPATH**/ ?>

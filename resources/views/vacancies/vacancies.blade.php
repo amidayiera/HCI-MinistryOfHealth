@@ -1,3 +1,7 @@
+{{-- @extends('includes.navbar')
+
+@section('content') --}}
+
 @include('messages.messages')
 <html>
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -11,9 +15,9 @@
 
         <!-- Styles --></head>
     <header class="header">
-        <div class="header__logo-box">
+        {{-- <div class="header__logo-box">
             <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
-        </div>
+        </div> --}}
         <div class="header__text-box">
         <h1 class="heading-primary">
         <span class="heading-primary--main">placements</span>
@@ -50,14 +54,13 @@
                         <img src="img/pic2.jpg " alt="photo 2" class="composition__photo composition__photo--p2">
                         <img src="img/pic3.jpg " alt="photo 3" class="composition__photo composition__photo--p3">
                     </div>
-
-
                 </div>
+            </div>
         </section>
                 <section class="jobs__available">
                 @if(count($vacancies)<1)
                 <div clas="u-center-text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">No vacancies currently</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small lineWord">No vacancies currently</h3>
 
                 </div>
 
@@ -215,3 +218,4 @@
     </main>
 </html>
 
+{{-- @endsection --}}

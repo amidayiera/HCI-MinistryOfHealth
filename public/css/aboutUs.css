@@ -54,10 +54,11 @@
 }
 .accordion{
   margin-top: 20px;
-  margin-left: 180px;
-  margin-right: 250px;
-  width: 600px;
+  align-items: center;
   line-height: 2em;
+}
+.accordionTitle {
+  background-color: white;
 }
 .card-title{
   color: darkblue;
