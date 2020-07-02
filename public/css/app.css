@@ -1,11 +1,60 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #fff !important;
+  border-radius: 0.25rem;}
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+
+.home{
+  background-color: #fcfcfc;
+}
+.home img{
+  height: 790px;
+}
+.callToAction a {
+  font-size:20px; 
+  margin: 20px 0;
+  /* text-align: center; */
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+}
+.callToAction {
+  margin-top: 20px      ;
+  font-size: 30px;
+  /* text-align: center; */
+}
+.navbar{
+  text-transform: uppercase;
+}
+.navbar li {
+  padding: 0 5px;
+  font-size: 27px;
+}
+a.navbar-brand{
+  font-size: 28px;
+  font-weight: bolder;
+}
+h4{
+  color:rgb(90, 90, 90);
+}
+p{
+  border-bottom: 1px solid #fff;
+}
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 
 :root {
   --blue: #3490dc;
@@ -10931,44 +10980,4 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
-
-.home{
-  background-color: #fcfcfc;
-}
-.home img{
-  height: 790px;
-}
-.callToAction a {
-  font-size:20px; 
-  margin: 20px 0;
-  /* text-align: center; */
-  text-transform: uppercase;
-  padding: 10px;
-  border: none;
-}
-.callToAction {
-  margin-top: 20px      ;
-  font-size: 30px;
-  /* text-align: center; */
-}
-.navbar{
-  text-transform: uppercase;
-}
-.navbar li {
-  padding: 0 5px;
-  font-size: 27px;
-}
-a.navbar-brand{
-  font-size: 28px;
-  font-weight: bolder;
-}
-h4{
-  color:rgb(90, 90, 90);
-}
-p{
-  border-bottom: 1px solid;
-  border-bottom-color:rgb(121, 120, 120);
 }

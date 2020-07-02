@@ -39,7 +39,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
         
   <div class="container">
-    <nav class="navbar navbar-expand-md  navbar-light bg-light">
+    <nav class="navbar navbar-expand-md  navbar-light">
     <a class="navbar-brand" href="/"> <img src="{{ url('/images/mohlogo1.png') }}" style="height:90px; width:100px;" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -77,7 +77,7 @@
     Et netus et malesuada fames ac turpis egestas integer.</p>
     </div>
     </div>
-
+  </div>
 
   <div class="card-deck">
   <div class="card">

@@ -7,69 +7,84 @@
   </div>
 </div>
 
-<div class="container-fluid">
-<div class="card-deck">
-  <div class="card" style="text-align: center;">
+<div class="container mt-4">
+  <h1 class="lineWord">About us</h1>
+  <div class="row justify-content-center">
+        <div class="col-auto mb-3">
+ 
+  <div class="card" style="width: 20rem;">
     <img src="<?php echo e(url('/images/vision1.jpg')); ?>" class="card-img-top" alt="vision">
     <div class="card-body">
-      <h5 class="card-title">VISION</h5>
+      <h5 class="card-title" style="text-align: center;">VISION</h5>
       <p class="card-text">A Healthy, productive and globally competitive nation.</p>
     </div>
   </div>
-  <div class="card" style="text-align: center;">
+  </div>
+  <div class="col-auto mb-3">
+
+  <div class="card" style="width: 20rem;">
   <img src="<?php echo e(url('/images/mission1.png')); ?>" class="card-img-top" alt="mission">
     <div class="card-body">
-      <h5 class="card-title">MISSION</h5>
+      <h5 class="card-title"style="text-align: center;">MISSION</h5>
       <p class="card-text">To build a progressive, responsive and sustainable health care system for accelerated attainment of the highest standard of health to all Kenyans.</p>
     </div>
   </div>
-  <div class="card" style="text-align: center;">
-  <img src="<?php echo e(url('/images/goal4.jpg')); ?>" class="card-img-top" alt="goals">
-    <div class="card-body">
-      <h5 class="card-title">GOAL</h5>
-      <p class="card-text">Attaining equitable, affordable, accessible and quality health care for all.</p>
+  </div>
+  <div class="col-auto mb-3">
+    <div class="card" style="width: 20rem;">
+    <img src="<?php echo e(url('/images/goal4.jpg')); ?>" class="card-img-top" alt="goals">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">GOAL</h5>
+        <p class="card-text">Attaining equitable, affordable, accessible and quality health care for all.</p>
+      </div>
     </div>
   </div>
-  <div class="card">
-  <img src="<?php echo e(url('/images/mandate1.png')); ?>" class="card-img-top" alt="mandate">
-    <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">MANDATE</h5>
-      <p class="card-text">
-      <ul>
-        <li>Health Policy</li>
-        <li>Health Regulation</li>
-        <li>National Referral Health Facilities</li>
-        <li>Capacity Building</li>
-        <li>Technical Assistance to Counties.</li>
-      </ul>  
-      </p>
+
+  <div class="col-auto mb-3">
+    <div class="card" style="width: 20rem;">
+    <img src="<?php echo e(url('/images/mandate1.png')); ?>" class="card-img-top" alt="mandate">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">MANDATE</h5>
+        <p class="card-text">
+        <ul>
+          <li>Health Policy</li>
+          <li>Health Regulation</li>
+          <li>National Referral Health Facilities</li>
+          <li>Capacity Building</li>
+          <li>Technical Assistance to Counties.</li>
+        </ul>  
+        </p>
+      </div>
     </div>
   </div>
-  <div class="card">
-  <img src="<?php echo e(url('/images/core4.jpg')); ?>" class="card-img-top" alt="values">
-    <div class="card-body">
-      <h5 class="card-title" style="text-align: center;">CORE VALUES</h5>
-      <p class="card-text">
-      <ul>
-        <li>Professionalism</li>
-        <li>Ethics</li>
-        <li>Integrity</li>
-        <li>Accountability</li>
-        <li>Patnership and Collaboration.</li>
-      </ul>  
-      </p>
-    </div>
-    </div>
+
+  <div class="col-auto mb-3">
+    <div class="card" style="width: 20rem;">
+    <img src="<?php echo e(url('/images/core4.jpg')); ?>" class="card-img-top" alt="values">
+      <div class="card-body">
+        <h5 class="card-title" style="text-align: center;">CORE VALUES</h5>
+        <p class="card-text">
+        <ul>
+          <li>Professionalism</li>
+          <li>Ethics</li>
+          <li>Integrity</li>
+          <li>Accountability</li>
+          <li>Patnership and Collaboration.</li>
+        </ul>  
+        </p>
+      </div>
+      </div>
   </div>
 </div>
+  </div>
 
+  <div class="container">
 <div class="management">
-    <h3>MANAGEMENT</h3>
+    <h3 class="lineWord">MANAGEMENT</h3>
 </div>
 
-<div class="container-fluid">
 <div class = "cardset2">
-<div class="card-group">
+<div class="card-deck">
   <div class="card">
     <img src="<?php echo e(url('/images/kagwe1.jpg')); ?>" class="card-img-top" alt="Kagwe">
     <div class="card-body">
@@ -110,12 +125,12 @@
 </div>
 
 <div class="departments">
-    <h3>DEPARTMENTS</h3>
+    <h3 class="lineWord">DEPARTMENTS</h3>
 </div>
 
 
 <div class="accordion" id="accordionExample">
-  <div class ="container-fluid">
+  
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
@@ -249,8 +264,9 @@
   </div>
 </div>
 </div>
-
+  </div>
 
 
         <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('includes.navBar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/aboutUs.blade.php ENDPATH**/ ?>
