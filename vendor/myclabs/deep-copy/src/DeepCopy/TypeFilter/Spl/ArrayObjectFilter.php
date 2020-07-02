@@ -1,7 +1,10 @@
 <?php
 namespace DeepCopy\TypeFilter\Spl;
 
+<<<<<<< HEAD
 use ArrayObject;
+=======
+>>>>>>> eventsResources
 use DeepCopy\DeepCopy;
 use DeepCopy\TypeFilter\TypeFilter;
 
@@ -26,11 +29,20 @@ final class ArrayObjectFilter implements TypeFilter
      */
     public function apply($arrayObject)
     {
+<<<<<<< HEAD
         return new ArrayObject(
             $this->copier->copy($arrayObject->getArrayCopy()),
             $arrayObject->getFlags(),
             $arrayObject->getIteratorClass()
         );
+=======
+        $clone = clone $arrayObject;
+        foreach ($arrayObject->getArrayCopy() as $k => $v) {
+            $clone->offsetSet($k, $this->copier->copy($v));
+        }
+
+        return $clone;
+>>>>>>> eventsResources
     }
 }
 

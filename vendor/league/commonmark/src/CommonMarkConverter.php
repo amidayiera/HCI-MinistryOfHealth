@@ -23,8 +23,16 @@ class CommonMarkConverter extends Converter
      * The currently-installed version.
      *
      * This might be a typical `x.y.z` version, or `x.y-dev`.
+<<<<<<< HEAD
      */
     public const VERSION = '1.4.3';
+=======
+     *
+     * @deprecated in 1.5.0 and will be removed from 2.0.0.
+     *   Use \Composer\InstalledVersions provided by composer-runtime-api instead.
+     */
+    public const VERSION = '1.5.1';
+>>>>>>> eventsResources
 
     /** @var EnvironmentInterface */
     protected $environment;

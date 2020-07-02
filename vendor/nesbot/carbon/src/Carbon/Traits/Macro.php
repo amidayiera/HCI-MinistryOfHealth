@@ -11,6 +11,7 @@
 namespace Carbon\Traits;
 
 /**
+<<<<<<< HEAD
  * Trait Boundaries.
  *
  * startOf, endOf and derived method for each unit.
@@ -27,6 +28,11 @@ namespace Carbon\Traits;
  * @method $this setTime(int $hour, int $minute, int $second = 0, int $microseconds = 0)
  * @method $this setDate(int $year, int $month, int $day)
  * @method $this addMonths(int $value = 1)
+=======
+ * Trait Macros.
+ *
+ * Allows users to register macros within the Carbon class.
+>>>>>>> eventsResources
  */
 trait Macro
 {

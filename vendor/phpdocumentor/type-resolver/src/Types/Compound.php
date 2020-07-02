@@ -13,10 +13,14 @@ declare(strict_types=1);
 
 namespace phpDocumentor\Reflection\Types;
 
+<<<<<<< HEAD
 use ArrayIterator;
 use IteratorAggregate;
 use phpDocumentor\Reflection\Type;
 use function implode;
+=======
+use phpDocumentor\Reflection\Type;
+>>>>>>> eventsResources
 
 /**
  * Value Object representing a Compound Type.
@@ -24,6 +28,7 @@ use function implode;
  * A Compound Type is not so much a special keyword or object reference but is a series of Types that are separated
  * using an OR operator (`|`). This combination of types signifies that whatever is associated with this compound type
  * may contain a value with any of the given types.
+<<<<<<< HEAD
  */
 final class Compound implements Type, IteratorAggregate
 {
@@ -101,5 +106,20 @@ final class Compound implements Type, IteratorAggregate
         }
 
         $this->types[] = $type;
+=======
+ *
+ * @psalm-immutable
+ */
+final class Compound extends AggregatedType
+{
+    /**
+     * Initializes a compound type (i.e. `string|int`) and tests if the provided types all implement the Type interface.
+     *
+     * @param array<Type> $types
+     */
+    public function __construct(array $types)
+    {
+        parent::__construct($types, '|');
+>>>>>>> eventsResources
     }
 }

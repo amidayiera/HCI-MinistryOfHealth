@@ -48,9 +48,15 @@ class Response implements ArrayAccess
     }
 
     /**
+<<<<<<< HEAD
      * Get the JSON decoded body of the response as an array.
      *
      * @return array
+=======
+     * Get the JSON decoded body of the response as an array or scalar value.
+     *
+     * @return mixed
+>>>>>>> eventsResources
      */
     public function json()
     {

@@ -20,7 +20,11 @@
         "source": "https://github.com/thephpleague/commonmark"
     },
     "require": {
+<<<<<<< HEAD
         "php": "^7.1",
+=======
+        "php": "^7.1 || ^8.0",
+>>>>>>> eventsResources
         "ext-mbstring": "*"
     },
     "require-dev": {
@@ -83,11 +87,14 @@
             "@phpunit"
         ]
     },
+<<<<<<< HEAD
     "extra": {
         "branch-alias": {
             "dev-master": "1.4-dev"
         }
     },
+=======
+>>>>>>> eventsResources
     "config": {
         "sort-packages": true
     }

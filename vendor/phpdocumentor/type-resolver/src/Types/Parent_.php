@@ -19,6 +19,11 @@ use phpDocumentor\Reflection\Type;
  * Value Object representing the 'parent' type.
  *
  * Parent, as a Type, represents the parent class of class in which the associated element was defined.
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
  */
 final class Parent_ implements Type
 {

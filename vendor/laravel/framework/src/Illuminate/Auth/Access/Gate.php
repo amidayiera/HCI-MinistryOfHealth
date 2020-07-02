@@ -126,6 +126,13 @@ class Gate implements GateContract
      */
     public function define($ability, $callback)
     {
+<<<<<<< HEAD
+=======
+        if (is_array($callback) && isset($callback[0]) && is_string($callback[0])) {
+            $callback = $callback[0].'@'.$callback[1];
+        }
+
+>>>>>>> eventsResources
         if (is_callable($callback)) {
             $this->abilities[$ability] = $callback;
         } elseif (is_string($callback)) {

@@ -362,7 +362,11 @@ trait Creator
      *
      * @throws InvalidFormatException
      *
+<<<<<<< HEAD
      * @return static
+=======
+     * @return static|false
+>>>>>>> eventsResources
      */
     public static function create($year = 0, $month = 1, $day = 1, $hour = 0, $minute = 0, $second = 0, $tz = null)
     {
@@ -412,7 +416,10 @@ trait Creator
         }
 
         $second = ($second < 10 ? '0' : '').number_format($second, 6);
+<<<<<<< HEAD
         /** @var CarbonImmutable|Carbon $instance */
+=======
+>>>>>>> eventsResources
         $instance = static::rawCreateFromFormat('!Y-n-j G:i:s.u', sprintf('%s-%s-%s %s:%02s:%02s', $year, $month, $day, $hour, $minute, $second), $tz);
 
         if ($fixYear !== null) {

@@ -13,6 +13,7 @@
  * Authors:
  * - Ge'ez Frontier Foundation    locales@geez.org
  */
+<<<<<<< HEAD
 return array_replace_recursive(require __DIR__.'/en.php', [
     'formats' => [
         'L' => 'DD/MM/YYYY',
@@ -25,3 +26,6 @@ return array_replace_recursive(require __DIR__.'/en.php', [
     'day_of_first_week_of_year' => 1,
     'meridiem' => ['subaxnimo', 'galabnimo'],
 ]);
+=======
+return require __DIR__.'/so.php';
+>>>>>>> eventsResources

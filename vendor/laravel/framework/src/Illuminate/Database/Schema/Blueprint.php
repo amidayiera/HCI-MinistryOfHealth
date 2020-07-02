@@ -1151,6 +1151,23 @@ class Blueprint
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Create a new UUID column on the table with a foreign key constraint.
+     *
+     * @param  string  $column
+     * @return \Illuminate\Database\Schema\ForeignIdColumnDefinition
+     */
+    public function foreignUuid($column)
+    {
+        return $this->columns[] = new ForeignIdColumnDefinition($this, [
+            'type' => 'uuid',
+            'name' => $column,
+        ]);
+    }
+
+    /**
+>>>>>>> eventsResources
      * Create a new IP address column on the table.
      *
      * @param  string  $column

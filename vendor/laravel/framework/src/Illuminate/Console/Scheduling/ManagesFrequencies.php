@@ -82,6 +82,39 @@ trait ManagesFrequencies
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Schedule the event to run every two minutes.
+     *
+     * @return $this
+     */
+    public function everyTwoMinutes()
+    {
+        return $this->spliceIntoPosition(1, '*/2');
+    }
+
+    /**
+     * Schedule the event to run every three minutes.
+     *
+     * @return $this
+     */
+    public function everyThreeMinutes()
+    {
+        return $this->spliceIntoPosition(1, '*/3');
+    }
+
+    /**
+     * Schedule the event to run every four minutes.
+     *
+     * @return $this
+     */
+    public function everyFourMinutes()
+    {
+        return $this->spliceIntoPosition(1, '*/4');
+    }
+
+    /**
+>>>>>>> eventsResources
      * Schedule the event to run every five minutes.
      *
      * @return $this
@@ -338,6 +371,7 @@ trait ManagesFrequencies
     }
 
     /**
+<<<<<<< HEAD
      * Schedule the event to run twice monthly.
      *
      * @param  int  $first
@@ -348,12 +382,43 @@ trait ManagesFrequencies
     {
         $days = $first.','.$second;
 
+=======
+     * Schedule the event to run twice monthly at a given time.
+     *
+     * @param  int  $first
+     * @param  int  $second
+     * @param  string  $time
+     * @return $this
+     */
+    public function twiceMonthly($first = 1, $second = 16, $time = '0:0')
+    {
+        $days = $first.','.$second;
+
+        $this->dailyAt($time);
+
+>>>>>>> eventsResources
         return $this->spliceIntoPosition(1, 0)
             ->spliceIntoPosition(2, 0)
             ->spliceIntoPosition(3, $days);
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Schedule the event to run on the last day of the month.
+     *
+     * @param  string  $time
+     * @return $this
+     */
+    public function lastDayOfMonth($time = '0:0')
+    {
+        $this->dailyAt($time);
+
+        return $this->spliceIntoPosition(3, Carbon::now()->endOfMonth()->day);
+    }
+
+    /**
+>>>>>>> eventsResources
      * Schedule the event to run quarterly.
      *
      * @return $this

@@ -119,11 +119,20 @@ class TrustProxies
             case Request::HEADER_FORWARDED:
                 return Request::HEADER_FORWARDED;
                 break;
+<<<<<<< HEAD
             default:
                 return Request::HEADER_X_FORWARDED_ALL;
         }
 
         // Should never reach this point
+=======
+            case 'HEADER_X_FORWARDED_ALL':
+            case Request::HEADER_X_FORWARDED_ALL:
+                return Request::HEADER_X_FORWARDED_ALL;
+                break;
+        }
+
+>>>>>>> eventsResources
         return $headers;
     }
 }

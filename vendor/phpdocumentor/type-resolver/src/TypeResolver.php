@@ -20,12 +20,19 @@ use phpDocumentor\Reflection\Types\ClassString;
 use phpDocumentor\Reflection\Types\Collection;
 use phpDocumentor\Reflection\Types\Compound;
 use phpDocumentor\Reflection\Types\Context;
+<<<<<<< HEAD
 use phpDocumentor\Reflection\Types\Integer;
+=======
+use phpDocumentor\Reflection\Types\Expression;
+use phpDocumentor\Reflection\Types\Integer;
+use phpDocumentor\Reflection\Types\Intersection;
+>>>>>>> eventsResources
 use phpDocumentor\Reflection\Types\Iterable_;
 use phpDocumentor\Reflection\Types\Nullable;
 use phpDocumentor\Reflection\Types\Object_;
 use phpDocumentor\Reflection\Types\String_;
 use RuntimeException;
+<<<<<<< HEAD
 use function array_keys;
 use function array_pop;
 use function class_exists;
@@ -37,6 +44,20 @@ use function strlen;
 use function strpos;
 use function strtolower;
 use function substr;
+=======
+use function array_key_exists;
+use function array_pop;
+use function array_values;
+use function class_exists;
+use function class_implements;
+use function count;
+use function end;
+use function in_array;
+use function key;
+use function preg_split;
+use function strpos;
+use function strtolower;
+>>>>>>> eventsResources
 use function trim;
 use const PREG_SPLIT_DELIM_CAPTURE;
 use const PREG_SPLIT_NO_EMPTY;
@@ -84,8 +105,13 @@ final class TypeResolver
         'scalar' => Types\Scalar::class,
         'callback' => Types\Callable_::class,
         'callable' => Types\Callable_::class,
+<<<<<<< HEAD
         'false' => Types\Boolean::class,
         'true' => Types\Boolean::class,
+=======
+        'false' => Types\False_::class,
+        'true' => Types\True_::class,
+>>>>>>> eventsResources
         'self' => Types\Self_::class,
         '$this' => Types\This::class,
         'static' => Types\Static_::class,
@@ -93,7 +119,14 @@ final class TypeResolver
         'iterable' => Iterable_::class,
     ];
 
+<<<<<<< HEAD
     /** @var FqsenResolver */
+=======
+    /**
+     * @var FqsenResolver
+     * @psalm-readonly
+     */
+>>>>>>> eventsResources
     private $fqsenResolver;
 
     /**
@@ -131,9 +164,15 @@ final class TypeResolver
             $context = new Context('');
         }
 
+<<<<<<< HEAD
         // split the type string into tokens `|`, `?`, `<`, `>`, `,`, `(`, `)[]`, '<', '>' and type names
         $tokens = preg_split(
             '/(\\||\\?|<|>|, ?|\\(|\\)(?:\\[\\])+)/',
+=======
+        // split the type string into tokens `|`, `?`, `<`, `>`, `,`, `(`, `)`, `[]`, '<', '>' and type names
+        $tokens = preg_split(
+            '/(\\||\\?|<|>|&|, ?|\\(|\\)|\\[\\]+)/',
+>>>>>>> eventsResources
             $type,
             -1,
             PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE
@@ -143,6 +182,10 @@ final class TypeResolver
             throw new InvalidArgumentException('Unable to split the type string "' . $type . '" into tokens');
         }
 
+<<<<<<< HEAD
+=======
+        /** @var ArrayIterator<int, string|null> $tokenIterator */
+>>>>>>> eventsResources
         $tokenIterator = new ArrayIterator($tokens);
 
         return $this->parseTypes($tokenIterator, $context, self::PARSER_IN_COMPOUND);
@@ -151,38 +194,75 @@ final class TypeResolver
     /**
      * Analyse each tokens and creates types
      *
+<<<<<<< HEAD
      * @param ArrayIterator $tokens        the iterator on tokens
      * @param int           $parserContext on of self::PARSER_* constants, indicating
+=======
+     * @param ArrayIterator<int, string|null> $tokens        the iterator on tokens
+     * @param int                        $parserContext on of self::PARSER_* constants, indicating
+>>>>>>> eventsResources
      * the context where we are in the parsing
      */
     private function parseTypes(ArrayIterator $tokens, Context $context, int $parserContext) : Type
     {
         $types = [];
         $token = '';
+<<<<<<< HEAD
         while ($tokens->valid()) {
             $token = $tokens->current();
 
             if ($token === '|') {
+=======
+        $compoundToken = '|';
+        while ($tokens->valid()) {
+            $token = $tokens->current();
+            if ($token === null) {
+                throw new RuntimeException(
+                    'Unexpected nullable character'
+                );
+            }
+
+            if ($token === '|' || $token === '&') {
+>>>>>>> eventsResources
                 if (count($types) === 0) {
                     throw new RuntimeException(
                         'A type is missing before a type separator'
                     );
                 }
 
+<<<<<<< HEAD
                 if ($parserContext !== self::PARSER_IN_COMPOUND
                     && $parserContext !== self::PARSER_IN_ARRAY_EXPRESSION
                     && $parserContext !== self::PARSER_IN_COLLECTION_EXPRESSION
+=======
+                if (!in_array($parserContext, [
+                    self::PARSER_IN_COMPOUND,
+                    self::PARSER_IN_ARRAY_EXPRESSION,
+                    self::PARSER_IN_COLLECTION_EXPRESSION,
+                ], true)
+>>>>>>> eventsResources
                 ) {
                     throw new RuntimeException(
                         'Unexpected type separator'
                     );
                 }
 
+<<<<<<< HEAD
                 $tokens->next();
             } elseif ($token === '?') {
                 if ($parserContext !== self::PARSER_IN_COMPOUND
                     && $parserContext !== self::PARSER_IN_ARRAY_EXPRESSION
                     && $parserContext !== self::PARSER_IN_COLLECTION_EXPRESSION
+=======
+                $compoundToken = $token;
+                $tokens->next();
+            } elseif ($token === '?') {
+                if (!in_array($parserContext, [
+                    self::PARSER_IN_COMPOUND,
+                    self::PARSER_IN_ARRAY_EXPRESSION,
+                    self::PARSER_IN_COLLECTION_EXPRESSION,
+                ], true)
+>>>>>>> eventsResources
                 ) {
                     throw new RuntimeException(
                         'Unexpected nullable character'
@@ -196,6 +276,7 @@ final class TypeResolver
                 $tokens->next();
                 $type = $this->parseTypes($tokens, $context, self::PARSER_IN_ARRAY_EXPRESSION);
 
+<<<<<<< HEAD
                 $resolvedType = new Array_($type);
 
                 $token = $tokens->current();
@@ -212,6 +293,18 @@ final class TypeResolver
 
                 $types[] = $resolvedType;
                 $tokens->next();
+=======
+                $token = $tokens->current();
+                if ($token === null) { // Someone did not properly close their array expression ..
+                    break;
+                }
+
+                $tokens->next();
+
+                $resolvedType = new Expression($type);
+
+                $types[] = $resolvedType;
+>>>>>>> eventsResources
             } elseif ($parserContext === self::PARSER_IN_ARRAY_EXPRESSION && $token[0] === ')') {
                 break;
             } elseif ($token === '<') {
@@ -235,6 +328,20 @@ final class TypeResolver
                 && ($token === '>' || trim($token) === ',')
             ) {
                 break;
+<<<<<<< HEAD
+=======
+            } elseif ($token === self::OPERATOR_ARRAY) {
+                end($types);
+                $last = key($types);
+                $lastItem = $types[$last];
+                if ($lastItem instanceof Expression) {
+                    $lastItem = $lastItem->getValueType();
+                }
+
+                $types[$last] = new Array_($lastItem);
+
+                $tokens->next();
+>>>>>>> eventsResources
             } else {
                 $type = $this->resolveSingleType($token, $context);
                 $tokens->next();
@@ -246,7 +353,11 @@ final class TypeResolver
             }
         }
 
+<<<<<<< HEAD
         if ($token === '|') {
+=======
+        if ($token === '|' || $token === '&') {
+>>>>>>> eventsResources
             throw new RuntimeException(
                 'A type is missing after a type separator'
             );
@@ -274,7 +385,15 @@ final class TypeResolver
             return $types[0];
         }
 
+<<<<<<< HEAD
         return new Compound($types);
+=======
+        if ($compoundToken === '|') {
+            return new Compound(array_values($types));
+        }
+
+        return new Intersection(array_values($types));
+>>>>>>> eventsResources
     }
 
     /**
@@ -283,14 +402,24 @@ final class TypeResolver
      * @param string $type the type string, representing a single type
      *
      * @return Type|Array_|Object_
+<<<<<<< HEAD
      */
     private function resolveSingleType(string $type, Context $context)
+=======
+     *
+     * @psalm-pure
+     */
+    private function resolveSingleType(string $type, Context $context) : object
+>>>>>>> eventsResources
     {
         switch (true) {
             case $this->isKeyword($type):
                 return $this->resolveKeyword($type);
+<<<<<<< HEAD
             case $this->isTypedArray($type):
                 return $this->resolveTypedArray($type, $context);
+=======
+>>>>>>> eventsResources
             case $this->isFqsen($type):
                 return $this->resolveTypedObject($type);
             case $this->isPartialStructuralElementName($type):
@@ -331,6 +460,7 @@ final class TypeResolver
     }
 
     /**
+<<<<<<< HEAD
      * Detects whether the given type represents an array.
      *
      * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
@@ -348,12 +478,28 @@ final class TypeResolver
     private function isKeyword(string $type) : bool
     {
         return in_array(strtolower($type), array_keys($this->keywords), true);
+=======
+     * Detects whether the given type represents a PHPDoc keyword.
+     *
+     * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
+     *
+     * @psalm-pure
+     */
+    private function isKeyword(string $type) : bool
+    {
+        return array_key_exists(strtolower($type), $this->keywords);
+>>>>>>> eventsResources
     }
 
     /**
      * Detects whether the given type represents a relative structural element name.
      *
      * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
      */
     private function isPartialStructuralElementName(string $type) : bool
     {
@@ -362,6 +508,11 @@ final class TypeResolver
 
     /**
      * Tests whether the given type is a Fully Qualified Structural Element Name.
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
      */
     private function isFqsen(string $type) : bool
     {
@@ -369,6 +520,7 @@ final class TypeResolver
     }
 
     /**
+<<<<<<< HEAD
      * Resolves the given typed array string (i.e. `string[]`) into an Array object with the right types set.
      */
     private function resolveTypedArray(string $type, Context $context) : Array_
@@ -378,6 +530,11 @@ final class TypeResolver
 
     /**
      * Resolves the given keyword (such as `string`) into a Type object representing that keyword.
+=======
+     * Resolves the given keyword (such as `string`) into a Type object representing that keyword.
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
      */
     private function resolveKeyword(string $type) : Type
     {
@@ -388,6 +545,11 @@ final class TypeResolver
 
     /**
      * Resolves the given FQSEN string into an FQSEN object.
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
      */
     private function resolveTypedObject(string $type, ?Context $context = null) : Object_
     {
@@ -396,6 +558,11 @@ final class TypeResolver
 
     /**
      * Resolves class string
+<<<<<<< HEAD
+=======
+     *
+     * @param ArrayIterator<int, (string|null)> $tokens
+>>>>>>> eventsResources
      */
     private function resolveClassString(ArrayIterator $tokens, Context $context) : Type
     {
@@ -409,15 +576,25 @@ final class TypeResolver
             );
         }
 
+<<<<<<< HEAD
         if ($tokens->current() !== '>') {
             if (empty($tokens->current())) {
+=======
+        $token = $tokens->current();
+        if ($token !== '>') {
+            if (empty($token)) {
+>>>>>>> eventsResources
                 throw new RuntimeException(
                     'class-string: ">" is missing'
                 );
             }
 
             throw new RuntimeException(
+<<<<<<< HEAD
                 'Unexpected character "' . $tokens->current() . '", ">" is missing'
+=======
+                'Unexpected character "' . $token . '", ">" is missing'
+>>>>>>> eventsResources
             );
         }
 
@@ -427,6 +604,11 @@ final class TypeResolver
     /**
      * Resolves the collection values and keys
      *
+<<<<<<< HEAD
+=======
+     * @param ArrayIterator<int, (string|null)> $tokens
+     *
+>>>>>>> eventsResources
      * @return Array_|Iterable_|Collection
      */
     private function resolveCollection(ArrayIterator $tokens, Type $classType, Context $context) : Type
@@ -447,7 +629,12 @@ final class TypeResolver
         $valueType = $this->parseTypes($tokens, $context, self::PARSER_IN_COLLECTION_EXPRESSION);
         $keyType   = null;
 
+<<<<<<< HEAD
         if ($tokens->current() !== null && trim($tokens->current()) === ',') {
+=======
+        $token = $tokens->current();
+        if ($token !== null && trim($token) === ',') {
+>>>>>>> eventsResources
             // if we have a comma, then we just parsed the key type, not the value type
             $keyType = $valueType;
             if ($isArray) {
@@ -480,15 +667,25 @@ final class TypeResolver
             $valueType = $this->parseTypes($tokens, $context, self::PARSER_IN_COLLECTION_EXPRESSION);
         }
 
+<<<<<<< HEAD
         if ($tokens->current() !== '>') {
             if (empty($tokens->current())) {
+=======
+        $token = $tokens->current();
+        if ($token !== '>') {
+            if (empty($token)) {
+>>>>>>> eventsResources
                 throw new RuntimeException(
                     'Collection: ">" is missing'
                 );
             }
 
             throw new RuntimeException(
+<<<<<<< HEAD
                 'Unexpected character "' . $tokens->current() . '", ">" is missing'
+=======
+                'Unexpected character "' . $token . '", ">" is missing'
+>>>>>>> eventsResources
             );
         }
 
@@ -500,7 +697,10 @@ final class TypeResolver
             return new Iterable_($valueType, $keyType);
         }
 
+<<<<<<< HEAD
         /** @psalm-suppress RedundantCondition */
+=======
+>>>>>>> eventsResources
         if ($classType instanceof Object_) {
             return $this->makeCollectionFromObject($classType, $valueType, $keyType);
         }
@@ -508,6 +708,12 @@ final class TypeResolver
         throw new RuntimeException('Invalid $classType provided');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @psalm-pure
+     */
+>>>>>>> eventsResources
     private function makeCollectionFromObject(Object_ $object, Type $valueType, ?Type $keyType = null) : Collection
     {
         return new Collection($object->getFqsen(), $valueType, $keyType);

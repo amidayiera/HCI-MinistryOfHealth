@@ -169,7 +169,11 @@ class MailManager implements FactoryContract
         }
 
         if (trim($transport) === '' || ! method_exists($this, $method = 'create'.ucfirst($transport).'Transport')) {
+<<<<<<< HEAD
             throw new InvalidArgumentException("Unsupported mail transport [{$config['transport']}].");
+=======
+            throw new InvalidArgumentException("Unsupported mail transport [{$transport}].");
+>>>>>>> eventsResources
         }
 
         return $this->{$method}($config);

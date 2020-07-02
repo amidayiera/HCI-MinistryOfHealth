@@ -20,6 +20,11 @@ use phpDocumentor\Reflection\Type;
  *
  * Void is generally only used when working with return types as it signifies that the method intentionally does not
  * return any value.
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
  */
 final class Void_ implements Type
 {

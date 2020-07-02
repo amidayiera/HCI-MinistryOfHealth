@@ -277,7 +277,11 @@ class Validator implements ValidatorContract
     }
 
     /**
+<<<<<<< HEAD
      * Parse the data array, converting dots to ->.
+=======
+     * Parse the data array, converting dots and asterisks.
+>>>>>>> eventsResources
      *
      * @param  array  $data
      * @return array
@@ -304,6 +308,36 @@ class Validator implements ValidatorContract
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Replace the placeholders used in data keys.
+     *
+     * @param  array  $data
+     * @return array
+     */
+    protected function replacePlaceholders($data)
+    {
+        $originalData = [];
+
+        foreach ($data as $key => $value) {
+            if (is_array($value)) {
+                $value = $this->replacePlaceholders($value);
+            }
+
+            $key = str_replace(
+                [$this->dotPlaceholder, '__asterisk__'],
+                ['.', '*'],
+                $key
+            );
+
+            $originalData[$key] = $value;
+        }
+
+        return $originalData;
+    }
+
+    /**
+>>>>>>> eventsResources
      * Add an after validation callback.
      *
      * @param  callable|string  $callback
@@ -464,7 +498,11 @@ class Validator implements ValidatorContract
             }
         }
 
+<<<<<<< HEAD
         return $results;
+=======
+        return $this->replacePlaceholders($results);
+>>>>>>> eventsResources
     }
 
     /**

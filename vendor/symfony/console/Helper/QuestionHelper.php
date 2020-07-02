@@ -106,7 +106,11 @@ class QuestionHelper extends Helper
     {
         $this->writePrompt($output, $question);
 
+<<<<<<< HEAD
         $inputStream = $this->inputStream ?: STDIN;
+=======
+        $inputStream = $this->inputStream ?: fopen('php://stdin', 'r');
+>>>>>>> eventsResources
         $autocomplete = $question->getAutocompleterCallback();
 
         if (null === $autocomplete || !self::$stty || !Terminal::hasSttyAvailable()) {
@@ -473,7 +477,11 @@ class QuestionHelper extends Helper
             } catch (\Exception $error) {
             }
 
+<<<<<<< HEAD
             $attempts = $attempts ?? -(int) $this->isTty();
+=======
+            $attempts = $attempts ?? -(int) $this->askForever();
+>>>>>>> eventsResources
         }
 
         throw $error;
@@ -506,9 +514,19 @@ class QuestionHelper extends Helper
         return self::$shell;
     }
 
+<<<<<<< HEAD
     private function isTty(): bool
     {
         $inputStream = !$this->inputStream && \defined('STDIN') ? STDIN : $this->inputStream;
+=======
+    private function askForever(): bool
+    {
+        $inputStream = $this->inputStream ?: fopen('php://stdin', 'r');
+
+        if ('php://stdin' !== (stream_get_meta_data($inputStream)['url'] ?? null)) {
+            return true;
+        }
+>>>>>>> eventsResources
 
         if (\function_exists('stream_isatty')) {
             return stream_isatty($inputStream);

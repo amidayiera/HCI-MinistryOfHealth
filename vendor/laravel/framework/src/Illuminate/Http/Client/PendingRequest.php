@@ -6,6 +6,10 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\HandlerStack;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Collection;
+>>>>>>> eventsResources
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 
@@ -35,6 +39,16 @@ class PendingRequest
     protected $bodyFormat;
 
     /**
+<<<<<<< HEAD
+=======
+     * The raw body for the request.
+     *
+     * @var string
+     */
+    protected $pendingBody;
+
+    /**
+>>>>>>> eventsResources
      * The pending files for the request.
      *
      * @var array
@@ -91,6 +105,16 @@ class PendingRequest
     protected $stubCallbacks;
 
     /**
+<<<<<<< HEAD
+=======
+     * The middleware callables added by users that will handle requests.
+     *
+     * @var \Illuminate\Support\Collection
+     */
+    protected $middleware;
+
+    /**
+>>>>>>> eventsResources
      * Create a new HTTP Client instance.
      *
      * @param  \Illuminate\Http\Client\Factory|null  $factory
@@ -99,6 +123,10 @@ class PendingRequest
     public function __construct(Factory $factory = null)
     {
         $this->factory = $factory;
+<<<<<<< HEAD
+=======
+        $this->middleware = new Collection;
+>>>>>>> eventsResources
 
         $this->asJson();
 
@@ -125,6 +153,27 @@ class PendingRequest
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Attach a raw body to the request.
+     *
+     * @param  resource|string  $content
+     * @param  string  $contentType
+     * @return $this
+     */
+    public function withBody($content, $contentType)
+    {
+        $this->bodyFormat('body');
+
+        $this->pendingBody = $content;
+
+        $this->contentType($contentType);
+
+        return $this;
+    }
+
+    /**
+>>>>>>> eventsResources
      * Indicate the request contains JSON.
      *
      * @return $this
@@ -361,6 +410,22 @@ class PendingRequest
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Add new middleware the client handler stack.
+     *
+     * @param  callable  $middleware
+     * @return $this
+     */
+    public function withMiddleware(callable $middleware)
+    {
+        $this->middleware->push($middleware);
+
+        return $this;
+    }
+
+    /**
+>>>>>>> eventsResources
      * Add a new "before sending" callback to the request.
      *
      * @param  callable  $callback
@@ -474,6 +539,7 @@ class PendingRequest
         if (isset($options[$this->bodyFormat])) {
             if ($this->bodyFormat === 'multipart') {
                 $options[$this->bodyFormat] = $this->parseMultipartBodyFormat($options[$this->bodyFormat]);
+<<<<<<< HEAD
             }
 
             $options[$this->bodyFormat] = array_merge(
@@ -482,6 +548,20 @@ class PendingRequest
         }
 
         $this->pendingFiles = [];
+=======
+            } elseif ($this->bodyFormat === 'body') {
+                $options[$this->bodyFormat] = $this->pendingBody;
+            }
+
+            if (is_array($options[$this->bodyFormat])) {
+                $options[$this->bodyFormat] = array_merge(
+                    $options[$this->bodyFormat], $this->pendingFiles
+                );
+            }
+        }
+
+        [$this->pendingBody, $this->pendingFiles] = [null, []];
+>>>>>>> eventsResources
 
         return retry($this->tries ?? 1, function () use ($method, $url, $options) {
             try {
@@ -570,6 +650,13 @@ class PendingRequest
             $stack->push($this->buildBeforeSendingHandler());
             $stack->push($this->buildRecorderHandler());
             $stack->push($this->buildStubHandler());
+<<<<<<< HEAD
+=======
+
+            $this->middleware->each(function ($middleware) use ($stack) {
+                $stack->push($middleware);
+            });
+>>>>>>> eventsResources
         });
     }
 

@@ -113,7 +113,11 @@ trait BuildsQueries
     }
 
     /**
+<<<<<<< HEAD
      * Execute a callback over each item while chunking by id.
+=======
+     * Execute a callback over each item while chunking by ID.
+>>>>>>> eventsResources
      *
      * @param  callable  $callback
      * @param  int  $count
@@ -166,7 +170,11 @@ trait BuildsQueries
      * Pass the query to a given callback.
      *
      * @param  callable  $callback
+<<<<<<< HEAD
      * @return \Illuminate\Database\Query\Builder
+=======
+     * @return $this
+>>>>>>> eventsResources
      */
     public function tap($callback)
     {

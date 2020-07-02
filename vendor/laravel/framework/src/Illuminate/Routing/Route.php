@@ -691,7 +691,17 @@ class Route
             return $this->getDomain();
         }
 
+<<<<<<< HEAD
         $this->action['domain'] = $domain;
+=======
+        $parsed = RouteUri::parse($domain);
+
+        $this->action['domain'] = $parsed->uri;
+
+        $this->bindingFields = array_merge(
+            $this->bindingFields, $parsed->bindingFields
+        );
+>>>>>>> eventsResources
 
         return $this;
     }
@@ -901,6 +911,13 @@ class Route
     {
         $this->action = $action;
 
+<<<<<<< HEAD
+=======
+        if (isset($this->action['domain'])) {
+            $this->domain($this->action['domain']);
+        }
+
+>>>>>>> eventsResources
         return $this;
     }
 

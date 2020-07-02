@@ -8,10 +8,19 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Traits\Macroable;
+>>>>>>> eventsResources
 use IteratorAggregate;
 
 class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
 {
+<<<<<<< HEAD
+=======
+    use Macroable;
+
+>>>>>>> eventsResources
     /**
      * The raw array of attributes.
      *
@@ -31,6 +40,20 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the first attribute's value.
+     *
+     * @param  mixed  $default
+     * @return mixed
+     */
+    public function first($default = null)
+    {
+        return $this->getIterator()->current() ?? value($default);
+    }
+
+    /**
+>>>>>>> eventsResources
      * Get a given attribute from the attribute array.
      *
      * @param  string  $key
@@ -81,6 +104,44 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Filter the attributes, returning a bag of attributes that pass the filter.
+     *
+     * @param  callable  $callback
+     * @return static
+     */
+    public function filter($callback)
+    {
+        return new static(collect($this->attributes)->filter($callback)->all());
+    }
+
+    /**
+     * Return a bag of attributes that have keys starting with the given value / pattern.
+     *
+     * @param  string  $string
+     * @return static
+     */
+    public function whereStartsWith($string)
+    {
+        return $this->filter(function ($value, $key) use ($string) {
+            return Str::startsWith($key, $string);
+        });
+    }
+
+    /**
+     * Return a bag of attributes that have keys starting with the given value / pattern.
+     *
+     * @param  string  $string
+     * @return static
+     */
+    public function thatStartWith($string)
+    {
+        return $this->whereStartsWith($string);
+    }
+
+    /**
+>>>>>>> eventsResources
      * Exclude the given attribute from the attribute array.
      *
      * @param  mixed|array  $keys

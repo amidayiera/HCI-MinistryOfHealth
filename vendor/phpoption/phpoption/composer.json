@@ -30,6 +30,13 @@
             "PhpOption\\Tests\\": "tests/PhpOption/Tests/"
         }
     },
+<<<<<<< HEAD
+=======
+    "config": {
+        "preferred-install": "dist",
+        "platform-check": false
+    },
+>>>>>>> eventsResources
     "extra": {
         "branch-alias": {
             "dev-master": "1.7-dev"

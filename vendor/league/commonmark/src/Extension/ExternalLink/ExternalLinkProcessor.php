@@ -17,6 +17,14 @@ use League\CommonMark\Inline\Element\Link;
 
 final class ExternalLinkProcessor
 {
+<<<<<<< HEAD
+=======
+    public const APPLY_NONE = '';
+    public const APPLY_ALL = 'all';
+    public const APPLY_EXTERNAL = 'external';
+    public const APPLY_INTERNAL = 'internal';
+
+>>>>>>> eventsResources
     /** @var EnvironmentInterface */
     private $environment;
 
@@ -50,6 +58,10 @@ final class ExternalLinkProcessor
 
                 if (self::hostMatches($host, $internalHosts)) {
                     $link->data['external'] = false;
+<<<<<<< HEAD
+=======
+                    $this->applyRelAttribute($link, false);
+>>>>>>> eventsResources
                     continue;
                 }
 
@@ -63,7 +75,11 @@ final class ExternalLinkProcessor
     {
         $link->data['external'] = true;
         $link->data['attributes'] = $link->getData('attributes', []);
+<<<<<<< HEAD
         $link->data['attributes']['rel'] = 'noopener noreferrer';
+=======
+        $this->applyRelAttribute($link, true);
+>>>>>>> eventsResources
 
         if ($openInNewWindow) {
             $link->data['attributes']['target'] = '_blank';
@@ -74,6 +90,35 @@ final class ExternalLinkProcessor
         }
     }
 
+<<<<<<< HEAD
+=======
+    private function applyRelAttribute(Link $link, bool $isExternal): void
+    {
+        $rel = [];
+
+        $options = [
+            'nofollow'   => $this->environment->getConfig('external_link/nofollow', self::APPLY_NONE),
+            'noopener'   => $this->environment->getConfig('external_link/noopener', self::APPLY_EXTERNAL),
+            'noreferrer' => $this->environment->getConfig('external_link/noreferrer', self::APPLY_EXTERNAL),
+        ];
+
+        foreach ($options as $type => $option) {
+            switch (true) {
+                case $option === self::APPLY_ALL:
+                case $isExternal && $option === self::APPLY_EXTERNAL:
+                case !$isExternal && $option === self::APPLY_INTERNAL:
+                    $rel[] = $type;
+            }
+        }
+
+        if ($rel === []) {
+            return;
+        }
+
+        $link->data['attributes']['rel'] = \implode(' ', $rel);
+    }
+
+>>>>>>> eventsResources
     /**
      * @param string $host
      * @param mixed  $compareTo

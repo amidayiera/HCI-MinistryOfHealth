@@ -17,8 +17,15 @@ use phpDocumentor\Reflection\Type;
 
 /**
  * Value Object representing a Boolean type.
+<<<<<<< HEAD
  */
 final class Boolean implements Type
+=======
+ *
+ * @psalm-immutable
+ */
+class Boolean implements Type
+>>>>>>> eventsResources
 {
     /**
      * Returns a rendered output of the Type as it would be used in a DocBlock.

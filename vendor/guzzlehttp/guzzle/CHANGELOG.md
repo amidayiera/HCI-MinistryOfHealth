@@ -1,5 +1,12 @@
 # Change Log
 
+<<<<<<< HEAD
+=======
+## 6.5.5 - 2020-06-16
+
+* Unpin version constraint for `symfony/polyfill-intl-idn` [#2678](https://github.com/guzzle/guzzle/pull/2678)
+
+>>>>>>> eventsResources
 ## 6.5.4 - 2020-05-25
 
 * Fix various intl icu issues [#2626](https://github.com/guzzle/guzzle/pull/2626)

@@ -23,11 +23,19 @@ use InvalidArgumentException;
  *
  * Depends on the following methods:
  *
+<<<<<<< HEAD
  * @method CarbonInterface        resolveCarbon($date)
  * @method CarbonInterface        copy()
  * @method CarbonInterface        nowWithSameTz()
  * @method static CarbonInterface yesterday($timezone = null)
  * @method static CarbonInterface tomorrow($timezone = null)
+=======
+ * @method static        resolveCarbon($date)
+ * @method static        copy()
+ * @method static        nowWithSameTz()
+ * @method static static yesterday($timezone = null)
+ * @method static static tomorrow($timezone = null)
+>>>>>>> eventsResources
  */
 trait Comparison
 {

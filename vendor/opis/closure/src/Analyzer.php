@@ -10,6 +10,12 @@ namespace Opis\Closure;
 use Closure;
 use SuperClosure\Analyzer\ClosureAnalyzer;
 
+<<<<<<< HEAD
+=======
+/**
+ * @deprecated We'll remove this class
+ */
+>>>>>>> eventsResources
 class Analyzer extends ClosureAnalyzer
 {
     /**

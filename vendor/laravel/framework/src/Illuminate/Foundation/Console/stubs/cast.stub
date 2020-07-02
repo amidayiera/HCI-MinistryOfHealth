@@ -13,7 +13,11 @@ class DummyClass implements CastsAttributes
      * @param  string  $key
      * @param  mixed  $value
      * @param  array  $attributes
+<<<<<<< HEAD
      * @return array
+=======
+     * @return mixed
+>>>>>>> eventsResources
      */
     public function get($model, $key, $value, $attributes)
     {
@@ -27,7 +31,11 @@ class DummyClass implements CastsAttributes
      * @param  string  $key
      * @param  array  $value
      * @param  array  $attributes
+<<<<<<< HEAD
      * @return string
+=======
+     * @return mixed
+>>>>>>> eventsResources
      */
     public function set($model, $key, $value, $attributes)
     {
