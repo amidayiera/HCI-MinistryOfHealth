@@ -4,6 +4,10 @@ namespace Illuminate\Support\Facades;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * @method static \Illuminate\Cache\TaggedCache tags(array|mixed $names)
+>>>>>>> eventsResources
 =======
  * @method static \Illuminate\Cache\TaggedCache tags(array|mixed $names)
 >>>>>>> eventsResources

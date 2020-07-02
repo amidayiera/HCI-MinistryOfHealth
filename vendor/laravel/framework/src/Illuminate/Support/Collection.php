@@ -1074,7 +1074,11 @@ class Collection implements ArrayAccess, Enumerable
      * Sort through each item with a callback.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  callable|null  $callback
+=======
+     * @param  callable|int|null  $callback
+>>>>>>> eventsResources
 =======
      * @param  callable|int|null  $callback
 >>>>>>> eventsResources

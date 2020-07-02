@@ -1,7 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array(
+=======
+return array (
+>>>>>>> eventsResources
 =======
 return array (
 >>>>>>> eventsResources
@@ -946,6 +950,10 @@ return array (
   '𑖺' => '𑖺',
   '𑖻' => '𑖻',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  '𑤸' => '𑤸',
+>>>>>>> eventsResources
 =======
   '𑤸' => '𑤸',
 >>>>>>> eventsResources

@@ -18,6 +18,11 @@ use phpDocumentor\Reflection\Type;
 /**
  * Value Object representing a nullable type. The real type is wrapped.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

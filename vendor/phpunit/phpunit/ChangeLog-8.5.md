@@ -3,7 +3,10 @@
 All notable changes of the PHPUnit 8.5 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 ## [8.5.8] - 2020-06-22
 
 ### Fixed
@@ -23,6 +26,9 @@ All notable changes of the PHPUnit 8.5 release series are documented in this fil
 
 * [#4211](https://github.com/sebastianbergmann/phpunit/issues/4211): `phpdbg_*()` functions are scoped to `PHPUnit\phpdbg_*()`
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 ## [8.5.5] - 2020-05-22
 
@@ -81,6 +87,12 @@ All notable changes of the PHPUnit 8.5 release series are documented in this fil
 * [#3968](https://github.com/sebastianbergmann/phpunit/pull/3968): Test class run in a separate PHP process are passing when `exit` called inside
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[8.5.8]: https://github.com/sebastianbergmann/phpunit/compare/8.5.7...8.5.8
+[8.5.7]: https://github.com/sebastianbergmann/phpunit/compare/8.5.6...8.5.7
+[8.5.6]: https://github.com/sebastianbergmann/phpunit/compare/8.5.5...8.5.6
+>>>>>>> eventsResources
 =======
 [8.5.8]: https://github.com/sebastianbergmann/phpunit/compare/8.5.7...8.5.8
 [8.5.7]: https://github.com/sebastianbergmann/phpunit/compare/8.5.6...8.5.7

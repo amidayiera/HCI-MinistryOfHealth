@@ -21,6 +21,11 @@ use phpDocumentor\Reflection\Type;
  * $this, as a Type, represents the instance of the class associated with the element as it was called. $this is
  * commonly used when documenting fluent interfaces since it represents that the same object is returned.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

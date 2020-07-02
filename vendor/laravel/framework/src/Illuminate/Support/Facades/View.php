@@ -5,6 +5,10 @@ namespace Illuminate\Support\Facades;
 /**
  * @method static \Illuminate\Contracts\View\Factory addNamespace(string $namespace, string|array $hints)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * @method static \Illuminate\Contracts\View\Factory first(array $views, \Illuminate\Contracts\Support\Arrayable|array $data, array $mergeData)
+>>>>>>> eventsResources
 =======
  * @method static \Illuminate\Contracts\View\Factory first(array $views, \Illuminate\Contracts\Support\Arrayable|array $data, array $mergeData)
 >>>>>>> eventsResources

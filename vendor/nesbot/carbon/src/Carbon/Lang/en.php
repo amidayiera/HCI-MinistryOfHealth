@@ -17,13 +17,19 @@
  */
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
     /*
      * {1}, {0} and ]1,Inf[ are not needed as it's the default for English pluralization.
      * But as some languages are using en.php as a fallback, it's better to specify it
      * explicitly so those languages also fallback to English pluralization when a unit
      * is missing.
      */
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     'year' => '{1}:count year|{0}:count years|]1,Inf[:count years',
     'a_year' => '{1}a year|{0}:count years|]1,Inf[:count years',
@@ -50,6 +56,12 @@ return [
     'a_millisecond' => '{1}a millisecond|{0}:count milliseconds|]1,Inf[:count milliseconds',
     'ms' => ':countms',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'microsecond' => '{1}:count microsecond|{0}:count microseconds|]1,Inf[:count microseconds',
+    'a_microsecond' => '{1}a microsecond|{0}:count microseconds|]1,Inf[:count microseconds',
+    'µs' => ':countµs',
+>>>>>>> eventsResources
 =======
     'microsecond' => '{1}:count microsecond|{0}:count microseconds|]1,Inf[:count microseconds',
     'a_microsecond' => '{1}a microsecond|{0}:count microseconds|]1,Inf[:count microseconds',

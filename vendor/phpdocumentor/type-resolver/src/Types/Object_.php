@@ -25,6 +25,11 @@ use function strpos;
  * pointing to an element in PHP. Object types that are untyped do not refer to a specific class but represent objects
  * in general.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

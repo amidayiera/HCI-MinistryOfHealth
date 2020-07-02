@@ -14,7 +14,11 @@ class DummyClass implements CastsAttributes
      * @param  mixed  $value
      * @param  array  $attributes
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
+=======
+     * @return mixed
+>>>>>>> eventsResources
 =======
      * @return mixed
 >>>>>>> eventsResources
@@ -32,7 +36,11 @@ class DummyClass implements CastsAttributes
      * @param  array  $value
      * @param  array  $attributes
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return string
+=======
+     * @return mixed
+>>>>>>> eventsResources
 =======
      * @return mixed
 >>>>>>> eventsResources

@@ -3,6 +3,10 @@
 namespace Illuminate\Database\Eloquent\Concerns;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Closure;
+>>>>>>> eventsResources
 =======
 use Closure;
 >>>>>>> eventsResources
@@ -50,7 +54,10 @@ trait HasRelationships
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * The relation resolver callbacks.
      *
      * @var array
@@ -73,6 +80,9 @@ trait HasRelationships
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Define a one-to-one relationship.
      *

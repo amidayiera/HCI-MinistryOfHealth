@@ -12,7 +12,10 @@
 namespace League\CommonMark\Extension\HeadingPermalink\Slug;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 use League\CommonMark\Normalizer\TextNormalizerInterface;
 
 @trigger_error(sprintf('%s is deprecated; use %s instead', SlugGeneratorInterface::class, TextNormalizerInterface::class), E_USER_DEPRECATED);
@@ -20,6 +23,9 @@ use League\CommonMark\Normalizer\TextNormalizerInterface;
 /**
  * @deprecated Use League\CommonMark\Normalizer\TextNormalizerInterface instead
  */
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 interface SlugGeneratorInterface
 {

@@ -3,6 +3,12 @@
 class Normalizer extends Symfony\Polyfill\Intl\Normalizer\Normalizer
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /**
+     * @deprecated since ICU 56 and removed in PHP 8
+     */
+>>>>>>> eventsResources
 =======
     /**
      * @deprecated since ICU 56 and removed in PHP 8

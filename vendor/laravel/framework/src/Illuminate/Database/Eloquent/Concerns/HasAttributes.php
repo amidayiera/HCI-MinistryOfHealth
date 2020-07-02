@@ -416,7 +416,12 @@ trait HasAttributes
         // it is a relationship and will load and return results from the query
         // and hydrate the relationship's value on the "relationships" array.
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (method_exists($this, $key)) {
+=======
+        if (method_exists($this, $key) ||
+            (static::$relationResolvers[get_class($this)][$key] ?? null)) {
+>>>>>>> eventsResources
 =======
         if (method_exists($this, $key) ||
             (static::$relationResolvers[get_class($this)][$key] ?? null)) {
@@ -1190,7 +1195,10 @@ trait HasAttributes
     public function getOriginal($key = null, $default = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         return (new static)->setRawAttributes(
             $this->original, $sync = true
         )->getOriginalWithoutRewindingModel($key, $default);
@@ -1205,6 +1213,9 @@ trait HasAttributes
      */
     protected function getOriginalWithoutRewindingModel($key = null, $default = null)
     {
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         if ($key) {
             return $this->transformModelValue(
@@ -1419,6 +1430,11 @@ trait HasAttributes
             return $this->castAttribute($key, $attribute) ==
                 $this->castAttribute($key, $original);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        } elseif ($this->hasCast($key, ['real', 'float', 'double'])) {
+            return abs($this->castAttribute($key, $attribute) - $this->castAttribute($key, $original)) < PHP_FLOAT_EPSILON * 4;
+>>>>>>> eventsResources
 =======
         } elseif ($this->hasCast($key, ['real', 'float', 'double'])) {
             return abs($this->castAttribute($key, $attribute) - $this->castAttribute($key, $original)) < PHP_FLOAT_EPSILON * 4;

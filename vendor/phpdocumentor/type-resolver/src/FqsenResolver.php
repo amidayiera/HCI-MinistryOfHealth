@@ -20,12 +20,18 @@ use function implode;
 use function strpos;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 /**
  * Resolver for Fqsen using Context information
  *
  * @psalm-immutable
  */
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 class FqsenResolver
 {

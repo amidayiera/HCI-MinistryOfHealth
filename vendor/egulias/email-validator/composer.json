@@ -19,9 +19,15 @@
   },
   "require-dev": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "satooshi/php-coveralls": "^1.0.1",
     "phpunit/phpunit": "^4.8.36|^7.5.15",
     "dominicsayers/isemail": "^3.0.7"
+=======
+    "dominicsayers/isemail": "^3.0.7",
+    "phpunit/phpunit": "^4.8.36|^7.5.15",
+    "satooshi/php-coveralls": "^1.0.1"
+>>>>>>> eventsResources
 =======
     "dominicsayers/isemail": "^3.0.7",
     "phpunit/phpunit": "^4.8.36|^7.5.15",
@@ -34,7 +40,11 @@
   "autoload": {
     "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Egulias\\EmailValidator\\": "EmailValidator"
+=======
+      "Egulias\\EmailValidator\\": "src"
+>>>>>>> eventsResources
 =======
       "Egulias\\EmailValidator\\": "src"
 >>>>>>> eventsResources
@@ -43,7 +53,11 @@
   "autoload-dev": {
     "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Egulias\\Tests\\": "Tests"
+=======
+      "Egulias\\EmailValidator\\Tests\\": "tests"
+>>>>>>> eventsResources
 =======
       "Egulias\\EmailValidator\\Tests\\": "tests"
 >>>>>>> eventsResources

@@ -22,6 +22,11 @@ namespace phpDocumentor\Reflection\Types;
  * 2. Types (`string[]`), where the value type is provided by preceding an opening and closing square bracket with a
  *    type name.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

@@ -4,7 +4,10 @@ Changelog
 ## UNRELEASED
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 ## 1.9.0
 
 * added better Psalm support for `all*` & `nullOr*` methods
@@ -19,6 +22,9 @@ This interface is linked to the `Assert` class with a `@mixin` annotation. Most 
 for a long time, and you should not lose any autocompletion capabilities. PHPStan has supported this since
 version `0.12.20`. This package is marked incompatbible (with a composer conflict) with phpstan version prior to that.
 If you do not use PHPStan than this does not matter.
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
 ## 1.8.0
@@ -33,7 +39,11 @@ If you do not use PHPStan than this does not matter.
 ### Fixed
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Exception messages of comparisons between `DateTime(Immutalbe)` objects now display their date & time.
+=======
+* Exception messages of comparisons between `DateTime(Immutable)` objects now display their date & time.
+>>>>>>> eventsResources
 =======
 * Exception messages of comparisons between `DateTime(Immutable)` objects now display their date & time.
 >>>>>>> eventsResources
@@ -65,7 +75,11 @@ They are countable, without implementing the `Countable` interface.
 * The doc block of `range` now has the proper variables.
 * An empty array will now pass `isList` and `isMap`. As it is a valid form of both.
 <<<<<<< HEAD
+<<<<<<< HEAD
 If a non empty variant is needed, use `isNonEmptyList` or `isNonEmptyMap`.
+=======
+If a non-empty variant is needed, use `isNonEmptyList` or `isNonEmptyMap`.
+>>>>>>> eventsResources
 =======
 If a non-empty variant is needed, use `isNonEmptyList` or `isNonEmptyMap`.
 >>>>>>> eventsResources
@@ -78,8 +92,13 @@ If a non-empty variant is needed, use `isNonEmptyList` or `isNonEmptyMap`.
   * [#146](https://github.com/webmozart/assert/pull/146)
   * [#150](https://github.com/webmozart/assert/pull/150)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * If you use psalm, the minimum version needed is `3.6.0`. Which is enforced through a composer conflict.
 If you don't use psalm, then this has no impact.
+=======
+* If you use Psalm, the minimum version needed is `3.6.0`. Which is enforced through a composer conflict.
+If you don't use Psalm, then this has no impact.
+>>>>>>> eventsResources
 =======
 * If you use Psalm, the minimum version needed is `3.6.0`. Which is enforced through a composer conflict.
 If you don't use Psalm, then this has no impact.
@@ -97,7 +116,11 @@ If you don't use Psalm, then this has no impact.
 ### Fixed
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * `Assert::endsWith()` would not give the correct result when dealing with multibyte suffix.
+=======
+* `Assert::endsWith()` would not give the correct result when dealing with a multibyte suffix.
+>>>>>>> eventsResources
 =======
 * `Assert::endsWith()` would not give the correct result when dealing with a multibyte suffix.
 >>>>>>> eventsResources

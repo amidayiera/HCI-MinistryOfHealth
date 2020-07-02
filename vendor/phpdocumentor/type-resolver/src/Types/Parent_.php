@@ -20,6 +20,11 @@ use phpDocumentor\Reflection\Type;
  *
  * Parent, as a Type, represents the parent class of class in which the associated element was defined.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

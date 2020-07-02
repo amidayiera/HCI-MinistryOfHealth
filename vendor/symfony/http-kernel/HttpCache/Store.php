@@ -151,8 +151,13 @@ class Store implements StoreInterface
 
         $headers = $match[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (file_exists($body = $this->getPath($headers['x-content-digest'][0]))) {
             return $this->restoreResponse($headers, $body);
+=======
+        if (file_exists($path = $this->getPath($headers['x-content-digest'][0]))) {
+            return $this->restoreResponse($headers, $path);
+>>>>>>> eventsResources
 =======
         if (file_exists($path = $this->getPath($headers['x-content-digest'][0]))) {
             return $this->restoreResponse($headers, $path);
@@ -181,6 +186,7 @@ class Store implements StoreInterface
         $storedEnv = $this->persistRequest($request);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $digest = $this->generateContentDigest($response);
         $response->headers->set('X-Content-Digest', $digest);
 
@@ -191,6 +197,8 @@ class Store implements StoreInterface
         if (!$response->headers->has('Transfer-Encoding')) {
             $response->headers->set('Content-Length', \strlen($response->getContent()));
 =======
+=======
+>>>>>>> eventsResources
         if ($response->headers->has('X-Body-File')) {
             // Assume the response came from disk, but at least perform some safeguard checks
             if (!$response->headers->has('X-Content-Digest')) {
@@ -213,6 +221,9 @@ class Store implements StoreInterface
             if (!$response->headers->has('Transfer-Encoding')) {
                 $response->headers->set('Content-Length', \strlen($response->getContent()));
             }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
 
@@ -477,7 +488,11 @@ class Store implements StoreInterface
      * Restores a Response from the HTTP headers and body.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function restoreResponse(array $headers, string $body = null): Response
+=======
+    private function restoreResponse(array $headers, string $path = null): Response
+>>>>>>> eventsResources
 =======
     private function restoreResponse(array $headers, string $path = null): Response
 >>>>>>> eventsResources
@@ -486,17 +501,23 @@ class Store implements StoreInterface
         unset($headers['X-Status']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $body) {
             $headers['X-Body-File'] = [$body];
         }
 
         return new Response($body, $status, $headers);
 =======
+=======
+>>>>>>> eventsResources
         if (null !== $path) {
             $headers['X-Body-File'] = [$path];
         }
 
         return new Response($path, $status, $headers);
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 }

@@ -14,6 +14,7 @@ namespace League\CommonMark\Extension\TableOfContents;
 use League\CommonMark\Block\Element\Document;
 use League\CommonMark\Block\Element\Heading;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use League\CommonMark\Block\Element\ListBlock;
 use League\CommonMark\Block\Element\ListData;
 use League\CommonMark\Block\Element\ListItem;
@@ -27,17 +28,23 @@ use League\CommonMark\Extension\TableOfContents\Normalizer\NormalizerStrategyInt
 use League\CommonMark\Extension\TableOfContents\Normalizer\RelativeNormalizerStrategy;
 use League\CommonMark\Inline\Element\Link;
 =======
+=======
+>>>>>>> eventsResources
 use League\CommonMark\Event\DocumentParsedEvent;
 use League\CommonMark\Exception\InvalidOptionException;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalink;
 use League\CommonMark\Extension\TableOfContents\Node\TableOfContents;
 use League\CommonMark\Extension\TableOfContents\Node\TableOfContentsPlaceholder;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 use League\CommonMark\Util\ConfigurationAwareInterface;
 use League\CommonMark\Util\ConfigurationInterface;
 
 final class TableOfContentsBuilder implements ConfigurationAwareInterface
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     public const STYLE_BULLET = ListBlock::TYPE_BULLET;
     public const STYLE_ORDERED = ListBlock::TYPE_ORDERED;
@@ -49,6 +56,8 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
     public const POSITION_TOP = 'top';
     public const POSITION_BEFORE_HEADINGS = 'before-headings';
 =======
+=======
+>>>>>>> eventsResources
     /**
      * @deprecated Use TableOfContentsGenerator::STYLE_BULLET instead
      */
@@ -77,6 +86,9 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
     public const POSITION_TOP = 'top';
     public const POSITION_BEFORE_HEADINGS = 'before-headings';
     public const POSITION_PLACEHOLDER = 'placeholder';
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
     /** @var ConfigurationInterface */
@@ -85,6 +97,7 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
     public function onDocumentParsed(DocumentParsedEvent $event): void
     {
         $document = $event->getDocument();
+<<<<<<< HEAD
 <<<<<<< HEAD
         $toc = $this->createToc();
 
@@ -124,6 +137,8 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
         if (!$toc->hasChildren() || $firstHeading === null) {
             return;
 =======
+=======
+>>>>>>> eventsResources
 
         $generator = new TableOfContentsGenerator(
             $this->config->get('table_of_contents/style', TableOfContentsGenerator::STYLE_BULLET),
@@ -142,6 +157,9 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
         $class = $this->config->get('table_of_contents/html_class', 'table-of-contents');
         if (!empty($class)) {
             $toc->data['attributes']['class'] = $class;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
 
@@ -151,7 +169,13 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
             $document->prependChild($toc);
         } elseif ($position === self::POSITION_BEFORE_HEADINGS) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $firstHeading->insertBefore($toc);
+=======
+            $this->insertBeforeFirstLinkedHeading($document, $toc);
+        } elseif ($position === self::POSITION_PLACEHOLDER) {
+            $this->replacePlaceholders($document, $toc);
+>>>>>>> eventsResources
 =======
             $this->insertBeforeFirstLinkedHeading($document, $toc);
         } elseif ($position === self::POSITION_PLACEHOLDER) {
@@ -162,6 +186,7 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     private function createToc(): TableOfContents
     {
@@ -225,6 +250,8 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
 
         throw new InvalidOptionException(\sprintf('Invalid config option "%s" for "table_of_contents/normalize"', $strategy));
 =======
+=======
+>>>>>>> eventsResources
     private function insertBeforeFirstLinkedHeading(Document $document, TableOfContents $toc): void
     {
         $walker = $document->walker();
@@ -252,6 +279,9 @@ final class TableOfContentsBuilder implements ConfigurationAwareInterface
 
             $event->getNode()->replaceWith(clone $toc);
         }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 

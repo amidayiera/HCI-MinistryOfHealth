@@ -4,7 +4,11 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/league/commonmark.svg?style=flat-square)](https://packagist.org/packages/league/commonmark)
 [![Software License](https://img.shields.io/badge/License-BSD--3-brightgreen.svg?style=flat-square)](LICENSE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Build Status](https://img.shields.io/travis/thephpleague/commonmark/master.svg?style=flat-square)](https://travis-ci.org/thephpleague/commonmark)
+=======
+[![Build Status](https://img.shields.io/travis/thephpleague/commonmark/1.5.svg?style=flat-square)](https://travis-ci.org/thephpleague/commonmark)
+>>>>>>> eventsResources
 =======
 [![Build Status](https://img.shields.io/travis/thephpleague/commonmark/1.5.svg?style=flat-square)](https://travis-ci.org/thephpleague/commonmark)
 >>>>>>> eventsResources
@@ -86,7 +90,11 @@ See the [Extensions documentation](https://commonmark.thephpleague.com/customiza
 
 - [CakePHP 3](https://github.com/gourmet/common-mark)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Drupal 7 & 8](https://www.drupal.org/project/markdown)
+=======
+- [Drupal](https://www.drupal.org/project/markdown)
+>>>>>>> eventsResources
 =======
 - [Drupal](https://www.drupal.org/project/markdown)
 >>>>>>> eventsResources
@@ -100,7 +108,11 @@ See the [Extensions documentation](https://commonmark.thephpleague.com/customiza
 ### Included Extensions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See [our extension documentation](https://commonmark.thephpleague.com/customization/extensions/#included-extensions) for a full list of extensions bundled with this library.
+=======
+See [our extension documentation](https://commonmark.thephpleague.com/extensions/overview) for a full list of extensions bundled with this library.
+>>>>>>> eventsResources
 =======
 See [our extension documentation](https://commonmark.thephpleague.com/extensions/overview) for a full list of extensions bundled with this library.
 >>>>>>> eventsResources
@@ -110,11 +122,17 @@ See [our extension documentation](https://commonmark.thephpleague.com/extensions
 Custom parsers/renderers can be bundled into extensions which extend CommonMark.  Here are some that you may find interesting:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  - [CommonMark Attributes Extension](https://github.com/webuni/commonmark-attributes-extension) - Adds a syntax to define attributes on the various HTML elements.
  - [Alt Three Emoji](https://github.com/AltThree/Emoji) An emoji parser for CommonMark.
  - [Sup Sub extensions](https://github.com/OWS/commonmark-sup-sub-extensions) - Adds support of superscript and subscript (`<sup>` and `<sub>` HTML tags)
  - [YouTube iframe extension](https://github.com/zoonru/commonmark-ext-youtube-iframe) - Replaces youtube link with iframe.
  - [Footnotes extension](https://github.com/rezozero/commonmark-ext-footnotes) - Adds support for referencing footnotes inline and rendering them at the bottom of your content
+=======
+ - [Alt Three Emoji](https://github.com/AltThree/Emoji) An emoji parser for CommonMark.
+ - [Sup Sub extensions](https://github.com/OWS/commonmark-sup-sub-extensions) - Adds support of superscript and subscript (`<sup>` and `<sub>` HTML tags)
+ - [YouTube iframe extension](https://github.com/zoonru/commonmark-ext-youtube-iframe) - Replaces youtube link with iframe.
+>>>>>>> eventsResources
 =======
  - [Alt Three Emoji](https://github.com/AltThree/Emoji) An emoji parser for CommonMark.
  - [Sup Sub extensions](https://github.com/OWS/commonmark-sup-sub-extensions) - Adds support of superscript and subscript (`<sup>` and `<sub>` HTML tags)
@@ -161,7 +179,11 @@ Contributions to this library are **welcome**, especially ones that:
 Major refactoring to core parsing logic should be avoided if possible so that we can easily follow updates made to [the reference implementation][commonmark.js]. That being said, we will absolutely consider changes which don't deviate too far from the reference spec or which are favored by other popular CommonMark implementations.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Please see [CONTRIBUTING](https://github.com/thephpleague/commonmark/blob/master/.github/CONTRIBUTING.md) for additional details.
+=======
+Please see [CONTRIBUTING](https://github.com/thephpleague/commonmark/blob/latest/.github/CONTRIBUTING.md) for additional details.
+>>>>>>> eventsResources
 =======
 Please see [CONTRIBUTING](https://github.com/thephpleague/commonmark/blob/latest/.github/CONTRIBUTING.md) for additional details.
 >>>>>>> eventsResources
@@ -211,7 +233,11 @@ This project is primarily maintained by [Colin O'Dell][@colinodell].  Members of
 ## 🗺️  Who Uses It?
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This project is used by [Laravel Framework](https://laravel.com/), [Cachet](https://cachethq.io/), [Firefly III](https://firefly-iii.org/), [Neos](https://www.neos.io/), [Daux.io](https://daux.io/), and [more](https://packagist.org/packages/league/commonmark/dependents)!
+=======
+This project is used by [Drupal](https://www.drupal.org/project/markdown), [Laravel Framework](https://laravel.com/), [Cachet](https://cachethq.io/), [Firefly III](https://firefly-iii.org/), [Neos](https://www.neos.io/), [Daux.io](https://daux.io/), and [more](https://packagist.org/packages/league/commonmark/dependents)!
+>>>>>>> eventsResources
 =======
 This project is used by [Drupal](https://www.drupal.org/project/markdown), [Laravel Framework](https://laravel.com/), [Cachet](https://cachethq.io/), [Firefly III](https://firefly-iii.org/), [Neos](https://www.neos.io/), [Daux.io](https://daux.io/), and [more](https://packagist.org/packages/league/commonmark/dependents)!
 >>>>>>> eventsResources

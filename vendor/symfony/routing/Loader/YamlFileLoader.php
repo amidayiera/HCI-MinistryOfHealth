@@ -172,7 +172,11 @@ class YamlFileLoader extends FileLoader
         $methods = isset($config['methods']) ? $config['methods'] : null;
         $trailingSlashOnRoot = $config['trailing_slash_on_root'] ?? true;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $namePrefix = $config['name_prefix'] ?? '';
+=======
+        $namePrefix = $config['name_prefix'] ?? null;
+>>>>>>> eventsResources
 =======
         $namePrefix = $config['name_prefix'] ?? null;
 >>>>>>> eventsResources

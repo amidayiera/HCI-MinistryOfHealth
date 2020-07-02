@@ -18,13 +18,19 @@ use phpDocumentor\Reflection\Type;
 /**
  * Value Object representing a Boolean type.
 <<<<<<< HEAD
+<<<<<<< HEAD
  */
 final class Boolean implements Type
 =======
+=======
+>>>>>>> eventsResources
  *
  * @psalm-immutable
  */
 class Boolean implements Type
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 {
     /**

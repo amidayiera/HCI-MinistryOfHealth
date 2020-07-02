@@ -90,7 +90,11 @@ final class Address
         }
         if (\is_string($address)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return new self($address);
+=======
+            return self::fromString($address);
+>>>>>>> eventsResources
 =======
             return self::fromString($address);
 >>>>>>> eventsResources

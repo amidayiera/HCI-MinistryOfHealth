@@ -106,7 +106,11 @@ class CliTestDoxPrinter extends TestDoxPrinter
     public function printResult(TestResult $result): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->printHeader();
+=======
+        $this->printHeader($result);
+>>>>>>> eventsResources
 =======
         $this->printHeader($result);
 >>>>>>> eventsResources
@@ -120,7 +124,11 @@ class CliTestDoxPrinter extends TestDoxPrinter
      * @throws \SebastianBergmann\Timer\RuntimeException
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function printHeader(): void
+=======
+    protected function printHeader(TestResult $result): void
+>>>>>>> eventsResources
 =======
     protected function printHeader(TestResult $result): void
 >>>>>>> eventsResources

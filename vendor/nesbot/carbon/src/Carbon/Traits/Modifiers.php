@@ -97,7 +97,11 @@ trait Modifiers
     private function nextOrPreviousDay($weekday = true, $forward = true)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var CarbonInterface $step */
+=======
+        /** @var CarbonInterface $date */
+>>>>>>> eventsResources
 =======
         /** @var CarbonInterface $date */
 >>>>>>> eventsResources

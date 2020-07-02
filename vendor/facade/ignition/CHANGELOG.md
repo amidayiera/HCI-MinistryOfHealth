@@ -3,11 +3,17 @@
 All notable changes to `ignition` will be documented in this file
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 ## 2.0.7 - 2020-06-07
 
 - Fix `DefaultDbNameSolutionProvider` (#277)
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 ## 2.0.6 - 2020-06-01
 

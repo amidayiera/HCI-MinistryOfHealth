@@ -479,7 +479,11 @@
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
+<<<<<<< HEAD
                 "Egulias\\EmailValidator\\": "EmailValidator"
+=======
+                "Egulias\\EmailValidator\\": "src"
+>>>>>>> eventsResources
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1175,6 +1179,7 @@
         ]
     },
     {
+<<<<<<< HEAD
         "name": "laravel/framework",
         "version": "v7.14.1",
         "version_normalized": "7.14.1.0",
@@ -1187,6 +1192,8 @@
             "type": "zip",
             "url": "https://api.github.com/repos/laravel/framework/zipball/469b7719a8dca40841a74f59f2e9f30f01d3a106",
             "reference": "469b7719a8dca40841a74f59f2e9f30f01d3a106",
+=======
+>>>>>>> eventsResources
         "name": "intervention/image",
         "version": "2.5.1",
         "version_normalized": "2.5.1.0",
@@ -1216,6 +1223,10 @@
             "intervention/imagecache": "Caching extension for the Intervention Image library"
         },
         "time": "2019-11-02T09:15:47+00:00",
+<<<<<<< HEAD
+=======
+        "type": "library",
+>>>>>>> eventsResources
         "extra": {
             "branch-alias": {
                 "dev-master": "2.4-dev"
@@ -1256,7 +1267,11 @@
             "thumbnail",
             "watermark"
         ]
+<<<<<<< HEAD
     }},
+=======
+    },
+>>>>>>> eventsResources
     {
         "name": "laravel/framework",
         "version": "v7.18.0",
@@ -1647,11 +1662,14 @@
             "bin/commonmark"
         ],
         "type": "library",
+<<<<<<< HEAD
         "extra": {
             "branch-alias": {
                 "dev-master": "1.4-dev"
             }
         },
+=======
+>>>>>>> eventsResources
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
@@ -1966,6 +1984,7 @@
     },
     {
         "name": "myclabs/deep-copy",
+<<<<<<< HEAD
         "version": "1.9.5",
         "version_normalized": "1.9.5.0",
         "source": {
@@ -1981,6 +2000,23 @@
         },
         "require": {
             "php": "^7.1"
+=======
+        "version": "1.10.1",
+        "version_normalized": "1.10.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/myclabs/DeepCopy.git",
+            "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+            "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1 || ^8.0"
+>>>>>>> eventsResources
         },
         "replace": {
             "myclabs/deep-copy": "self.version"

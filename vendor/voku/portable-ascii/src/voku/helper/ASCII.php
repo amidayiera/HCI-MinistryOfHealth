@@ -157,12 +157,18 @@ final class ASCII
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * @var array<string, int>|null
      */
     private static $LANGUAGE_MAX_KEY;
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * url: https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters
      *
@@ -330,7 +336,11 @@ final class ASCII
      *                                      (default is 'en') | ASCII::*_LANGUAGE_CODE</p>
      * @param bool   $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
+=======
+     * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
+>>>>>>> eventsResources
 =======
      * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
 >>>>>>> eventsResources
@@ -430,7 +440,11 @@ final class ASCII
      *
      * @param bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
+=======
+     * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
+>>>>>>> eventsResources
 =======
      * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
 >>>>>>> eventsResources
@@ -786,13 +800,19 @@ final class ASCII
             $langSpecific = self::charsArrayWithOneLanguage($language, $replace_extra_symbols, false);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $REPLACE_HELPER_CACHE[$cacheKey] = \array_merge([], $langAll, $langSpecific);
 =======
+=======
+>>>>>>> eventsResources
             if ($langSpecific === []) {
                 $REPLACE_HELPER_CACHE[$cacheKey] = $langAll;
             } else {
                 $REPLACE_HELPER_CACHE[$cacheKey] = \array_merge([], $langAll, $langSpecific);
             }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
 
@@ -814,7 +834,10 @@ final class ASCII
         if (\preg_match_all('/' . self::$REGEX_ASCII . ($replace_extra_symbols ? '|[' . $EXTRA_SYMBOLS_CACHE . ']' : '') . '/u', $str, $matches)) {
             if (!$replace_single_chars_only) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
                 if (self::$LANGUAGE_MAX_KEY === null) {
                     /** @noinspection PsalmLocalImmutableInspection */
                     self::$LANGUAGE_MAX_KEY = self::getData('ascii_language_max_key');
@@ -878,6 +901,9 @@ final class ASCII
                     }
                 }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                 foreach ($matches[0] as $keyTmp => $char) {
                     if (isset($matches[0][$keyTmp + 2])) {

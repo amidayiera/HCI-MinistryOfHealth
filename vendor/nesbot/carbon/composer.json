@@ -37,14 +37,20 @@
         "doctrine/orm": "^2.7",
         "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "kylekatarnls/multi-tester": "^1.1",
         "phpmd/phpmd": "^2.8",
         "phpstan/phpstan": "^0.11",
 =======
+=======
+>>>>>>> eventsResources
         "kylekatarnls/multi-tester": "^2.0",
         "phpmd/phpmd": "^2.8",
         "phpstan/extension-installer": "^1.0",
         "phpstan/phpstan": "^0.12.30",
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         "phpunit/phpunit": "^7.5 || ^8.0",
         "squizlabs/php_codesniffer": "^3.4"
@@ -76,7 +82,11 @@
         "phpunit": "phpunit --verbose",
         "phpcs": "php-cs-fixer fix -v --diff --dry-run",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "phpstan": "phpstan analyse --configuration phpstan.neon --level 3 src tests",
+=======
+        "phpstan": "phpstan analyse --configuration phpstan.neon",
+>>>>>>> eventsResources
 =======
         "phpstan": "phpstan analyse --configuration phpstan.neon",
 >>>>>>> eventsResources
@@ -93,12 +103,18 @@
                 "Carbon\\Laravel\\ServiceProvider"
             ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         },
         "phpstan": {
             "includes": [
                 "extension.neon"
             ]
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
     }

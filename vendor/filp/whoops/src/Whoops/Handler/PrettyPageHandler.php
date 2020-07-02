@@ -48,7 +48,11 @@ class PrettyPageHandler extends Handler
      * The name of the custom css file.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var string
+=======
+     * @var string|null
+>>>>>>> eventsResources
 =======
      * @var string|null
 >>>>>>> eventsResources
@@ -59,7 +63,11 @@ class PrettyPageHandler extends Handler
      * The name of the custom js file.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var string
+=======
+     * @var string|null
+>>>>>>> eventsResources
 =======
      * @var string|null
 >>>>>>> eventsResources
@@ -527,8 +535,13 @@ class PrettyPageHandler extends Handler
      * Determine if the editor link should act as an Ajax request.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string  $filePath
      * @param int     $line
+=======
+     * @param string $filePath
+     * @param int    $line
+>>>>>>> eventsResources
 =======
      * @param string $filePath
      * @param int    $line
@@ -625,7 +638,11 @@ class PrettyPageHandler extends Handler
      * Adds a path to the list of paths to be searched for resources.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string $path
+=======
+     * @param string $path
+>>>>>>> eventsResources
 =======
      * @param string $path
 >>>>>>> eventsResources
@@ -649,7 +666,11 @@ class PrettyPageHandler extends Handler
      * Adds a custom css file to be loaded.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string $name
+=======
+     * @param string|null $name
+>>>>>>> eventsResources
 =======
      * @param string|null $name
 >>>>>>> eventsResources
@@ -665,7 +686,12 @@ class PrettyPageHandler extends Handler
      * Adds a custom js file to be loaded.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string $name
+=======
+     * @param string|null $name
+     *
+>>>>>>> eventsResources
 =======
      * @param string|null $name
      *
@@ -693,7 +719,11 @@ class PrettyPageHandler extends Handler
      * all resources.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string $resource
+=======
+     * @param string $resource
+>>>>>>> eventsResources
 =======
      * @param string $resource
 >>>>>>> eventsResources
@@ -791,15 +821,21 @@ class PrettyPageHandler extends Handler
     /**
      * blacklist a sensitive value within one of the superglobal arrays.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param string $superGlobalName The name of the superglobal array, e.g. '_GET'
      * @param string $key             The key within the superglobal
 =======
+=======
+>>>>>>> eventsResources
      * Alias for the hideSuperglobalKey method.
      *
      * @param string $superGlobalName The name of the superglobal array, e.g. '_GET'
      * @param string $key             The key within the superglobal
      * @see hideSuperglobalKey
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      *
      * @return void
@@ -811,7 +847,10 @@ class PrettyPageHandler extends Handler
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Hide a sensitive value within one of the superglobal arrays.
      *
      * @param string $superGlobalName The name of the superglobal array, e.g. '_GET'
@@ -824,6 +863,9 @@ class PrettyPageHandler extends Handler
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Checks all values within the given superGlobal array.
      *
@@ -832,7 +874,11 @@ class PrettyPageHandler extends Handler
      * depends on the 'auto_globals_jit' php.ini setting.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array $superGlobal      One of the superglobal arrays
+=======
+     * @param array  $superGlobal     One of the superglobal arrays
+>>>>>>> eventsResources
 =======
      * @param array  $superGlobal     One of the superglobal arrays
 >>>>>>> eventsResources

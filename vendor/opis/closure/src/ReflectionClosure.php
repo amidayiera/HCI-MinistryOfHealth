@@ -125,9 +125,15 @@ class ReflectionClosure extends ReflectionFunction
         $tokens = $this->getTokens();
         $state = $lastState = 'start';
 <<<<<<< HEAD
+<<<<<<< HEAD
         $inside_anonymous = false;
         $isShortClosure = false;
         $anonymous_mark = 0;
+=======
+        $inside_structure = false;
+        $isShortClosure = false;
+        $inside_structure_mark = 0;
+>>>>>>> eventsResources
 =======
         $inside_structure = false;
         $isShortClosure = false;
@@ -285,7 +291,10 @@ class ReflectionClosure extends ReflectionFunction
                         case T_CURLY_OPEN:
                         case T_DOLLAR_OPEN_CURLY_BRACES:
 <<<<<<< HEAD
+<<<<<<< HEAD
                         case T_STRING_VARNAME:
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
                         case '{':
@@ -297,8 +306,13 @@ class ReflectionClosure extends ReflectionFunction
                             if(--$open === 0 && !$isShortClosure){
                                 break 3;
 <<<<<<< HEAD
+<<<<<<< HEAD
                             } elseif ($inside_anonymous) {
                                 $inside_anonymous = !($open === $anonymous_mark);
+=======
+                            } elseif ($inside_structure) {
+                                $inside_structure = !($open === $inside_structure_mark);
+>>>>>>> eventsResources
 =======
                             } elseif ($inside_structure) {
                                 $inside_structure = !($open === $inside_structure_mark);
@@ -343,6 +357,7 @@ class ReflectionClosure extends ReflectionFunction
                             break;
                         case T_CLASS_C:
 <<<<<<< HEAD
+<<<<<<< HEAD
                             $code .= $inside_anonymous ? $token[1] : $_class;
                             break;
                         case T_FUNC_C:
@@ -351,6 +366,8 @@ class ReflectionClosure extends ReflectionFunction
                         case T_METHOD_C:
                             $code .= $inside_anonymous ? $token[1] : $_method;
 =======
+=======
+>>>>>>> eventsResources
                             $code .= $inside_structure ? $token[1] : $_class;
                             break;
                         case T_FUNC_C:
@@ -358,6 +375,9 @@ class ReflectionClosure extends ReflectionFunction
                             break;
                         case T_METHOD_C:
                             $code .= $inside_structure ? $token[1] : $_method;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                             break;
                         case T_COMMENT:
@@ -375,7 +395,11 @@ class ReflectionClosure extends ReflectionFunction
                             break;
                         case T_VARIABLE:
 <<<<<<< HEAD
+<<<<<<< HEAD
                             if($token[1] == '$this' && !$inside_anonymous){
+=======
+                            if($token[1] == '$this' && !$inside_structure){
+>>>>>>> eventsResources
 =======
                             if($token[1] == '$this' && !$inside_structure){
 >>>>>>> eventsResources
@@ -385,11 +409,14 @@ class ReflectionClosure extends ReflectionFunction
                             break;
                         case T_STATIC:
 <<<<<<< HEAD
+<<<<<<< HEAD
                             if (!$inside_anonymous) {
                                 $isUsingScope = true;
                             }
                             $code .= $token[1];
                             break;
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
                         case T_NS_SEPARATOR:
@@ -430,11 +457,17 @@ class ReflectionClosure extends ReflectionFunction
                             $code .= $token[1];
                             $state = 'closure_args';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
                             if (!$inside_structure) {
                                 $inside_structure = true;
                                 $inside_structure_mark = $open;
                             }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                             break;
                         case T_TRAIT_C:
@@ -540,13 +573,19 @@ class ReflectionClosure extends ReflectionFunction
                             }
                             if($context === 'new' || false !== strpos($id_name, '\\')){
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 if($id_start !== '\\' && !in_array($id_start_ci, $class_keywords)){
 =======
+=======
+>>>>>>> eventsResources
                                 if($id_start_ci === 'self' || $id_start_ci === 'static') {
                                     if (!$inside_structure) {
                                         $isUsingScope = true;
                                     }
                                 } elseif ($id_start !== '\\' && !in_array($id_start_ci, $class_keywords)) {
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                                     if ($classes === null) {
                                         $classes = $this->getClasses();
@@ -575,11 +614,14 @@ class ReflectionClosure extends ReflectionFunction
                         case T_DOUBLE_COLON:
                             if($id_start !== '\\') {
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 if($id_start_ci === 'self' || $id_start_ci === 'static' || $id_start_ci === 'parent'){
                                     if (!$inside_anonymous) {
                                         $isUsingScope = true;
                                     }
 =======
+=======
+>>>>>>> eventsResources
                                 if($id_start_ci === 'self' || $id_start_ci === 'parent'){
                                     if (!$inside_structure) {
                                         $isUsingScope = true;
@@ -588,6 +630,9 @@ class ReflectionClosure extends ReflectionFunction
                                     if (!$inside_structure) {
                                         $isUsingScope = $token[0] === T_DOUBLE_COLON;
                                     }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                                 } elseif (!($php7 && in_array($id_start_ci, $php7_types))){
                                     if ($classes === null) {
@@ -602,6 +647,10 @@ class ReflectionClosure extends ReflectionFunction
                                 }
                             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> eventsResources
 =======
 
 >>>>>>> eventsResources
@@ -624,7 +673,11 @@ class ReflectionClosure extends ReflectionFunction
                                 ){
                                     if($id_start_ci === 'self' || $id_start_ci === 'static' || $id_start_ci === 'parent'){
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         if (!$inside_anonymous) {
+=======
+                                        if (!$inside_structure && !$id_start_ci === 'static') {
+>>>>>>> eventsResources
 =======
                                         if (!$inside_structure && !$id_start_ci === 'static') {
 >>>>>>> eventsResources
@@ -662,9 +715,15 @@ class ReflectionClosure extends ReflectionFunction
                         case '{':
                             $state = 'closure';
 <<<<<<< HEAD
+<<<<<<< HEAD
                             if (!$inside_anonymous) {
                                 $inside_anonymous = true;
                                 $anonymous_mark = $open;
+=======
+                            if (!$inside_structure) {
+                                $inside_structure = true;
+                                $inside_structure_mark = $open;
+>>>>>>> eventsResources
 =======
                             if (!$inside_structure) {
                                 $inside_structure = true;
@@ -1054,7 +1113,10 @@ class ReflectionClosure extends ReflectionFunction
                         case T_CURLY_OPEN:
                         case T_DOLLAR_OPEN_CURLY_BRACES:
 <<<<<<< HEAD
+<<<<<<< HEAD
                         case T_STRING_VARNAME:
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
                             $open++;

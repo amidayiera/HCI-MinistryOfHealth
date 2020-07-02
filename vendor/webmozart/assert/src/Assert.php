@@ -28,6 +28,7 @@ use Traversable;
  * Efficient assertions to validate the input/output of your methods.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static void nullOrString($value, $message = '')
  * @method static void nullOrStringNotEmpty($value, $message = '')
  * @method static void nullOrInteger($value, $message = '')
@@ -213,6 +214,9 @@ use Traversable;
 =======
  * @mixin Mixin
 >>>>>>> eventsResources
+=======
+ * @mixin Mixin
+>>>>>>> eventsResources
  *
  * @since  1.0
  *
@@ -242,8 +246,12 @@ class Assert
     /**
      * @psalm-pure
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @psalm-assert string $value
      * @psalm-assert !empty $value
+=======
+     * @psalm-assert non-empty-string $value
+>>>>>>> eventsResources
 =======
      * @psalm-assert non-empty-string $value
 >>>>>>> eventsResources
@@ -349,7 +357,11 @@ class Assert
         if (!\is_int($value) || $value < 0) {
             static::reportInvalidArgument(\sprintf(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $message ?: 'Expected a non-negative integer. Got %s',
+=======
+                $message ?: 'Expected a non-negative integer. Got: %s',
+>>>>>>> eventsResources
 =======
                 $message ?: 'Expected a non-negative integer. Got: %s',
 >>>>>>> eventsResources
@@ -836,6 +848,10 @@ class Assert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @psalm-pure
+>>>>>>> eventsResources
 =======
      * @psalm-pure
 >>>>>>> eventsResources
@@ -898,7 +914,11 @@ class Assert
         if (false === \filter_var($value, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV6)) {
             static::reportInvalidArgument(\sprintf(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $message ?: 'Expected a value to be an IPv6. Got %s',
+=======
+                $message ?: 'Expected a value to be an IPv6. Got: %s',
+>>>>>>> eventsResources
 =======
                 $message ?: 'Expected a value to be an IPv6. Got: %s',
 >>>>>>> eventsResources
@@ -918,7 +938,11 @@ class Assert
         if (false === \filter_var($value, FILTER_VALIDATE_EMAIL)) {
             static::reportInvalidArgument(\sprintf(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $message ?: 'Expected a value to be a valid e-mail address. Got %s',
+=======
+                $message ?: 'Expected a value to be a valid e-mail address. Got: %s',
+>>>>>>> eventsResources
 =======
                 $message ?: 'Expected a value to be a valid e-mail address. Got: %s',
 >>>>>>> eventsResources
@@ -1693,6 +1717,11 @@ class Assert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @psalm-assert class-string $value
+     *
+>>>>>>> eventsResources
 =======
      * @psalm-assert class-string $value
      *
@@ -1737,6 +1766,11 @@ class Assert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @psalm-assert class-string $value
+     *
+>>>>>>> eventsResources
 =======
      * @psalm-assert class-string $value
      *
@@ -2025,8 +2059,12 @@ class Assert
     /**
      * @psalm-pure
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @psalm-assert list $array
      * @psalm-assert !empty $array
+=======
+     * @psalm-assert non-empty-list $array
+>>>>>>> eventsResources
 =======
      * @psalm-assert non-empty-list $array
 >>>>>>> eventsResources
@@ -2111,7 +2149,11 @@ class Assert
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @psalm-param class-string<Throwable>
+=======
+     * @psalm-param class-string<Throwable> $class
+>>>>>>> eventsResources
 =======
      * @psalm-param class-string<Throwable> $class
 >>>>>>> eventsResources

@@ -34,7 +34,11 @@ final class Version
 
         if (self::$version === '') {
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::$version = (new VersionId('8.5.5', \dirname(__DIR__, 2)))->getVersion();
+=======
+            self::$version = (new VersionId('8.5.8', \dirname(__DIR__, 2)))->getVersion();
+>>>>>>> eventsResources
 =======
             self::$version = (new VersionId('8.5.8', \dirname(__DIR__, 2)))->getVersion();
 >>>>>>> eventsResources

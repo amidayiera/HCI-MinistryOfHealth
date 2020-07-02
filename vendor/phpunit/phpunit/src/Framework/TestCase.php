@@ -61,7 +61,11 @@ abstract class TestCase extends Assert implements SelfDescribing, Test
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var bool
+=======
+     * @var ?bool
+>>>>>>> eventsResources
 =======
      * @var ?bool
 >>>>>>> eventsResources

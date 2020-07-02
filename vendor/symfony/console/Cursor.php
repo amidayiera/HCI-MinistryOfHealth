@@ -22,15 +22,21 @@ final class Cursor
     private $input;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(OutputInterface $output, $input = STDIN)
     {
         $this->output = $output;
         $this->input = $input;
 =======
+=======
+>>>>>>> eventsResources
     public function __construct(OutputInterface $output, $input = null)
     {
         $this->output = $output;
         $this->input = $input ?? (\defined('STDIN') ? STDIN : fopen('php://input', 'r+'));
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 

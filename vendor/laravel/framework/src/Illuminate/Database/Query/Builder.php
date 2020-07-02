@@ -9,6 +9,10 @@ use Illuminate\Database\Concerns\BuildsQueries;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Relations\Relation;
+>>>>>>> eventsResources
 =======
 use Illuminate\Database\Eloquent\Relations\Relation;
 >>>>>>> eventsResources
@@ -247,7 +251,11 @@ class Builder
      * Add a subselect expression to the query.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  \Closure|\Illuminate\Database\Query\Builder|string  $query
+=======
+     * @param  \Closure|$this|string  $query
+>>>>>>> eventsResources
 =======
      * @param  \Closure|$this|string  $query
 >>>>>>> eventsResources
@@ -346,7 +354,11 @@ class Builder
     protected function parseSub($query)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($query instanceof self || $query instanceof EloquentBuilder) {
+=======
+        if ($query instanceof self || $query instanceof EloquentBuilder || $query instanceof Relation) {
+>>>>>>> eventsResources
 =======
         if ($query instanceof self || $query instanceof EloquentBuilder || $query instanceof Relation) {
 >>>>>>> eventsResources
@@ -3099,6 +3111,10 @@ class Builder
         return $value instanceof self ||
                $value instanceof EloquentBuilder ||
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+               $value instanceof Relation ||
+>>>>>>> eventsResources
 =======
                $value instanceof Relation ||
 >>>>>>> eventsResources

@@ -630,7 +630,10 @@ class Collection extends BaseCollection implements QueueableCollection
         return $connection;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 
     /**
      * Get the Eloquent query builder from the collection.
@@ -657,5 +660,8 @@ class Collection extends BaseCollection implements QueueableCollection
 
         return $model->newModelQuery()->whereKey($this->modelKeys());
     }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 }

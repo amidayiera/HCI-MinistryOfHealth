@@ -18,6 +18,11 @@ use phpDocumentor\Reflection\Type;
 /**
  * Value Object representing a Callable type.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

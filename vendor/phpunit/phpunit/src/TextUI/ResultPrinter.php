@@ -161,7 +161,11 @@ class ResultPrinter extends Printer implements TestListener
     public function printResult(TestResult $result): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->printHeader();
+=======
+        $this->printHeader($result);
+>>>>>>> eventsResources
 =======
         $this->printHeader($result);
 >>>>>>> eventsResources
@@ -393,15 +397,21 @@ class ResultPrinter extends Printer implements TestListener
      * @throws \SebastianBergmann\Timer\RuntimeException
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function printHeader(): void
     {
         $this->write("\n\n" . Timer::resourceUsage() . "\n\n");
 =======
+=======
+>>>>>>> eventsResources
     protected function printHeader(TestResult $result): void
     {
         if (\count($result) > 0) {
             $this->write(\PHP_EOL . \PHP_EOL . Timer::resourceUsage() . \PHP_EOL . \PHP_EOL);
         }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 

@@ -1,13 +1,19 @@
 # Changelog
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 ### 1.5.2 (2020-06-16)
 
 - add "Bengali" (bn) language support (thanks @eliyas5044)
 - fix "Portuguese" char-mapping
 - reduce the file size (removed extra comments from "avian2/unidecode")
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 ### 1.5.1 (2020-05-26)
 

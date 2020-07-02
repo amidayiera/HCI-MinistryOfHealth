@@ -2,6 +2,11 @@ parameters:
   level: max
   ignoreErrors:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    - '#Anonymous function should have native return typehint ".+".#'
+    - '#Call to function is_string\(\) with string will always evaluate to true.#'
+>>>>>>> eventsResources
 =======
     - '#Anonymous function should have native return typehint ".+".#'
     - '#Call to function is_string\(\) with string will always evaluate to true.#'
@@ -15,6 +20,10 @@ parameters:
     - '#Parameter \#1 \$callable of method PhpOption\\Option<array\|null>::[a-z]+\(\) expects callable\(array\|null\): [a-z]+, Closure\(array\): mixed given.#'
     - '#Parameter \#1 \$name of method Dotenv\\Repository\\AbstractRepository::set\(\) expects string, string\|null given.#'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    - '#Parameter \#.+ of method Dotenv\\Repository\\AbstractRepository::offset.+ should be contravariant .+#'
+>>>>>>> eventsResources
 =======
     - '#Parameter \#.+ of method Dotenv\\Repository\\AbstractRepository::offset.+ should be contravariant .+#'
 >>>>>>> eventsResources

@@ -82,7 +82,10 @@ trait MakesHttpRequests
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Add an authorization token for the request.
      *
      * @param  string  $token
@@ -95,6 +98,9 @@ trait MakesHttpRequests
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Flush all the configured headers.
      *

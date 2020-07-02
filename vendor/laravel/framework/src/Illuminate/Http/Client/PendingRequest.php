@@ -7,6 +7,10 @@ use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\HandlerStack;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Collection;
+>>>>>>> eventsResources
 =======
 use Illuminate\Support\Collection;
 >>>>>>> eventsResources
@@ -40,7 +44,10 @@ class PendingRequest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * The raw body for the request.
      *
      * @var string
@@ -48,6 +55,9 @@ class PendingRequest
     protected $pendingBody;
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * The pending files for the request.
      *
@@ -106,7 +116,10 @@ class PendingRequest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * The middleware callables added by users that will handle requests.
      *
      * @var \Illuminate\Support\Collection
@@ -114,6 +127,9 @@ class PendingRequest
     protected $middleware;
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Create a new HTTP Client instance.
      *
@@ -124,6 +140,10 @@ class PendingRequest
     {
         $this->factory = $factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $this->middleware = new Collection;
+>>>>>>> eventsResources
 =======
         $this->middleware = new Collection;
 >>>>>>> eventsResources
@@ -154,7 +174,10 @@ class PendingRequest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Attach a raw body to the request.
      *
      * @param  resource|string  $content
@@ -173,6 +196,9 @@ class PendingRequest
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Indicate the request contains JSON.
      *
@@ -411,7 +437,10 @@ class PendingRequest
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Add new middleware the client handler stack.
      *
      * @param  callable  $middleware
@@ -425,6 +454,9 @@ class PendingRequest
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Add a new "before sending" callback to the request.
      *
@@ -540,6 +572,7 @@ class PendingRequest
             if ($this->bodyFormat === 'multipart') {
                 $options[$this->bodyFormat] = $this->parseMultipartBodyFormat($options[$this->bodyFormat]);
 <<<<<<< HEAD
+<<<<<<< HEAD
             }
 
             $options[$this->bodyFormat] = array_merge(
@@ -549,6 +582,8 @@ class PendingRequest
 
         $this->pendingFiles = [];
 =======
+=======
+>>>>>>> eventsResources
             } elseif ($this->bodyFormat === 'body') {
                 $options[$this->bodyFormat] = $this->pendingBody;
             }
@@ -561,6 +596,9 @@ class PendingRequest
         }
 
         [$this->pendingBody, $this->pendingFiles] = [null, []];
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
         return retry($this->tries ?? 1, function () use ($method, $url, $options) {
@@ -651,11 +689,17 @@ class PendingRequest
             $stack->push($this->buildRecorderHandler());
             $stack->push($this->buildStubHandler());
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 
             $this->middleware->each(function ($middleware) use ($stack) {
                 $stack->push($middleware);
             });
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         });
     }

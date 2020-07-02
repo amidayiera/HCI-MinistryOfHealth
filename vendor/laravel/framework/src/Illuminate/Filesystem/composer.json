@@ -31,6 +31,10 @@
     },
     "suggest": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "ext-ftp": "Required to use the Flysystem FTP driver.",
+>>>>>>> eventsResources
 =======
         "ext-ftp": "Required to use the Flysystem FTP driver.",
 >>>>>>> eventsResources

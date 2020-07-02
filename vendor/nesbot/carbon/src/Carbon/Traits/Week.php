@@ -29,7 +29,11 @@ namespace Carbon\Traits;
  * @method static dayOfYear(int $dayOfYear)
  * @method string getTranslationMessage(string $key, string $locale = null, string $default = null, $translator = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static next(int $day)
+=======
+ * @method static next(int|string $day = null)
+>>>>>>> eventsResources
 =======
  * @method static next(int|string $day = null)
 >>>>>>> eventsResources

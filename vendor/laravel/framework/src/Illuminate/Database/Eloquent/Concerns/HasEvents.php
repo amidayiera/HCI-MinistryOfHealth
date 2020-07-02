@@ -4,6 +4,10 @@ namespace Illuminate\Database\Eloquent\Concerns;
 
 use Illuminate\Contracts\Events\Dispatcher;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Events\NullDispatcher;
+>>>>>>> eventsResources
 =======
 use Illuminate\Events\NullDispatcher;
 >>>>>>> eventsResources
@@ -404,7 +408,13 @@ trait HasEvents
         $dispatcher = static::getEventDispatcher();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         static::unsetEventDispatcher();
+=======
+        if ($dispatcher) {
+            static::setEventDispatcher(new NullDispatcher($dispatcher));
+        }
+>>>>>>> eventsResources
 =======
         if ($dispatcher) {
             static::setEventDispatcher(new NullDispatcher($dispatcher));

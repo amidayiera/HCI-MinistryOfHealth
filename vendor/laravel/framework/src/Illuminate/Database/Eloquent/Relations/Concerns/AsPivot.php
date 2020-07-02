@@ -122,6 +122,11 @@ trait AsPivot
 
         return tap($this->getDeleteQuery()->delete(), function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            $this->exists = false;
+
+>>>>>>> eventsResources
 =======
             $this->exists = false;
 

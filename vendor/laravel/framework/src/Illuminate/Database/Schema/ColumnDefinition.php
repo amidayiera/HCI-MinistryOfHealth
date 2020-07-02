@@ -7,6 +7,7 @@ use Illuminate\Support\Fluent;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method ColumnDefinition after(string $column) Place the column "after" another column (MySQL)
  * @method ColumnDefinition always() Used as a modifier for generatedAs() (PostgreSQL)
  * @method ColumnDefinition autoIncrement() Set INTEGER columns as auto-increment (primary key)
@@ -28,6 +29,8 @@ use Illuminate\Support\Fluent;
  * @method ColumnDefinition useCurrent() Set the TIMESTAMP column to use CURRENT_TIMESTAMP as default value
  * @method ColumnDefinition virtualAs(string $expression) Create a virtual generated column (MySQL)
 =======
+=======
+>>>>>>> eventsResources
  * @method static after(string $column) Place the column "after" another column (MySQL)
  * @method static always() Used as a modifier for generatedAs() (PostgreSQL)
  * @method static autoIncrement() Set INTEGER columns as auto-increment (primary key)
@@ -48,6 +51,9 @@ use Illuminate\Support\Fluent;
  * @method static unsigned() Set the INTEGER column as UNSIGNED (MySQL)
  * @method static useCurrent() Set the TIMESTAMP column to use CURRENT_TIMESTAMP as default value
  * @method static virtualAs(string $expression) Create a virtual generated column (MySQL)
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
  */
 class ColumnDefinition extends Fluent

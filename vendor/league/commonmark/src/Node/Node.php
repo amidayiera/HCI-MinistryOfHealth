@@ -256,7 +256,10 @@ abstract class Node
         return new NodeWalker($this);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
 
     /**
      * Clone the current node and its children
@@ -278,5 +281,8 @@ abstract class Node
             $this->appendChild(clone $child);
         }
     }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 }

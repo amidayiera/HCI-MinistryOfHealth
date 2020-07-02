@@ -61,7 +61,10 @@ abstract class HasOneOrMany extends Relation
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Create and return an un-saved instances of the related models.
      *
      * @param  iterable  $records
@@ -79,6 +82,9 @@ abstract class HasOneOrMany extends Relation
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Set the base constraints on the relation query.
      *

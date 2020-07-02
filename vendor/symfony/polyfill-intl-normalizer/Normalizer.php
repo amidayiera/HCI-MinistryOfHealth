@@ -24,7 +24,10 @@ namespace Symfony\Polyfill\Intl\Normalizer;
 class Normalizer
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     const NONE = \Normalizer::NONE;
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
     const FORM_D = \Normalizer::FORM_D;
@@ -46,7 +49,11 @@ class Normalizer
     public static function isNormalized($s, $form = self::NFC)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($form <= self::NONE || self::NFKC < $form) {
+=======
+        if (!\in_array($form, array(self::NFD, self::NFKD, self::NFC, self::NFKC))) {
+>>>>>>> eventsResources
 =======
         if (!\in_array($form, array(self::NFD, self::NFKD, self::NFC, self::NFKC))) {
 >>>>>>> eventsResources
@@ -57,17 +64,23 @@ class Normalizer
             return true;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (self::NFC === $form && preg_match('//u', $s) && !preg_match('/[^\x00-\x{2FF}]/u', $s)) {
             return true;
         }
 
         return false; // Pretend false as quick checks implementented in PHP won't be so quick
 =======
+=======
+>>>>>>> eventsResources
         if (self::NFC == $form && preg_match('//u', $s) && !preg_match('/[^\x00-\x{2FF}]/u', $s)) {
             return true;
         }
 
         return self::normalize($s, $form) === $s;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 
@@ -80,7 +93,10 @@ class Normalizer
 
         switch ($form) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             case self::NONE: return $s;
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
             case self::NFC: $C = true; $K = false; break;
@@ -88,14 +104,20 @@ class Normalizer
             case self::NFKC: $C = true; $K = true; break;
             case self::NFKD: $C = false; $K = true; break;
 <<<<<<< HEAD
+<<<<<<< HEAD
             default: return false;
 =======
+=======
+>>>>>>> eventsResources
             default:
                 if (\defined('Normalizer::NONE') && \Normalizer::NONE == $form) {
                     return $s;
                 }
 
                 return false;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
 

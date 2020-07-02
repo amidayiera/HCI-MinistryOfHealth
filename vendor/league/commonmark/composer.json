@@ -21,7 +21,11 @@
     },
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.1",
+=======
+        "php": "^7.1 || ^8.0",
+>>>>>>> eventsResources
 =======
         "php": "^7.1 || ^8.0",
 >>>>>>> eventsResources
@@ -88,11 +92,14 @@
         ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "extra": {
         "branch-alias": {
             "dev-master": "1.4-dev"
         }
     },
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
     "config": {

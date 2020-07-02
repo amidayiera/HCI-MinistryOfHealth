@@ -114,7 +114,11 @@ trait BuildsQueries
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Execute a callback over each item while chunking by id.
+=======
+     * Execute a callback over each item while chunking by ID.
+>>>>>>> eventsResources
 =======
      * Execute a callback over each item while chunking by ID.
 >>>>>>> eventsResources
@@ -171,7 +175,11 @@ trait BuildsQueries
      *
      * @param  callable  $callback
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Query\Builder
+=======
+     * @return $this
+>>>>>>> eventsResources
 =======
      * @return $this
 >>>>>>> eventsResources

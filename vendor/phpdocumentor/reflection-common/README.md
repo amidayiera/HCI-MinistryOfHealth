@@ -1,7 +1,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Travis Status](https://img.shields.io/travis/phpDocumentor/ReflectionCommon.svg?label=Linux)](https://travis-ci.org/phpDocumentor/ReflectionCommon)
 [![Appveyor Status](https://img.shields.io/appveyor/ci/phpDocumentor/ReflectionCommon.svg?label=Windows)](https://ci.appveyor.com/project/phpDocumentor/ReflectionCommon/branch/master)
+=======
+![Qa workflow](https://github.com/phpDocumentor/ReflectionCommon/workflows/Qa%20workflow/badge.svg)
+>>>>>>> eventsResources
 =======
 ![Qa workflow](https://github.com/phpDocumentor/ReflectionCommon/workflows/Qa%20workflow/badge.svg)
 >>>>>>> eventsResources

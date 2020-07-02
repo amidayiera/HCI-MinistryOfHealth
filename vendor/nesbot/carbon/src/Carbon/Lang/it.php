@@ -48,6 +48,12 @@ return [
     'a_millisecond' => 'un millisecondo|:count millisecondi',
     'ms' => ':countms',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'microsecond' => ':count microsecondo|:count microsecondi',
+    'a_microsecond' => 'un microsecondo|:count microsecondi',
+    'µs' => ':countµs',
+>>>>>>> eventsResources
 =======
     'microsecond' => ':count microsecondo|:count microsecondi',
     'a_microsecond' => 'un microsecondo|:count microsecondi',

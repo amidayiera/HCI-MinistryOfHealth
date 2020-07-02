@@ -21,6 +21,10 @@ use Carbon\Exceptions\UnknownSetterException;
 use Carbon\Exceptions\UnknownUnitException;
 use Carbon\Traits\IntervalRounding;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Carbon\Traits\IntervalStep;
+>>>>>>> eventsResources
 =======
 use Carbon\Traits\IntervalStep;
 >>>>>>> eventsResources
@@ -47,6 +51,10 @@ use Throwable;
  * @property int $microseconds Total microseconds of the current interval.
  * @property int $milliseconds Total microseconds of the current interval.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * @property int $microExcludeMilli Remaining microseconds without the milliseconds.
+>>>>>>> eventsResources
 =======
  * @property int $microExcludeMilli Remaining microseconds without the milliseconds.
 >>>>>>> eventsResources
@@ -64,6 +72,7 @@ use Throwable;
  * @property-read float $totalMicroseconds Number of microseconds equivalent to the interval.
  * @property-read string $locale locale of the current instance
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static CarbonInterval years($years = 1) Create instance specifying a number of years.
  * @method static CarbonInterval year($years = 1) Alias for years()
@@ -104,6 +113,8 @@ use Throwable;
  * @method $this microseconds($seconds = 1) Set the seconds portion of the current interval.
  * @method $this microsecond($seconds = 1) Alias for seconds().
 =======
+=======
+>>>>>>> eventsResources
  * @method static CarbonInterval years($years = 1) Create instance specifying a number of years or modify the number of years if called on an instance.
  * @method static CarbonInterval year($years = 1) Alias for years()
  * @method static CarbonInterval months($months = 1) Create instance specifying a number of months or modify the number of months if called on an instance.
@@ -123,6 +134,9 @@ use Throwable;
  * @method static CarbonInterval millisecond($milliseconds = 1) Alias for milliseconds()
  * @method static CarbonInterval microseconds($microseconds = 1) Create instance specifying a number of microseconds or modify the number of microseconds if called on an instance.
  * @method static CarbonInterval microsecond($microseconds = 1) Alias for microseconds()
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
  * @method $this roundYear(float $precision = 1, string $function = "round") Round the current instance year with given precision using the given function.
  * @method $this roundYears(float $precision = 1, string $function = "round") Round the current instance year with given precision using the given function.
@@ -204,14 +218,20 @@ use Throwable;
  * @method $this ceilMicroseconds(float $precision = 1) Ceil the current instance microsecond with given precision.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CarbonInterval extends DateInterval
 {
     use IntervalRounding;
 =======
+=======
+>>>>>>> eventsResources
 class CarbonInterval extends DateInterval implements CarbonConverterInterface
 {
     use IntervalRounding;
     use IntervalStep;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     use Mixin {
         Mixin::mixin as baseMixin;
@@ -370,12 +390,18 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
     public function __construct($years = 1, $months = null, $weeks = null, $days = null, $hours = null, $minutes = null, $seconds = null, $microseconds = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($years instanceof Closure) {
             $this->step = $years;
             $years = null;
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         if ($years instanceof DateInterval) {
             parent::__construct(static::getDateIntervalSpec($years));
@@ -602,6 +628,10 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
         $date->invert = $this->invert;
         $date->f = $this->f;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $date->step = $this->step;
+>>>>>>> eventsResources
 =======
         $date->step = $this->step;
 >>>>>>> eventsResources
@@ -891,11 +921,17 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($interval instanceof self && is_a($className, self::class, true)) {
             $instance->setStep($interval->getStep());
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         static::copyNegativeUnits($interval, $instance);
 
@@ -946,8 +982,13 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
      * and recurrences). Throw an exception for invalid format, but otherwise return null.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param mixed|int|DateInterval|string|null $interval interval or number of the given $unit
      * @param string|null                        $unit     if specified, $interval must be an integer
+=======
+     * @param mixed|int|DateInterval|string|Closure|null $interval interval or number of the given $unit
+     * @param string|null                                $unit     if specified, $interval must be an integer
+>>>>>>> eventsResources
 =======
      * @param mixed|int|DateInterval|string|Closure|null $interval interval or number of the given $unit
      * @param string|null                                $unit     if specified, $interval must be an integer
@@ -966,11 +1007,17 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($interval instanceof Closure) {
             return new static($interval);
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         if (!is_string($interval)) {
             return null;
@@ -1076,6 +1123,12 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
                 return (int) round($this->f * Carbon::MICROSECONDS_PER_SECOND);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            case 'microExcludeMilli':
+                return (int) round($this->f * Carbon::MICROSECONDS_PER_SECOND) % Carbon::MICROSECONDS_PER_MILLISECOND;
+
+>>>>>>> eventsResources
 =======
             case 'microExcludeMilli':
                 return (int) round($this->f * Carbon::MICROSECONDS_PER_SECOND) % Carbon::MICROSECONDS_PER_MILLISECOND;
@@ -1654,6 +1707,7 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
 
         $diffIntervalArray = [
 <<<<<<< HEAD
+<<<<<<< HEAD
             ['value' => $intervalValues->years,            'unit' => 'year',        'unitShort' => 'y'],
             ['value' => $intervalValues->months,           'unit' => 'month',       'unitShort' => 'm'],
             ['value' => $intervalValues->weeks,            'unit' => 'week',        'unitShort' => 'w'],
@@ -1663,6 +1717,8 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
             ['value' => $intervalValues->seconds,          'unit' => 'second',      'unitShort' => 's'],
             ['value' => $intervalValues->milliseconds,     'unit' => 'millisecond', 'unitShort' => 'ms'],
 =======
+=======
+>>>>>>> eventsResources
             ['value' => $intervalValues->years,             'unit' => 'year',        'unitShort' => 'y'],
             ['value' => $intervalValues->months,            'unit' => 'month',       'unitShort' => 'm'],
             ['value' => $intervalValues->weeks,             'unit' => 'week',        'unitShort' => 'w'],
@@ -1672,6 +1728,9 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
             ['value' => $intervalValues->seconds,           'unit' => 'second',      'unitShort' => 's'],
             ['value' => $intervalValues->milliseconds,      'unit' => 'millisecond', 'unitShort' => 'ms'],
             ['value' => $intervalValues->microExcludeMilli, 'unit' => 'microsecond', 'unitShort' => 'µs'],
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         ];
 

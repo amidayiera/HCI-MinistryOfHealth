@@ -13,7 +13,10 @@ namespace Carbon;
 use Carbon\Traits\Date;
 use DateTime;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use DateTimeImmutable;
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
 use DateTimeInterface;
@@ -507,7 +510,10 @@ use DateTimeZone;
  * @method        string         shortRelativeToOtherDiffForHumans(DateTimeInterface $other = null, int $parts = 1)   Get the difference (short format, 'RelativeToOther' mode) in a human readable format in the current locale. ($other and $parts parameters can be swapped.)
  * @method        string         longRelativeToOtherDiffForHumans(DateTimeInterface $other = null, int $parts = 1)    Get the difference (long format, 'RelativeToOther' mode) in a human readable format in the current locale. ($other and $parts parameters can be swapped.)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method        static Carbon  createFromImmutable(DateTimeImmutable $dateTime)                                     Create a new Carbon object from an immutable date.
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
  * @method        static Carbon  createFromFormat(string $format, string $time, string|DateTimeZone $timezone = null) Parse a string into a new Carbon object according to the specified format.

@@ -11,15 +11,21 @@
 namespace Carbon\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\CarbonInterface;
 use Carbon\CarbonInterval;
 use Carbon\Exceptions\UnitException;
 =======
+=======
+>>>>>>> eventsResources
 use Carbon\CarbonConverterInterface;
 use Carbon\CarbonInterface;
 use Carbon\CarbonInterval;
 use Carbon\Exceptions\UnitException;
 use Closure;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 use DateInterval;
 
@@ -176,7 +182,10 @@ trait Units
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable add() method.
      *
      * @param DateInterval $interval
@@ -189,6 +198,9 @@ trait Units
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Add given units or interval to the current instance.
      *
@@ -197,9 +209,15 @@ trait Units
      * @example $date->add(CarbonInterval::days(4))
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string|DateInterval $unit
      * @param int                 $value
      * @param bool|null           $overflow
+=======
+     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
+     * @param int                                                  $value
+     * @param bool|null                                            $overflow
+>>>>>>> eventsResources
 =======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value
@@ -215,7 +233,10 @@ trait Units
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($unit instanceof CarbonConverterInterface) {
             return $this->resolveCarbon($unit->convertDate($this, false));
         }
@@ -224,6 +245,9 @@ trait Units
             return $this->resolveCarbon($unit($this, false));
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         if ($unit instanceof DateInterval) {
             return parent::add($unit);
@@ -347,7 +371,10 @@ trait Units
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable sub() method.
      *
      * @param DateInterval $interval
@@ -360,6 +387,9 @@ trait Units
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Subtract given units or interval to the current instance.
      *
@@ -368,9 +398,15 @@ trait Units
      * @example $date->sub(CarbonInterval::days(4))
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string|DateInterval $unit
      * @param int                 $value
      * @param bool|null           $overflow
+=======
+     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
+     * @param int                                                  $value
+     * @param bool|null                                            $overflow
+>>>>>>> eventsResources
 =======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value
@@ -386,7 +422,10 @@ trait Units
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($unit instanceof CarbonConverterInterface) {
             return $this->resolveCarbon($unit->convertDate($this, true));
         }
@@ -395,6 +434,9 @@ trait Units
             return $this->resolveCarbon($unit($this, true));
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         if ($unit instanceof DateInterval) {
             return parent::sub($unit);

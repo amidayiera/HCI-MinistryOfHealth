@@ -61,7 +61,11 @@ class WhoopsHandler
     protected function registerBlacklist($handler)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         foreach (config('app.debug_blacklist', []) as $key => $secrets) {
+=======
+        foreach (config('app.debug_blacklist', config('app.debug_hide', [])) as $key => $secrets) {
+>>>>>>> eventsResources
 =======
         foreach (config('app.debug_blacklist', config('app.debug_hide', [])) as $key => $secrets) {
 >>>>>>> eventsResources

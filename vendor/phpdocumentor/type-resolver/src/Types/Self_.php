@@ -20,6 +20,11 @@ use phpDocumentor\Reflection\Type;
  *
  * Self, as a Type, represents the class in which the associated element was defined.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

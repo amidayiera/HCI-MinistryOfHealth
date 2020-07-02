@@ -504,6 +504,7 @@ final class TestRunner extends BaseTestRunner
 
         if ($codeCoverageReports > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $codeCoverage = new CodeCoverage(
                 null,
                 $this->codeCoverageFilter
@@ -558,6 +559,8 @@ final class TestRunner extends BaseTestRunner
 
                 unset($codeCoverage);
 =======
+=======
+>>>>>>> eventsResources
             try {
                 $codeCoverage = new CodeCoverage(
                     null,
@@ -617,6 +620,9 @@ final class TestRunner extends BaseTestRunner
                 $this->writeMessage('Error', $e->getMessage());
 
                 $codeCoverageReports = 0;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
             }
         }

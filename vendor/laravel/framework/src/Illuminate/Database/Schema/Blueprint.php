@@ -1152,7 +1152,10 @@ class Blueprint
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Create a new UUID column on the table with a foreign key constraint.
      *
      * @param  string  $column
@@ -1167,6 +1170,9 @@ class Blueprint
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Create a new IP address column on the table.
      *

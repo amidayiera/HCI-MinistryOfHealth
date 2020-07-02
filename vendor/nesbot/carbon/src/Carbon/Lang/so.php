@@ -11,10 +11,13 @@
 
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Unknown default region, use the first alphabetically.
  */
 return require __DIR__.'/so_DJ.php';
 =======
+=======
+>>>>>>> eventsResources
  * Author:
  * - Abdifatah Abdilahi(@abdifatahz)
  */
@@ -77,4 +80,7 @@ return [
         'sameElse' => 'L',
     ],
 ];
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources

@@ -14,12 +14,15 @@ namespace League\CommonMark\Extension\HeadingPermalink;
 use League\CommonMark\Block\Element\Heading;
 use League\CommonMark\Event\DocumentParsedEvent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use League\CommonMark\Extension\HeadingPermalink\Slug\DefaultSlugGenerator;
 use League\CommonMark\Extension\HeadingPermalink\Slug\SlugGeneratorInterface;
 use League\CommonMark\Inline\Element\Code;
 use League\CommonMark\Inline\Element\Text;
 use League\CommonMark\Node\Node;
 =======
+=======
+>>>>>>> eventsResources
 use League\CommonMark\Exception\InvalidOptionException;
 use League\CommonMark\Extension\HeadingPermalink\Slug\SlugGeneratorInterface as DeprecatedSlugGeneratorInterface;
 use League\CommonMark\Inline\Element\Code;
@@ -27,6 +30,9 @@ use League\CommonMark\Inline\Element\Text;
 use League\CommonMark\Node\Node;
 use League\CommonMark\Normalizer\SlugNormalizer;
 use League\CommonMark\Normalizer\TextNormalizerInterface;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 use League\CommonMark\Util\ConfigurationAwareInterface;
 use League\CommonMark\Util\ConfigurationInterface;
@@ -40,8 +46,13 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
     const INSERT_AFTER = 'after';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var SlugGeneratorInterface */
     private $slugGenerator;
+=======
+    /** @var TextNormalizerInterface|DeprecatedSlugGeneratorInterface */
+    private $slugNormalizer;
+>>>>>>> eventsResources
 =======
     /** @var TextNormalizerInterface|DeprecatedSlugGeneratorInterface */
     private $slugNormalizer;
@@ -51,10 +62,13 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
     private $config;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(SlugGeneratorInterface $slugGenerator = null)
     {
         $this->slugGenerator = $slugGenerator ?? new DefaultSlugGenerator();
 =======
+=======
+>>>>>>> eventsResources
     /**
      * @param TextNormalizerInterface|DeprecatedSlugGeneratorInterface|null $slugNormalizer
      */
@@ -65,6 +79,9 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
         }
 
         $this->slugNormalizer = $slugNormalizer ?? new SlugNormalizer();
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 
@@ -76,6 +93,11 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
     public function __invoke(DocumentParsedEvent $e): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $this->useNormalizerFromConfigurationIfProvided();
+
+>>>>>>> eventsResources
 =======
         $this->useNormalizerFromConfigurationIfProvided();
 
@@ -91,11 +113,14 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function addHeadingLink(Heading $heading): void
     {
         $text = $this->getChildText($heading);
         $slug = $this->slugGenerator->createSlug($text);
 =======
+=======
+>>>>>>> eventsResources
     private function useNormalizerFromConfigurationIfProvided(): void
     {
         $generator = $this->config->get('heading_permalink/slug_normalizer');
@@ -118,6 +143,9 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
         } else {
             $slug = $this->slugNormalizer->normalize($text, $heading);
         }
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
         $headingLinkAnchor = new HeadingPermalink($slug);
@@ -137,6 +165,12 @@ final class HeadingPermalinkProcessor implements ConfigurationAwareInterface
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /**
+     * @deprecated Not needed in 2.0
+     */
+>>>>>>> eventsResources
 =======
     /**
      * @deprecated Not needed in 2.0

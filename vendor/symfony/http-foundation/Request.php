@@ -86,7 +86,11 @@ class Request
      * Request body parameters ($_POST).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var InputBag
+=======
+     * @var InputBag|ParameterBag
+>>>>>>> eventsResources
 =======
      * @var InputBag|ParameterBag
 >>>>>>> eventsResources
@@ -273,7 +277,11 @@ class Request
     public function initialize(array $query = [], array $request = [], array $attributes = [], array $cookies = [], array $files = [], array $server = [], $content = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->request = new InputBag($request);
+=======
+        $this->request = new ParameterBag($request);
+>>>>>>> eventsResources
 =======
         $this->request = new ParameterBag($request);
 >>>>>>> eventsResources
@@ -307,7 +315,13 @@ class Request
         $request = self::createRequestFromFactory($_GET, $_POST, [], $_COOKIE, $_FILES, $_SERVER);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (0 === strpos($request->headers->get('CONTENT_TYPE'), 'application/x-www-form-urlencoded')
+=======
+        if ($_POST) {
+            $request->request = new InputBag($_POST);
+        } elseif (0 === strpos($request->headers->get('CONTENT_TYPE'), 'application/x-www-form-urlencoded')
+>>>>>>> eventsResources
 =======
         if ($_POST) {
             $request->request = new InputBag($_POST);
@@ -462,7 +476,11 @@ class Request
         }
         if (null !== $request) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $dup->request = new InputBag($request);
+=======
+            $dup->request = new ParameterBag($request);
+>>>>>>> eventsResources
 =======
             $dup->request = new ParameterBag($request);
 >>>>>>> eventsResources

@@ -174,7 +174,12 @@ class CarbonTimeZone extends DateTimeZone
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Returns the first region string (such as "America/Toronto") that matches the current timezone.
+=======
+     * Returns the first region string (such as "America/Toronto") that matches the current timezone or
+     * false if no match is found.
+>>>>>>> eventsResources
 =======
      * Returns the first region string (such as "America/Toronto") that matches the current timezone or
      * false if no match is found.
@@ -186,7 +191,11 @@ class CarbonTimeZone extends DateTimeZone
      * @param int                    $isDst
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return string
+=======
+     * @return string|false
+>>>>>>> eventsResources
 =======
      * @return string|false
 >>>>>>> eventsResources
@@ -201,17 +210,23 @@ class CarbonTimeZone extends DateTimeZone
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Integer construction no longer supported since PHP 8
         // @codeCoverageIgnoreStart
         try {
             $offset = @$this->getOffset($date ?: Carbon::now($this)) ?: 0;
 =======
+=======
+>>>>>>> eventsResources
         $date = $date ?: Carbon::now($this);
 
         // Integer construction no longer supported since PHP 8
         // @codeCoverageIgnoreStart
         try {
             $offset = @$this->getOffset($date) ?: 0;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         } catch (\Throwable $e) {
             $offset = 0;
@@ -219,8 +234,11 @@ class CarbonTimeZone extends DateTimeZone
         // @codeCoverageIgnoreEnd
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return @timezone_name_from_abbr('', $offset, $isDst);
 =======
+=======
+>>>>>>> eventsResources
         $name = @timezone_name_from_abbr('', $offset, $isDst);
 
         if ($name) {
@@ -234,6 +252,9 @@ class CarbonTimeZone extends DateTimeZone
         }
 
         return false;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 

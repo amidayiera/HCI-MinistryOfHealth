@@ -497,7 +497,10 @@ return [
         '+' => ' plus ',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
     // Bengali (Bangla)
     'bn' => [
         '=' => ' Saman ',
@@ -509,6 +512,9 @@ return [
         '&' => ' Abong ',
         '+' => ' Songzojon ',
     ],
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     // English
     'en' => [

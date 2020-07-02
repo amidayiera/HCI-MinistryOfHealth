@@ -363,7 +363,11 @@ trait Creator
      * @throws InvalidFormatException
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return static
+=======
+     * @return static|false
+>>>>>>> eventsResources
 =======
      * @return static|false
 >>>>>>> eventsResources
@@ -417,7 +421,10 @@ trait Creator
 
         $second = ($second < 10 ? '0' : '').number_format($second, 6);
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var CarbonImmutable|Carbon $instance */
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
         $instance = static::rawCreateFromFormat('!Y-n-j G:i:s.u', sprintf('%s-%s-%s %s:%02s:%02s', $year, $month, $day, $hour, $minute, $second), $tz);

@@ -1726,11 +1726,17 @@ abstract class Model implements Arrayable, ArrayAccess, Jsonable, JsonSerializab
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if ($resolver = (static::$relationResolvers[get_class($this)][$method] ?? null)) {
             return $resolver($this);
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         return $this->forwardCallTo($this->newQuery(), $method, $parameters);
     }

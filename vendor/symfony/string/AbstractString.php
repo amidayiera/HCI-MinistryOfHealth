@@ -644,13 +644,19 @@ abstract class AbstractString implements \Stringable, \JsonSerializable
 
         if (!$cut) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $length = $ellipsisLength + ($this->indexOf([' ', "\r", "\n", "\t"], ($length ?: 1) - 1) ?? $stringLength);
 =======
+=======
+>>>>>>> eventsResources
             if (null === $length = $this->indexOf([' ', "\r", "\n", "\t"], ($length ?: 1) - 1)) {
                 return clone $this;
             }
 
             $length += $ellipsisLength;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         }
 

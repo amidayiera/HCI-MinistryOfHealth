@@ -4,6 +4,10 @@ namespace Illuminate\Container;
 
 use Closure;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use ReflectionNamedType;
+>>>>>>> eventsResources
 =======
 use ReflectionNamedType;
 >>>>>>> eventsResources
@@ -53,8 +57,11 @@ class Util
         $type = $parameter->getType();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return ($type && ! $type->isBuiltin()) ? $type->getName() : null;
 =======
+=======
+>>>>>>> eventsResources
         if (! $type instanceof ReflectionNamedType || $type->isBuiltin()) {
             return;
         }
@@ -66,6 +73,9 @@ class Util
         }
 
         return $name;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 }

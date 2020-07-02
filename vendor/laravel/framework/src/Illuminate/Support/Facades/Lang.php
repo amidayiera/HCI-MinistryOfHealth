@@ -4,6 +4,10 @@ namespace Illuminate\Support\Facades;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * @method static bool has(string $key)
+>>>>>>> eventsResources
 =======
  * @method static bool has(string $key)
 >>>>>>> eventsResources

@@ -14,6 +14,11 @@ declare(strict_types=1);
 namespace League\CommonMark;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use League\CommonMark\Exception\UnexpectedEncodingException;
+
+>>>>>>> eventsResources
 =======
 use League\CommonMark\Exception\UnexpectedEncodingException;
 
@@ -86,11 +91,17 @@ class Cursor
     public function __construct(string $line)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
         if (!\mb_check_encoding($line, 'UTF-8')) {
             throw new UnexpectedEncodingException('Unexpected encoding - UTF-8 or ASCII was expected');
         }
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         $this->line = $line;
         $this->length = \mb_strlen($line, 'UTF-8') ?: 0;

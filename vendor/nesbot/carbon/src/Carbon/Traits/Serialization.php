@@ -27,7 +27,11 @@ use Carbon\Exceptions\InvalidFormatException;
  * Depends on the following methods:
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method string|static locale(string $locale = null)
+=======
+ * @method string|static locale(string $locale = null, string ...$fallbackLocales)
+>>>>>>> eventsResources
 =======
  * @method string|static locale(string $locale = null, string ...$fallbackLocales)
 >>>>>>> eventsResources

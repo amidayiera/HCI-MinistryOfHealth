@@ -12,9 +12,12 @@
 namespace League\CommonMark\Extension\HeadingPermalink\Slug;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Creates URL-friendly strings
 =======
+=======
+>>>>>>> eventsResources
 use League\CommonMark\Normalizer\SlugNormalizer;
 
 @trigger_error(sprintf('%s is deprecated; use %s instead', DefaultSlugGenerator::class, SlugNormalizer::class), E_USER_DEPRECATED);
@@ -23,6 +26,9 @@ use League\CommonMark\Normalizer\SlugNormalizer;
  * Creates URL-friendly strings
  *
  * @deprecated Use League\CommonMark\Normalizer\SlugNormalizer instead
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
  */
 final class DefaultSlugGenerator implements SlugGeneratorInterface

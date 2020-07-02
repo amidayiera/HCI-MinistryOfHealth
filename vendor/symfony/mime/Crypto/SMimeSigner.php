@@ -26,11 +26,14 @@ final class SMimeSigner extends SMime
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var string|null
      */
     private $privateKeyPassphrase;
 
     /**
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
      * @param string      $certificate          The path of the file containing the signing certificate (in PEM format)
@@ -56,7 +59,10 @@ final class SMimeSigner extends SMime
         $this->signOptions = $signOptions ?? PKCS7_DETACHED;
         $this->extraCerts = $extraCerts ? realpath($extraCerts) : null;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->privateKeyPassphrase = $privateKeyPassphrase;
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
     }

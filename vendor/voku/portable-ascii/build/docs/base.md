@@ -18,6 +18,11 @@ The benefit of Portable ASCII is that it is easy to use, easy to bundle.
 
 The project based on ...
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
++ Sean M. Burke's work (https://metacpan.org/pod/Text::Unidecode)
++ Tomaz Solc's work (https://pypi.org/project/Unidecode/)
+>>>>>>> eventsResources
 =======
 + Sean M. Burke's work (https://metacpan.org/pod/Text::Unidecode)
 + Tomaz Solc's work (https://pypi.org/project/Unidecode/)

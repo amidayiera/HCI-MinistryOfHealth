@@ -18,6 +18,11 @@ use phpDocumentor\Reflection\Type;
 /**
  * Value Object representing the type 'string'.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable

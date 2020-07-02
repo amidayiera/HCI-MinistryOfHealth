@@ -732,9 +732,15 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      * @example $date->add(CarbonInterval::days(4))
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string|DateInterval $unit
      * @param int                 $value
      * @param bool|null           $overflow
+=======
+     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
+     * @param int                                                  $value
+     * @param bool|null                                            $overflow
+>>>>>>> eventsResources
 =======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value
@@ -2966,7 +2972,11 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      *
      * @param string|null $locale
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string[]    ...$fallbackLocales
+=======
+     * @param string      ...$fallbackLocales
+>>>>>>> eventsResources
 =======
      * @param string      ...$fallbackLocales
 >>>>>>> eventsResources
@@ -3410,7 +3420,10 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable add() method.
      *
      * @param DateInterval $interval
@@ -3420,6 +3433,9 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function rawAdd(DateInterval $interval);
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Create a Carbon instance from a specific format.
      *
@@ -3460,7 +3476,10 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable sub() method.
      *
      * @param DateInterval $interval
@@ -3470,6 +3489,9 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function rawSub(DateInterval $interval);
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Remove all macros and generic macros.
      */
@@ -4102,9 +4124,15 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      * @example $date->sub(CarbonInterval::days(4))
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string|DateInterval $unit
      * @param int                 $value
      * @param bool|null           $overflow
+=======
+     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
+     * @param int                                                  $value
+     * @param bool|null                                            $overflow
+>>>>>>> eventsResources
 =======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value

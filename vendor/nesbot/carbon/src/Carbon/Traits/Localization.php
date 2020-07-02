@@ -427,7 +427,11 @@ trait Localization
      *
      * @param string|null $locale
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string[]    ...$fallbackLocales
+=======
+     * @param string      ...$fallbackLocales
+>>>>>>> eventsResources
 =======
      * @param string      ...$fallbackLocales
 >>>>>>> eventsResources

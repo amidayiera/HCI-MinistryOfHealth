@@ -21,8 +21,13 @@ use Carbon\Exceptions\UnknownUnitException;
  * Depends on the following methods:
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method CarbonInterface copy()
  * @method CarbonInterface startOfWeek(int $weekStartsAt = null)
+=======
+ * @method static copy()
+ * @method static startOfWeek(int $weekStartsAt = null)
+>>>>>>> eventsResources
 =======
  * @method static copy()
  * @method static startOfWeek(int $weekStartsAt = null)

@@ -83,7 +83,10 @@ trait ManagesFrequencies
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Schedule the event to run every two minutes.
      *
      * @return $this
@@ -114,6 +117,9 @@ trait ManagesFrequencies
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Schedule the event to run every five minutes.
      *
@@ -372,6 +378,7 @@ trait ManagesFrequencies
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Schedule the event to run twice monthly.
      *
      * @param  int  $first
@@ -383,6 +390,8 @@ trait ManagesFrequencies
         $days = $first.','.$second;
 
 =======
+=======
+>>>>>>> eventsResources
      * Schedule the event to run twice monthly at a given time.
      *
      * @param  int  $first
@@ -396,6 +405,9 @@ trait ManagesFrequencies
 
         $this->dailyAt($time);
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
         return $this->spliceIntoPosition(1, 0)
             ->spliceIntoPosition(2, 0)
@@ -404,7 +416,10 @@ trait ManagesFrequencies
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Schedule the event to run on the last day of the month.
      *
      * @param  string  $time
@@ -418,6 +433,9 @@ trait ManagesFrequencies
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Schedule the event to run quarterly.
      *

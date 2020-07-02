@@ -34,7 +34,11 @@ class Application extends Container implements ApplicationContract, CachesConfig
      * @var string
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     const VERSION = '7.14.1';
+=======
+    const VERSION = '7.18.0';
+>>>>>>> eventsResources
 =======
     const VERSION = '7.18.0';
 >>>>>>> eventsResources
@@ -1108,7 +1112,10 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
      * Determine if the given service provider is loaded.
      *
      * @param  string  $provider
@@ -1120,6 +1127,9 @@ class Application extends Container implements ApplicationContract, CachesConfig
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
      * Get the application's deferred services.
      *

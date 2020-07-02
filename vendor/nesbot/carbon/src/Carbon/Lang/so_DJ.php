@@ -14,6 +14,7 @@
  * - Ge'ez Frontier Foundation    locales@geez.org
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array_replace_recursive(require __DIR__.'/en.php', [
     'formats' => [
         'L' => 'DD.MM.YYYY',
@@ -55,9 +56,14 @@ return array_replace_recursive(require __DIR__.'/en.php', [
     's' => ':count ilbiriqsi',
     'a_second' => ':count ilbiriqsi',
 =======
+=======
+>>>>>>> eventsResources
 return array_replace_recursive(require __DIR__.'/so.php', [
     'formats' => [
         'L' => 'DD.MM.YYYY',
     ],
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 ]);

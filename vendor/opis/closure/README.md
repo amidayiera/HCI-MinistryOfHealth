@@ -1,7 +1,11 @@
 Opis Closure
 ====================
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/opis/closure.png)](https://travis-ci.org/opis/closure)
+=======
+[![Tests](https://github.com/opis/closure/workflows/Tests/badge.svg)](https://github.com/opis/closure/actions)
+>>>>>>> eventsResources
 =======
 [![Tests](https://github.com/opis/closure/workflows/Tests/badge.svg)](https://github.com/opis/closure/actions)
 >>>>>>> eventsResources
@@ -40,6 +44,7 @@ proper serialization
 in order for the closure to work after deserialization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Documentation
 
 The full documentation for this library can be found [here][documentation].
@@ -50,6 +55,8 @@ The full documentation for this library can be found [here][documentation].
 
 ### Requirements
 =======
+=======
+>>>>>>> eventsResources
 ## Documentation
 
 The full documentation for this library can be found [here][documentation].
@@ -59,6 +66,9 @@ The full documentation for this library can be found [here][documentation].
 **Opis Closure** is licensed under the [MIT License (MIT)][license].
 
 ## Requirements
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
 * PHP ^5.4 || ^7.0
@@ -95,6 +105,7 @@ of **Opis Closure**. Otherwise, assuming you are not using one of the removed/re
 ### Arbitrary object serialization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This feature was primarily introduced in order to support serializing an object bound 
 to a closure and available via `$this`. The implementation is far from being perfect 
 and it's really hard to make it work flawless. I will try to improve this, but I can 
@@ -106,11 +117,16 @@ functions is to use them with caution.
 **Opis Closure** is shipped with an analyzer(`Opis\Closure\Analyzer`) which 
 aims to provide *Opis Closure*'s parsing precision and speed to [SuperClosure].
 =======
+=======
+>>>>>>> eventsResources
 We've added this feature in order to be able to support the serialization of a closure's bound object. 
 The implementation is far from being perfect, and it's really hard to make it work flawless. 
 We will try to improve this, but we can't guarantee anything. 
 So our advice regarding the `Opis\Closure\serialize|unserialize` functions is to use them with caution.
 
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 
 [documentation]: https://www.opis.io/closure "Opis Closure"
@@ -118,7 +134,10 @@ So our advice regarding the `Opis\Closure\serialize|unserialize` functions is to
 [Packagist]: https://packagist.org/packages/opis/closure "Packagist"
 [Composer]: https://getcomposer.org "Composer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 [SuperClosure]: https://github.com/jeremeamia/super_closure "SuperClosure"
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
 [SemVer]: http://semver.org/ "Semantic versioning"

@@ -548,9 +548,13 @@ class Filesystem
         // create it recursively, which just gets the destination prepared to copy
         // the files over. Once we make the directory we'll proceed the copying.
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $this->isDirectory($destination)) {
             $this->makeDirectory($destination, 0777, true);
         }
+=======
+        $this->ensureDirectoryExists($destination, 0777);
+>>>>>>> eventsResources
 =======
         $this->ensureDirectoryExists($destination, 0777);
 >>>>>>> eventsResources

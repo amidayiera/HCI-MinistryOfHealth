@@ -15,6 +15,11 @@
 namespace League\CommonMark\Reference;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use League\CommonMark\Normalizer\TextNormalizer;
+
+>>>>>>> eventsResources
 =======
 use League\CommonMark\Normalizer\TextNormalizer;
 
@@ -37,6 +42,7 @@ final class Reference implements ReferenceInterface
     protected $title;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @var array<int, array<int, string>>
      *
@@ -50,6 +56,11 @@ final class Reference implements ReferenceInterface
     public function __construct(string $label, string $destination, string $title)
     {
         $this->label = self::normalizeReference($label);
+=======
+    public function __construct(string $label, string $destination, string $title)
+    {
+        $this->label = $label;
+>>>>>>> eventsResources
 =======
     public function __construct(string $label, string $destination, string $title)
     {
@@ -83,6 +94,7 @@ final class Reference implements ReferenceInterface
      *
      * @return string
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     public static function normalizeReference(string $string): string
     {
@@ -99,6 +111,8 @@ final class Reference implements ReferenceInterface
 
         return \mb_convert_case($string, \MB_CASE_FOLD, 'UTF-8');
 =======
+=======
+>>>>>>> eventsResources
      *
      * @deprecated Use TextNormalizer::normalize() instead
      */
@@ -107,6 +121,9 @@ final class Reference implements ReferenceInterface
         @trigger_error(sprintf('%s::normlizeReference() is deprecated; use %s::normalize() instead', self::class, TextNormalizer::class), E_USER_DEPRECATED);
 
         return (new TextNormalizer())->normalize($string);
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 }

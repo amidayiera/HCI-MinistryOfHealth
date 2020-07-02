@@ -18,6 +18,11 @@ use phpDocumentor\Reflection\Type;
 /**
  * Represents a list of values. This is an abstract class for Array_ and Collection.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @psalm-immutable
+>>>>>>> eventsResources
 =======
  *
  * @psalm-immutable
@@ -54,11 +59,15 @@ abstract class AbstractList implements Type
     public function getKeyType() : Type
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->keyType === null) {
             return $this->defaultKeyType;
         }
 
         return $this->keyType;
+=======
+        return $this->keyType ?? $this->defaultKeyType;
+>>>>>>> eventsResources
 =======
         return $this->keyType ?? $this->defaultKeyType;
 >>>>>>> eventsResources

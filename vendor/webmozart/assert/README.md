@@ -105,15 +105,21 @@ Method                                                   | Description
 `isCountable($value, $message = '')`                     | Check that a value is an array or a `\Countable`
 `isInstanceOf($value, $class, $message = '')`            | Check that a value is an `instanceof` a class
 <<<<<<< HEAD
+<<<<<<< HEAD
 `isInstanceOfAny($value, array $classes, $message = '')` | Check that a value is an `instanceof` a at least one class on the array of classes
 `notInstanceOf($value, $class, $message = '')`           | Check that a value is not an `instanceof` a class
 `isAOf($value, $class, $message = '')`                   | Check that a value is of the class or has one of its parents
 `isAnyOf($value, array $classes, $message = '')`         | Check that a value a at least one of the class or has one of its parents
 =======
+=======
+>>>>>>> eventsResources
 `isInstanceOfAny($value, array $classes, $message = '')` | Check that a value is an `instanceof` at least one class on the array of classes
 `notInstanceOf($value, $class, $message = '')`           | Check that a value is not an `instanceof` a class
 `isAOf($value, $class, $message = '')`                   | Check that a value is of the class or has one of its parents
 `isAnyOf($value, array $classes, $message = '')`         | Check that a value is of at least one of the classes or has one of its parents
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 `isNotA($value, $class, $message = '')`                  | Check that a value is not of the class or has not one of its parents
 `isArrayAccessible($value, $message = '')`               | Check that a value can be accessed as an array
@@ -151,7 +157,11 @@ Method                                              | Description
 --------------------------------------------------- | -----------------------------------------------------------------
 `contains($value, $subString, $message = '')`       | Check that a string contains a substring
 <<<<<<< HEAD
+<<<<<<< HEAD
 `notContains($value, $subString, $message = '')`    | Check that a string does not contains a substring
+=======
+`notContains($value, $subString, $message = '')`    | Check that a string does not contain a substring
+>>>>>>> eventsResources
 =======
 `notContains($value, $subString, $message = '')`    | Check that a string does not contain a substring
 >>>>>>> eventsResources

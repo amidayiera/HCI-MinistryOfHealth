@@ -155,8 +155,13 @@ return [
         'Ĉ' => 'C',
         'Ċ' => 'C',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Ç' => 'Ç',
         'ç' => 'ç',
+=======
+        'Ç' => 'C',
+        'ç' => 'c',
+>>>>>>> eventsResources
 =======
         'Ç' => 'C',
         'ç' => 'c',
@@ -175,7 +180,11 @@ return [
         'Ė' => 'E',
         'è' => 'e',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'é' => 'é',
+=======
+        'é' => 'e',
+>>>>>>> eventsResources
 =======
         'é' => 'e',
 >>>>>>> eventsResources
@@ -2059,7 +2068,10 @@ return [
         'ẞ' => 'SS',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
     // Bengali (Bangla)
     'bn' => [
         'ভ্ল'   => 'vl',
@@ -2290,6 +2302,9 @@ return [
         'ঁ'     => 'nn',
         '্‌'    => '',
     ],
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     // English
     'en' => [

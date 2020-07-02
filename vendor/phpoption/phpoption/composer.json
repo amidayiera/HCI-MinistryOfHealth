@@ -31,11 +31,17 @@
         }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
     "config": {
         "preferred-install": "dist",
         "platform-check": false
     },
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     "extra": {
         "branch-alias": {

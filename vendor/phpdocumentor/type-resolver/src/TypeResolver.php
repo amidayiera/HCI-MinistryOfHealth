@@ -21,7 +21,13 @@ use phpDocumentor\Reflection\Types\Collection;
 use phpDocumentor\Reflection\Types\Compound;
 use phpDocumentor\Reflection\Types\Context;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use phpDocumentor\Reflection\Types\Integer;
+=======
+use phpDocumentor\Reflection\Types\Expression;
+use phpDocumentor\Reflection\Types\Integer;
+use phpDocumentor\Reflection\Types\Intersection;
+>>>>>>> eventsResources
 =======
 use phpDocumentor\Reflection\Types\Expression;
 use phpDocumentor\Reflection\Types\Integer;
@@ -32,6 +38,7 @@ use phpDocumentor\Reflection\Types\Nullable;
 use phpDocumentor\Reflection\Types\Object_;
 use phpDocumentor\Reflection\Types\String_;
 use RuntimeException;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use function array_keys;
 use function array_pop;
@@ -45,6 +52,8 @@ use function strpos;
 use function strtolower;
 use function substr;
 =======
+=======
+>>>>>>> eventsResources
 use function array_key_exists;
 use function array_pop;
 use function array_values;
@@ -57,6 +66,9 @@ use function key;
 use function preg_split;
 use function strpos;
 use function strtolower;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
 use function trim;
 use const PREG_SPLIT_DELIM_CAPTURE;
@@ -106,8 +118,13 @@ final class TypeResolver
         'callback' => Types\Callable_::class,
         'callable' => Types\Callable_::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'false' => Types\Boolean::class,
         'true' => Types\Boolean::class,
+=======
+        'false' => Types\False_::class,
+        'true' => Types\True_::class,
+>>>>>>> eventsResources
 =======
         'false' => Types\False_::class,
         'true' => Types\True_::class,
@@ -120,12 +137,18 @@ final class TypeResolver
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var FqsenResolver */
 =======
+=======
+>>>>>>> eventsResources
     /**
      * @var FqsenResolver
      * @psalm-readonly
      */
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     private $fqsenResolver;
 
@@ -165,9 +188,15 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // split the type string into tokens `|`, `?`, `<`, `>`, `,`, `(`, `)[]`, '<', '>' and type names
         $tokens = preg_split(
             '/(\\||\\?|<|>|, ?|\\(|\\)(?:\\[\\])+)/',
+=======
+        // split the type string into tokens `|`, `?`, `<`, `>`, `,`, `(`, `)`, `[]`, '<', '>' and type names
+        $tokens = preg_split(
+            '/(\\||\\?|<|>|&|, ?|\\(|\\)|\\[\\]+)/',
+>>>>>>> eventsResources
 =======
         // split the type string into tokens `|`, `?`, `<`, `>`, `,`, `(`, `)`, `[]`, '<', '>' and type names
         $tokens = preg_split(
@@ -183,6 +212,10 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        /** @var ArrayIterator<int, string|null> $tokenIterator */
+>>>>>>> eventsResources
 =======
         /** @var ArrayIterator<int, string|null> $tokenIterator */
 >>>>>>> eventsResources
@@ -195,8 +228,13 @@ final class TypeResolver
      * Analyse each tokens and creates types
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param ArrayIterator $tokens        the iterator on tokens
      * @param int           $parserContext on of self::PARSER_* constants, indicating
+=======
+     * @param ArrayIterator<int, string|null> $tokens        the iterator on tokens
+     * @param int                        $parserContext on of self::PARSER_* constants, indicating
+>>>>>>> eventsResources
 =======
      * @param ArrayIterator<int, string|null> $tokens        the iterator on tokens
      * @param int                        $parserContext on of self::PARSER_* constants, indicating
@@ -208,11 +246,14 @@ final class TypeResolver
         $types = [];
         $token = '';
 <<<<<<< HEAD
+<<<<<<< HEAD
         while ($tokens->valid()) {
             $token = $tokens->current();
 
             if ($token === '|') {
 =======
+=======
+>>>>>>> eventsResources
         $compoundToken = '|';
         while ($tokens->valid()) {
             $token = $tokens->current();
@@ -223,6 +264,9 @@ final class TypeResolver
             }
 
             if ($token === '|' || $token === '&') {
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                 if (count($types) === 0) {
                     throw new RuntimeException(
@@ -231,15 +275,21 @@ final class TypeResolver
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($parserContext !== self::PARSER_IN_COMPOUND
                     && $parserContext !== self::PARSER_IN_ARRAY_EXPRESSION
                     && $parserContext !== self::PARSER_IN_COLLECTION_EXPRESSION
 =======
+=======
+>>>>>>> eventsResources
                 if (!in_array($parserContext, [
                     self::PARSER_IN_COMPOUND,
                     self::PARSER_IN_ARRAY_EXPRESSION,
                     self::PARSER_IN_COLLECTION_EXPRESSION,
                 ], true)
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                 ) {
                     throw new RuntimeException(
@@ -248,12 +298,15 @@ final class TypeResolver
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $tokens->next();
             } elseif ($token === '?') {
                 if ($parserContext !== self::PARSER_IN_COMPOUND
                     && $parserContext !== self::PARSER_IN_ARRAY_EXPRESSION
                     && $parserContext !== self::PARSER_IN_COLLECTION_EXPRESSION
 =======
+=======
+>>>>>>> eventsResources
                 $compoundToken = $token;
                 $tokens->next();
             } elseif ($token === '?') {
@@ -262,6 +315,9 @@ final class TypeResolver
                     self::PARSER_IN_ARRAY_EXPRESSION,
                     self::PARSER_IN_COLLECTION_EXPRESSION,
                 ], true)
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                 ) {
                     throw new RuntimeException(
@@ -276,6 +332,7 @@ final class TypeResolver
                 $tokens->next();
                 $type = $this->parseTypes($tokens, $context, self::PARSER_IN_ARRAY_EXPRESSION);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $resolvedType = new Array_($type);
 
@@ -294,6 +351,8 @@ final class TypeResolver
                 $types[] = $resolvedType;
                 $tokens->next();
 =======
+=======
+>>>>>>> eventsResources
                 $token = $tokens->current();
                 if ($token === null) { // Someone did not properly close their array expression ..
                     break;
@@ -304,6 +363,9 @@ final class TypeResolver
                 $resolvedType = new Expression($type);
 
                 $types[] = $resolvedType;
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
             } elseif ($parserContext === self::PARSER_IN_ARRAY_EXPRESSION && $token[0] === ')') {
                 break;
@@ -329,7 +391,10 @@ final class TypeResolver
             ) {
                 break;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eventsResources
             } elseif ($token === self::OPERATOR_ARRAY) {
                 end($types);
                 $last = key($types);
@@ -341,6 +406,9 @@ final class TypeResolver
                 $types[$last] = new Array_($lastItem);
 
                 $tokens->next();
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
             } else {
                 $type = $this->resolveSingleType($token, $context);
@@ -354,7 +422,11 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($token === '|') {
+=======
+        if ($token === '|' || $token === '&') {
+>>>>>>> eventsResources
 =======
         if ($token === '|' || $token === '&') {
 >>>>>>> eventsResources
@@ -386,13 +458,19 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new Compound($types);
 =======
+=======
+>>>>>>> eventsResources
         if ($compoundToken === '|') {
             return new Compound(array_values($types));
         }
 
         return new Intersection(array_values($types));
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 
@@ -403,21 +481,30 @@ final class TypeResolver
      *
      * @return Type|Array_|Object_
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     private function resolveSingleType(string $type, Context $context)
 =======
+=======
+>>>>>>> eventsResources
      *
      * @psalm-pure
      */
     private function resolveSingleType(string $type, Context $context) : object
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     {
         switch (true) {
             case $this->isKeyword($type):
                 return $this->resolveKeyword($type);
 <<<<<<< HEAD
+<<<<<<< HEAD
             case $this->isTypedArray($type):
                 return $this->resolveTypedArray($type, $context);
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
             case $this->isFqsen($type):
@@ -461,6 +548,7 @@ final class TypeResolver
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Detects whether the given type represents an array.
      *
      * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
@@ -479,6 +567,8 @@ final class TypeResolver
     {
         return in_array(strtolower($type), array_keys($this->keywords), true);
 =======
+=======
+>>>>>>> eventsResources
      * Detects whether the given type represents a PHPDoc keyword.
      *
      * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
@@ -488,6 +578,9 @@ final class TypeResolver
     private function isKeyword(string $type) : bool
     {
         return array_key_exists(strtolower($type), $this->keywords);
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     }
 
@@ -496,6 +589,11 @@ final class TypeResolver
      *
      * @param string $type A relative or absolute type as defined in the phpDocumentor documentation.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
 =======
      *
      * @psalm-pure
@@ -509,6 +607,11 @@ final class TypeResolver
     /**
      * Tests whether the given type is a Fully Qualified Structural Element Name.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
 =======
      *
      * @psalm-pure
@@ -521,6 +624,7 @@ final class TypeResolver
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Resolves the given typed array string (i.e. `string[]`) into an Array object with the right types set.
      */
     private function resolveTypedArray(string $type, Context $context) : Array_
@@ -530,6 +634,11 @@ final class TypeResolver
 
     /**
      * Resolves the given keyword (such as `string`) into a Type object representing that keyword.
+=======
+     * Resolves the given keyword (such as `string`) into a Type object representing that keyword.
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
 =======
      * Resolves the given keyword (such as `string`) into a Type object representing that keyword.
      *
@@ -546,6 +655,11 @@ final class TypeResolver
     /**
      * Resolves the given FQSEN string into an FQSEN object.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     *
+     * @psalm-pure
+>>>>>>> eventsResources
 =======
      *
      * @psalm-pure
@@ -559,6 +673,11 @@ final class TypeResolver
     /**
      * Resolves class string
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     *
+     * @param ArrayIterator<int, (string|null)> $tokens
+>>>>>>> eventsResources
 =======
      *
      * @param ArrayIterator<int, (string|null)> $tokens
@@ -577,8 +696,14 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($tokens->current() !== '>') {
             if (empty($tokens->current())) {
+=======
+        $token = $tokens->current();
+        if ($token !== '>') {
+            if (empty($token)) {
+>>>>>>> eventsResources
 =======
         $token = $tokens->current();
         if ($token !== '>') {
@@ -591,7 +716,11 @@ final class TypeResolver
 
             throw new RuntimeException(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'Unexpected character "' . $tokens->current() . '", ">" is missing'
+=======
+                'Unexpected character "' . $token . '", ">" is missing'
+>>>>>>> eventsResources
 =======
                 'Unexpected character "' . $token . '", ">" is missing'
 >>>>>>> eventsResources
@@ -605,6 +734,11 @@ final class TypeResolver
      * Resolves the collection values and keys
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @param ArrayIterator<int, (string|null)> $tokens
+     *
+>>>>>>> eventsResources
 =======
      * @param ArrayIterator<int, (string|null)> $tokens
      *
@@ -630,7 +764,12 @@ final class TypeResolver
         $keyType   = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($tokens->current() !== null && trim($tokens->current()) === ',') {
+=======
+        $token = $tokens->current();
+        if ($token !== null && trim($token) === ',') {
+>>>>>>> eventsResources
 =======
         $token = $tokens->current();
         if ($token !== null && trim($token) === ',') {
@@ -668,8 +807,14 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($tokens->current() !== '>') {
             if (empty($tokens->current())) {
+=======
+        $token = $tokens->current();
+        if ($token !== '>') {
+            if (empty($token)) {
+>>>>>>> eventsResources
 =======
         $token = $tokens->current();
         if ($token !== '>') {
@@ -682,7 +827,11 @@ final class TypeResolver
 
             throw new RuntimeException(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'Unexpected character "' . $tokens->current() . '", ">" is missing'
+=======
+                'Unexpected character "' . $token . '", ">" is missing'
+>>>>>>> eventsResources
 =======
                 'Unexpected character "' . $token . '", ">" is missing'
 >>>>>>> eventsResources
@@ -698,7 +847,10 @@ final class TypeResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @psalm-suppress RedundantCondition */
+=======
+>>>>>>> eventsResources
 =======
 >>>>>>> eventsResources
         if ($classType instanceof Object_) {
@@ -709,6 +861,12 @@ final class TypeResolver
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /**
+     * @psalm-pure
+     */
+>>>>>>> eventsResources
 =======
     /**
      * @psalm-pure

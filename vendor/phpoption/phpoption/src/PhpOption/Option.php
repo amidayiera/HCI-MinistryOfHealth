@@ -94,7 +94,11 @@ abstract class Option implements IteratorAggregate
     public static function fromReturn($callback, array $arguments = [], $noneValue = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new LazyOption(function () use ($callback, $arguments, $noneValue) {
+=======
+        return new LazyOption(static function () use ($callback, $arguments, $noneValue) {
+>>>>>>> eventsResources
 =======
         return new LazyOption(static function () use ($callback, $arguments, $noneValue) {
 >>>>>>> eventsResources
@@ -131,7 +135,11 @@ abstract class Option implements IteratorAggregate
             return $value;
         } elseif (is_callable($value)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return new LazyOption(function () use ($value, $noneValue) {
+=======
+            return new LazyOption(static function () use ($value, $noneValue) {
+>>>>>>> eventsResources
 =======
             return new LazyOption(static function () use ($value, $noneValue) {
 >>>>>>> eventsResources
@@ -168,7 +176,11 @@ abstract class Option implements IteratorAggregate
     public static function lift($callback, $noneValue = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return function () use ($callback, $noneValue) {
+=======
+        return static function () use ($callback, $noneValue) {
+>>>>>>> eventsResources
 =======
         return static function () use ($callback, $noneValue) {
 >>>>>>> eventsResources
@@ -179,7 +191,11 @@ abstract class Option implements IteratorAggregate
                 $args,
                 /** @param bool $status */
 <<<<<<< HEAD
+<<<<<<< HEAD
                 function ($status, self $o) {
+=======
+                static function ($status, self $o) {
+>>>>>>> eventsResources
 =======
                 static function ($status, self $o) {
 >>>>>>> eventsResources
@@ -195,7 +211,11 @@ abstract class Option implements IteratorAggregate
             $args = array_map(
                 /** @return T */
 <<<<<<< HEAD
+<<<<<<< HEAD
                 function (self $o) {
+=======
+                static function (self $o) {
+>>>>>>> eventsResources
 =======
                 static function (self $o) {
 >>>>>>> eventsResources

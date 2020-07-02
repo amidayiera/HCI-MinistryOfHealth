@@ -37,6 +37,7 @@ use RuntimeException;
  * Substitution of DatePeriod with some modifications and many more features.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static CarbonPeriod start($date, $inclusive = null) Create instance specifying start date.
  * @method static CarbonPeriod since($date, $inclusive = null) Alias for start().
  * @method static CarbonPeriod sinceNow($inclusive = null) Create instance with start date set to now.
@@ -107,6 +108,8 @@ use RuntimeException;
  * @method $this seconds($seconds = 1) Set the seconds portion of the date interval.
  * @method $this second($seconds = 1) Alias for seconds().
 =======
+=======
+>>>>>>> eventsResources
  * @method static CarbonPeriod start($date, $inclusive = null) Create instance specifying start date or modify the start date if called on an instance.
  * @method static CarbonPeriod since($date, $inclusive = null) Alias for start().
  * @method static CarbonPeriod sinceNow($inclusive = null) Create instance with start date set to now or set the start date to now if called on an instance.
@@ -144,6 +147,9 @@ use RuntimeException;
  * @method static CarbonPeriod minute($minutes = 1) Alias for minutes().
  * @method static CarbonPeriod seconds($seconds = 1) Create instance specifying a number of seconds for date interval or replace the interval by the given a number of seconds if called on an instance.
  * @method static CarbonPeriod second($seconds = 1) Alias for seconds().
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
  * @method $this roundYear(float $precision = 1, string $function = "round") Round the current instance year with given precision using the given function.
  * @method $this roundYears(float $precision = 1, string $function = "round") Round the current instance year with given precision using the given function.
@@ -249,7 +255,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Available options.
+=======
+     * Exclude start date from iteration.
+>>>>>>> eventsResources
 =======
      * Exclude start date from iteration.
 >>>>>>> eventsResources
@@ -258,8 +268,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
      */
     const EXCLUDE_START_DATE = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
     const EXCLUDE_END_DATE = 2;
 =======
+=======
+>>>>>>> eventsResources
 
     /**
      * Exclude end date from iteration.
@@ -273,6 +286,9 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
      *
      * @var int
      */
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
     const IMMUTABLE = 4;
 
@@ -719,15 +735,21 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             if ($this->dateInterval === null &&
                 (
 <<<<<<< HEAD
+<<<<<<< HEAD
                     is_string($argument) && preg_match('/^(\d.*|P[T0-9].*|(?:\h*\d+(?:\.\d+)?\h*[a-z]+)+)$/i', $argument) ||
                     $argument instanceof DateInterval
 =======
+=======
+>>>>>>> eventsResources
                     is_string($argument) && preg_match(
                         '/^(\d(\d(?![\/-])|[^\d\/-]([\/-])?)*|P[T0-9].*|(?:\h*\d+(?:\.\d+)?\h*[a-z]+)+)$/i',
                         $argument
                     ) ||
                     $argument instanceof DateInterval ||
                     $argument instanceof Closure
+<<<<<<< HEAD
+>>>>>>> eventsResources
+=======
 >>>>>>> eventsResources
                 ) &&
                 $parsed = @CarbonInterval::make($argument)
@@ -824,7 +846,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($interval->spec() === 'PT0S' && !$interval->f) {
+=======
+        if ($interval->spec() === 'PT0S' && !$interval->f && !$interval->getStep()) {
+>>>>>>> eventsResources
 =======
         if ($interval->spec() === 'PT0S' && !$interval->f && !$interval->getStep()) {
 >>>>>>> eventsResources
@@ -1491,9 +1517,15 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public function key()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->valid()) {
             return $this->key;
         }
+=======
+        return $this->valid()
+            ? $this->key
+            : null;
+>>>>>>> eventsResources
 =======
         return $this->valid()
             ? $this->key
@@ -1509,9 +1541,15 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public function current()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->valid()) {
             return $this->prepareForReturn($this->current);
         }
+=======
+        return $this->valid()
+            ? $this->prepareForReturn($this->current)
+            : null;
+>>>>>>> eventsResources
 =======
         return $this->valid()
             ? $this->prepareForReturn($this->current)
@@ -1764,9 +1802,13 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public function first()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($array = $this->toArray()) {
             return $array[0];
         }
+=======
+        return ($this->toArray() ?: [])[0] ?? null;
+>>>>>>> eventsResources
 =======
         return ($this->toArray() ?: [])[0] ?? null;
 >>>>>>> eventsResources
@@ -1780,9 +1822,15 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public function last()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($array = $this->toArray()) {
             return $array[count($array) - 1];
         }
+=======
+        $array = $this->toArray();
+
+        return $array ? $array[count($array) - 1] : null;
+>>>>>>> eventsResources
 =======
         $array = $this->toArray();
 
