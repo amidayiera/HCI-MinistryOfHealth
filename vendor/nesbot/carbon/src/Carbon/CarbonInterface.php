@@ -731,21 +731,9 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      * @example $date->add(15, 'days')
      * @example $date->add(CarbonInterval::days(4))
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param string|DateInterval $unit
-     * @param int                 $value
-     * @param bool|null           $overflow
-=======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value
      * @param bool|null                                            $overflow
->>>>>>> eventsResources
-=======
-     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
-     * @param int                                                  $value
-     * @param bool|null                                            $overflow
->>>>>>> eventsResources
      *
      * @return static
      */
@@ -2971,15 +2959,7 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      * Get/set the locale for the current instance.
      *
      * @param string|null $locale
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param string[]    ...$fallbackLocales
-=======
      * @param string      ...$fallbackLocales
->>>>>>> eventsResources
-=======
-     * @param string      ...$fallbackLocales
->>>>>>> eventsResources
      *
      * @return $this|string
      */
@@ -3419,11 +3399,6 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function range($end = null, $interval = null, $unit = null);
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable add() method.
      *
      * @param DateInterval $interval
@@ -3433,10 +3408,6 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function rawAdd(DateInterval $interval);
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Create a Carbon instance from a specific format.
      *
      * @param string                         $format Datetime format
@@ -3475,11 +3446,6 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public static function rawParse($time = null, $tz = null);
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Call native PHP DateTime/DateTimeImmutable sub() method.
      *
      * @param DateInterval $interval
@@ -3489,10 +3455,6 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
     public function rawSub(DateInterval $interval);
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Remove all macros and generic macros.
      */
     public static function resetMacros();
@@ -4123,21 +4085,9 @@ interface CarbonInterface extends DateTimeInterface, JsonSerializable
      * @example $date->sub(15, 'days')
      * @example $date->sub(CarbonInterval::days(4))
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param string|DateInterval $unit
-     * @param int                 $value
-     * @param bool|null           $overflow
-=======
      * @param string|DateInterval|Closure|CarbonConverterInterface $unit
      * @param int                                                  $value
      * @param bool|null                                            $overflow
->>>>>>> eventsResources
-=======
-     * @param string|DateInterval|Closure|CarbonConverterInterface $unit
-     * @param int                                                  $value
-     * @param bool|null                                            $overflow
->>>>>>> eventsResources
      *
      * @return static
      */

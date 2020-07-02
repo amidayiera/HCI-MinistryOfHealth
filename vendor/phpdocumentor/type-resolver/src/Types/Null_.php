@@ -17,16 +17,8 @@ use phpDocumentor\Reflection\Type;
 
 /**
  * Value Object representing a null value or type.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Null_ implements Type
 {

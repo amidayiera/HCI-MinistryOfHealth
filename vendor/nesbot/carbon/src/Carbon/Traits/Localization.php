@@ -426,15 +426,7 @@ trait Localization
      * Get/set the locale for the current instance.
      *
      * @param string|null $locale
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param string[]    ...$fallbackLocales
-=======
      * @param string      ...$fallbackLocales
->>>>>>> eventsResources
-=======
-     * @param string      ...$fallbackLocales
->>>>>>> eventsResources
      *
      * @return $this|string
      */

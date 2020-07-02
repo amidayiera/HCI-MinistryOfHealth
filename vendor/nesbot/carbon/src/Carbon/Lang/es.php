@@ -52,18 +52,9 @@ return [
     'millisecond' => ':count milisegundo|:count milisegundos',
     'a_millisecond' => 'un milisegundo|:count milisegundos',
     'ms' => ':countms',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     'microsecond' => ':count microsegundo|:count microsegundos',
     'a_microsecond' => 'un microsegundo|:count microsegundos',
     'µs' => ':countµs',
->>>>>>> eventsResources
-=======
-    'microsecond' => ':count microsegundo|:count microsegundos',
-    'a_microsecond' => 'un microsegundo|:count microsegundos',
-    'µs' => ':countµs',
->>>>>>> eventsResources
     'ago' => 'hace :time',
     'from_now' => 'en :time',
     'after' => ':time después',

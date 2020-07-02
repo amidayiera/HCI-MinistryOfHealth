@@ -13,15 +13,7 @@ namespace League\CommonMark\Extension\TableOfContents\Normalizer;
 
 use League\CommonMark\Block\Element\ListBlock;
 use League\CommonMark\Block\Element\ListItem;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use League\CommonMark\Extension\TableOfContents\TableOfContents;
-=======
 use League\CommonMark\Extension\TableOfContents\Node\TableOfContents;
->>>>>>> eventsResources
-=======
-use League\CommonMark\Extension\TableOfContents\Node\TableOfContents;
->>>>>>> eventsResources
 
 final class AsIsNormalizerStrategy implements NormalizerStrategyInterface
 {
@@ -71,15 +63,6 @@ final class AsIsNormalizerStrategy implements NormalizerStrategyInterface
         $this->lastListItem = $listItemToAdd;
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 // Trigger autoload without causing a deprecated error
 \class_exists(TableOfContents::class);
->>>>>>> eventsResources
-=======
-
-// Trigger autoload without causing a deprecated error
-\class_exists(TableOfContents::class);
->>>>>>> eventsResources

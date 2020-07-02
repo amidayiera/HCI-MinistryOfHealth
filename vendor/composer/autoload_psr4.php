@@ -54,12 +54,11 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'League\\CommonMark\\' => array($vendorDir . '/league/commonmark/src'),
+    'Laravel\\Ui\\' => array($vendorDir . '/laravel/ui/src'),
     'Laravel\\Tinker\\' => array($vendorDir . '/laravel/tinker/src'),
-<<<<<<< HEAD
-=======
     'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src/Intervention/Image'),
+    'Illuminate\\Foundation\\Auth\\' => array($vendorDir . '/laravel/ui/auth-backend'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
->>>>>>> eventsResources
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
@@ -69,11 +68,7 @@ return array(
     'Facade\\Ignition\\' => array($vendorDir . '/facade/ignition/src'),
     'Facade\\IgnitionContracts\\' => array($vendorDir . '/facade/ignition-contracts/src'),
     'Facade\\FlareClient\\' => array($vendorDir . '/facade/flare-client-php/src'),
-<<<<<<< HEAD
-    'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/EmailValidator'),
-=======
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
->>>>>>> eventsResources
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector'),

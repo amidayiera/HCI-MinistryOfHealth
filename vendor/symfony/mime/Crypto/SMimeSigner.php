@@ -25,17 +25,6 @@ final class SMimeSigner extends SMime
     private $extraCerts;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @var string|null
-     */
-    private $privateKeyPassphrase;
-
-    /**
-=======
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * @param string      $certificate          The path of the file containing the signing certificate (in PEM format)
      * @param string      $privateKey           The path of the file containing the private key (in PEM format)
      * @param string|null $privateKeyPassphrase A passphrase of the private key (if any)
@@ -58,13 +47,6 @@ final class SMimeSigner extends SMime
 
         $this->signOptions = $signOptions ?? PKCS7_DETACHED;
         $this->extraCerts = $extraCerts ? realpath($extraCerts) : null;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->privateKeyPassphrase = $privateKeyPassphrase;
-=======
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     public function sign(Message $message): Message

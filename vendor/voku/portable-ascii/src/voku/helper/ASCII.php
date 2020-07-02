@@ -156,20 +156,11 @@ final class ASCII
     private static $ORD;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * @var array<string, int>|null
      */
     private static $LANGUAGE_MAX_KEY;
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * url: https://en.wikipedia.org/wiki/Wikipedia:ASCII#ASCII_printable_characters
      *
      * @var string
@@ -335,15 +326,7 @@ final class ASCII
      * @param string $language              [optional] <p>Language of the source string e.g.: en, de_at, or de-ch.
      *                                      (default is 'en') | ASCII::*_LANGUAGE_CODE</p>
      * @param bool   $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
-=======
      * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
->>>>>>> eventsResources
-=======
-     * @param bool   $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
->>>>>>> eventsResources
      *                                      array</p>
      * @psalm-pure
      *
@@ -439,15 +422,7 @@ final class ASCII
      * </code>
      *
      * @param bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
-=======
      * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
->>>>>>> eventsResources
-=======
-     * @param bool $asOrigReplaceArray    [optional] <p>TRUE === return {orig: string[], replace: string[]}
->>>>>>> eventsResources
      *                                    array</p>
      * @psalm-pure
      *
@@ -799,21 +774,11 @@ final class ASCII
 
             $langSpecific = self::charsArrayWithOneLanguage($language, $replace_extra_symbols, false);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $REPLACE_HELPER_CACHE[$cacheKey] = \array_merge([], $langAll, $langSpecific);
-=======
-=======
->>>>>>> eventsResources
             if ($langSpecific === []) {
                 $REPLACE_HELPER_CACHE[$cacheKey] = $langAll;
             } else {
                 $REPLACE_HELPER_CACHE[$cacheKey] = \array_merge([], $langAll, $langSpecific);
             }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         }
 
         if (
@@ -833,11 +798,6 @@ final class ASCII
         $charDone = [];
         if (\preg_match_all('/' . self::$REGEX_ASCII . ($replace_extra_symbols ? '|[' . $EXTRA_SYMBOLS_CACHE . ']' : '') . '/u', $str, $matches)) {
             if (!$replace_single_chars_only) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
                 if (self::$LANGUAGE_MAX_KEY === null) {
                     /** @noinspection PsalmLocalImmutableInspection */
                     self::$LANGUAGE_MAX_KEY = self::getData('ascii_language_max_key');
@@ -901,10 +861,6 @@ final class ASCII
                     }
                 }
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
                 foreach ($matches[0] as $keyTmp => $char) {
                     if (isset($matches[0][$keyTmp + 2])) {
                         $threeChars = $matches[0][$keyTmp + 0] . $matches[0][$keyTmp + 1] . $matches[0][$keyTmp + 2];

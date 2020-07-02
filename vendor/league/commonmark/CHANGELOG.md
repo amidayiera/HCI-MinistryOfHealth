@@ -4,11 +4,6 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 ## [Unreleased][unreleased]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
 ## [1.5.1] - 2020-06-27
 
 ### Fixed
@@ -55,10 +50,6 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
  - Deprecated the `\League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkRenderer::DEFAULT_INNER_CONTENTS` constant (#505)
  - Deprecated the `heading_permalink/inner_contents` configuration option in the `HeadingPermalink` extension (use the new `heading_permalink/symbol` configuration option instead) (#505)
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 ## [1.4.3] - 2020-05-04
 
 ### Fixed
@@ -356,19 +347,9 @@ No changes were made since 1.0.0-rc1.
    - Removed `DelimiterStack::iterateByCharacters()` (use the new `processDelimiters()` method instead)
    - Removed the protected `DelimiterStack::findMatchingOpener()` method
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-[unreleased]: https://github.com/thephpleague/commonmark/compare/1.4.3...HEAD
-=======
 [unreleased]: https://github.com/thephpleague/commonmark/compare/1.5.1...1.5
 [1.5.1]: https://github.com/thephpleague/commonmark/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/thephpleague/commonmark/compare/1.4.3...1.5.0
->>>>>>> eventsResources
-=======
-[unreleased]: https://github.com/thephpleague/commonmark/compare/1.5.1...1.5
-[1.5.1]: https://github.com/thephpleague/commonmark/compare/1.5.0...1.5.1
-[1.5.0]: https://github.com/thephpleague/commonmark/compare/1.4.3...1.5.0
->>>>>>> eventsResources
 [1.4.3]: https://github.com/thephpleague/commonmark/compare/1.4.2...1.4.3
 [1.4.2]: https://github.com/thephpleague/commonmark/compare/1.4.1...1.4.2
 [1.4.1]: https://github.com/thephpleague/commonmark/compare/1.4.0...1.4.1

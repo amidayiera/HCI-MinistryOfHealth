@@ -13,15 +13,7 @@ $readmeGenerator->templateMethod = <<<RAW
 %params%
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `%return%`
-=======
 %return%
->>>>>>> eventsResources
-=======
-%return%
->>>>>>> eventsResources
 
 --------
 

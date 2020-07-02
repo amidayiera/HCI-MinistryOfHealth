@@ -134,18 +134,6 @@ class AliasLoader
     /**
      * Add an alias to the loader.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $class
-     * @param  string  $alias
-     * @return void
-     */
-    public function alias($class, $alias)
-    {
-        $this->aliases[$class] = $alias;
-=======
-=======
->>>>>>> eventsResources
      * @param  string  $alias
      * @param  string  $class
      * @return void
@@ -153,10 +141,6 @@ class AliasLoader
     public function alias($alias, $class)
     {
         $this->aliases[$alias] = $class;
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     /**

@@ -11,16 +11,8 @@
 
 namespace Symfony\Component\HttpFoundation;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 
->>>>>>> eventsResources
-=======
-use Symfony\Component\HttpFoundation\Exception\BadRequestException;
-
->>>>>>> eventsResources
 /**
  * ParameterBag is a container for key/value pairs.
  *
@@ -41,16 +33,6 @@ class ParameterBag implements \IteratorAggregate, \Countable
     /**
      * Returns the parameters.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array An array of parameters
-     */
-    public function all()
-    {
-        return $this->parameters;
-=======
-=======
->>>>>>> eventsResources
      * @param string|null $key The name of the parameter to return or null to get them all
      *
      * @return array An array of parameters
@@ -68,10 +50,6 @@ class ParameterBag implements \IteratorAggregate, \Countable
         }
 
         return $value;
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     /**

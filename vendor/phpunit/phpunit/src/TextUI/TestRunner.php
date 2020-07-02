@@ -503,64 +503,6 @@ final class TestRunner extends BaseTestRunner
         }
 
         if ($codeCoverageReports > 0) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $codeCoverage = new CodeCoverage(
-                null,
-                $this->codeCoverageFilter
-            );
-
-            $codeCoverage->setUnintentionallyCoveredSubclassesWhitelist(
-                [Comparator::class]
-            );
-
-            $codeCoverage->setCheckForUnintentionallyCoveredCode(
-                $arguments['strictCoverage']
-            );
-
-            $codeCoverage->setCheckForMissingCoversAnnotation(
-                $arguments['strictCoverage']
-            );
-
-            if (isset($arguments['forceCoversAnnotation'])) {
-                $codeCoverage->setForceCoversAnnotation(
-                    $arguments['forceCoversAnnotation']
-                );
-            }
-
-            if (isset($arguments['ignoreDeprecatedCodeUnitsFromCodeCoverage'])) {
-                $codeCoverage->setIgnoreDeprecatedCode(
-                    $arguments['ignoreDeprecatedCodeUnitsFromCodeCoverage']
-                );
-            }
-
-            if (isset($arguments['disableCodeCoverageIgnore'])) {
-                $codeCoverage->setDisableIgnoredLines(true);
-            }
-
-            if (!empty($filterConfiguration['whitelist'])) {
-                $codeCoverage->setAddUncoveredFilesFromWhitelist(
-                    $filterConfiguration['whitelist']['addUncoveredFilesFromWhitelist']
-                );
-
-                $codeCoverage->setProcessUncoveredFilesFromWhitelist(
-                    $filterConfiguration['whitelist']['processUncoveredFilesFromWhitelist']
-                );
-            }
-
-            if (!$this->codeCoverageFilter->hasWhitelist()) {
-                if (!$whitelistFromConfigurationFile && !$whitelistFromOption) {
-                    $this->writeMessage('Error', 'No whitelist is configured, no code coverage will be generated.');
-                } else {
-                    $this->writeMessage('Error', 'Incorrect whitelist config, no code coverage will be generated.');
-                }
-
-                $codeCoverageReports = 0;
-
-                unset($codeCoverage);
-=======
-=======
->>>>>>> eventsResources
             try {
                 $codeCoverage = new CodeCoverage(
                     null,
@@ -620,10 +562,6 @@ final class TestRunner extends BaseTestRunner
                 $this->writeMessage('Error', $e->getMessage());
 
                 $codeCoverageReports = 0;
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
             }
         }
 

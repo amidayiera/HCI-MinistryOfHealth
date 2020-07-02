@@ -17,16 +17,8 @@ use phpDocumentor\Reflection\Type;
 
 /**
  * Value Object representing a Float.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Float_ implements Type
 {

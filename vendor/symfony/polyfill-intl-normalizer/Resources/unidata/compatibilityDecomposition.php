@@ -1,14 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return array(
-=======
 return array (
->>>>>>> eventsResources
-=======
-return array (
->>>>>>> eventsResources
   ' ' => ' ',
   '¨' => ' ̈',
   'ª' => 'a',
@@ -1371,14 +1363,7 @@ return array (
   'ꭝ' => 'ꬷ',
   'ꭞ' => 'ɫ',
   'ꭟ' => 'ꭒ',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   'ꭩ' => 'ʍ',
->>>>>>> eventsResources
-=======
-  'ꭩ' => 'ʍ',
->>>>>>> eventsResources
   'ﬀ' => 'ff',
   'ﬁ' => 'fi',
   'ﬂ' => 'fl',
@@ -3697,11 +3682,6 @@ return array (
   '🉈' => '〔敗〕',
   '🉐' => '得',
   '🉑' => '可',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
   '🯰' => '0',
   '🯱' => '1',
   '🯲' => '2',
@@ -3712,8 +3692,4 @@ return array (
   '🯷' => '7',
   '🯸' => '8',
   '🯹' => '9',
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 );

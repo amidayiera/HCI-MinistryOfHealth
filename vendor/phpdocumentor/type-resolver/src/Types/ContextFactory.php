@@ -23,23 +23,10 @@ use ReflectionProperty;
 use Reflector;
 use RuntimeException;
 use UnexpectedValueException;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use function array_merge;
-use function file_exists;
-use function file_get_contents;
-use function get_class;
-=======
-=======
->>>>>>> eventsResources
 use function file_exists;
 use function file_get_contents;
 use function get_class;
 use function in_array;
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 use function is_string;
 use function token_get_all;
 use function trim;
@@ -77,18 +64,9 @@ final class ContextFactory
     public function createFromReflector(Reflector $reflector) : Context
     {
         if ($reflector instanceof ReflectionClass) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             //phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable
             /** @var ReflectionClass<object> $reflector */
 
->>>>>>> eventsResources
-=======
-            //phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable
-            /** @var ReflectionClass<object> $reflector */
-
->>>>>>> eventsResources
             return $this->createFromReflectionClass($reflector);
         }
 
@@ -114,16 +92,6 @@ final class ContextFactory
     private function createFromReflectionParameter(ReflectionParameter $parameter) : Context
     {
         $class = $parameter->getDeclaringClass();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ($class) {
-            return $this->createFromReflectionClass($class);
-        }
-
-        throw new InvalidArgumentException('Unable to get class of ' . $parameter->getName());
-=======
-=======
->>>>>>> eventsResources
         if (!$class) {
             throw new InvalidArgumentException('Unable to get class of ' . $parameter->getName());
         }
@@ -132,60 +100,28 @@ final class ContextFactory
         /** @var ReflectionClass<object> $class */
 
         return $this->createFromReflectionClass($class);
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     private function createFromReflectionMethod(ReflectionMethod $method) : Context
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->createFromReflectionClass($method->getDeclaringClass());
-=======
-=======
->>>>>>> eventsResources
         //phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable
         /** @var ReflectionClass<object> $class */
         $class = $method->getDeclaringClass();
 
         return $this->createFromReflectionClass($class);
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     private function createFromReflectionProperty(ReflectionProperty $property) : Context
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->createFromReflectionClass($property->getDeclaringClass());
-=======
-=======
->>>>>>> eventsResources
         //phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable
         /** @var ReflectionClass<object> $class */
         $class = $property->getDeclaringClass();
 
         return $this->createFromReflectionClass($class);
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     private function createFromReflectionClassConstant(ReflectionClassConstant $constant) : Context
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->createFromReflectionClass($constant->getDeclaringClass());
-    }
-
-=======
-=======
->>>>>>> eventsResources
         //phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable
         /** @var ReflectionClass<object> $class */
         $class = $constant->getDeclaringClass();
@@ -196,10 +132,6 @@ final class ContextFactory
     /**
      * @param ReflectionClass<object> $class
      */
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     private function createFromReflectionClass(ReflectionClass $class) : Context
     {
         $fileName  = $class->getFileName();
@@ -234,17 +166,8 @@ final class ContextFactory
         $tokens           = new ArrayIterator(token_get_all($fileContents));
 
         while ($tokens->valid()) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            switch ($tokens->current()[0]) {
-=======
             $currentToken = $tokens->current();
             switch ($currentToken[0]) {
->>>>>>> eventsResources
-=======
-            $currentToken = $tokens->current();
-            switch ($currentToken[0]) {
->>>>>>> eventsResources
                 case T_NAMESPACE:
                     $currentNamespace = $this->parseNamespace($tokens);
                     break;
@@ -255,21 +178,9 @@ final class ContextFactory
                     $braceLevel      = 0;
                     $firstBraceFound = false;
                     while ($tokens->valid() && ($braceLevel > 0 || !$firstBraceFound)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        if ($tokens->current() === '{'
-                            || $tokens->current()[0] === T_CURLY_OPEN
-                            || $tokens->current()[0] === T_DOLLAR_OPEN_CURLY_BRACES) {
-=======
                         $currentToken = $tokens->current();
                         if ($currentToken === '{'
                             || in_array($currentToken[0], [T_CURLY_OPEN, T_DOLLAR_OPEN_CURLY_BRACES], true)) {
->>>>>>> eventsResources
-=======
-                        $currentToken = $tokens->current();
-                        if ($currentToken === '{'
-                            || in_array($currentToken[0], [T_CURLY_OPEN, T_DOLLAR_OPEN_CURLY_BRACES], true)) {
->>>>>>> eventsResources
                             if (!$firstBraceFound) {
                                 $firstBraceFound = true;
                             }
@@ -277,15 +188,7 @@ final class ContextFactory
                             ++$braceLevel;
                         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        if ($tokens->current() === '}') {
-=======
                         if ($currentToken === '}') {
->>>>>>> eventsResources
-=======
-                        if ($currentToken === '}') {
->>>>>>> eventsResources
                             --$braceLevel;
                         }
 
@@ -295,15 +198,7 @@ final class ContextFactory
                     break;
                 case T_USE:
                     if ($currentNamespace === $namespace) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        $useStatements = array_merge($useStatements, $this->parseUseStatement($tokens));
-=======
                         $useStatements += $this->parseUseStatement($tokens);
->>>>>>> eventsResources
-=======
-                        $useStatements += $this->parseUseStatement($tokens);
->>>>>>> eventsResources
                     }
 
                     break;
@@ -317,16 +212,8 @@ final class ContextFactory
 
     /**
      * Deduce the name from tokens when we are at the T_NAMESPACE token.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
      *
      * @param ArrayIterator<int, string|array{0:int,1:string,2:int}> $tokens
->>>>>>> eventsResources
-=======
-     *
-     * @param ArrayIterator<int, string|array{0:int,1:string,2:int}> $tokens
->>>>>>> eventsResources
      */
     private function parseNamespace(ArrayIterator $tokens) : string
     {
@@ -334,16 +221,7 @@ final class ContextFactory
         $this->skipToNextStringOrNamespaceSeparator($tokens);
 
         $name = '';
-<<<<<<< HEAD
-<<<<<<< HEAD
-        while ($tokens->valid() && ($tokens->current()[0] === T_STRING || $tokens->current()[0] === T_NS_SEPARATOR)
-        ) {
-=======
         while ($tokens->valid() && in_array($tokens->current()[0], [T_STRING, T_NS_SEPARATOR], true)) {
->>>>>>> eventsResources
-=======
-        while ($tokens->valid() && in_array($tokens->current()[0], [T_STRING, T_NS_SEPARATOR], true)) {
->>>>>>> eventsResources
             $name .= $tokens->current()[1];
             $tokens->next();
         }
@@ -354,42 +232,16 @@ final class ContextFactory
     /**
      * Deduce the names of all imports when we are at the T_USE token.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return string[]
-=======
-=======
->>>>>>> eventsResources
      * @param ArrayIterator<int, string|array{0:int,1:string,2:int}> $tokens
      *
      * @return string[]
      *
      * @psalm-return array<string, string>
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      */
     private function parseUseStatement(ArrayIterator $tokens) : array
     {
         $uses = [];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        while (true) {
-            $this->skipToNextStringOrNamespaceSeparator($tokens);
-
-            $uses = array_merge($uses, $this->extractUseStatements($tokens));
-            if ($tokens->current()[0] === self::T_LITERAL_END_OF_USE) {
-                return $uses;
-            }
-
-            if ($tokens->current() === false) {
-                break;
-            }
-=======
-=======
->>>>>>> eventsResources
         while ($tokens->valid()) {
             $this->skipToNextStringOrNamespaceSeparator($tokens);
 
@@ -398,10 +250,6 @@ final class ContextFactory
             if ($currentToken[0] === self::T_LITERAL_END_OF_USE) {
                 return $uses;
             }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         }
 
         return $uses;
@@ -409,15 +257,6 @@ final class ContextFactory
 
     /**
      * Fast-forwards the iterator as longs as we don't encounter a T_STRING or T_NS_SEPARATOR token.
-<<<<<<< HEAD
-<<<<<<< HEAD
-     */
-    private function skipToNextStringOrNamespaceSeparator(ArrayIterator $tokens) : void
-    {
-        while ($tokens->valid() && ($tokens->current()[0] !== T_STRING) && ($tokens->current()[0] !== T_NS_SEPARATOR)) {
-=======
-=======
->>>>>>> eventsResources
      *
      * @param ArrayIterator<int, string|array{0:int,1:string,2:int}> $tokens
      */
@@ -429,10 +268,6 @@ final class ContextFactory
                 break;
             }
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
             $tokens->next();
         }
     }
@@ -441,14 +276,6 @@ final class ContextFactory
      * Deduce the namespace name and alias of an import when we are at the T_USE token or have not reached the end of
      * a USE statement yet. This will return a key/value array of the alias => namespace.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return string[]
-     *
-     * @psalm-suppress TypeDoesNotContainType
-=======
-=======
->>>>>>> eventsResources
      * @param ArrayIterator<int, string|array{0:int,1:string,2:int}> $tokens
      *
      * @return string[]
@@ -456,10 +283,6 @@ final class ContextFactory
      * @psalm-suppress TypeDoesNotContainType
      *
      * @psalm-return array<string, string>
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      */
     private function extractUseStatements(ArrayIterator $tokens) : array
     {
@@ -478,15 +301,7 @@ final class ContextFactory
                     switch ($tokenId) {
                         case T_STRING:
                         case T_NS_SEPARATOR:
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            $currentNs   .= $tokenValue;
-=======
                             $currentNs   .= (string) $tokenValue;
->>>>>>> eventsResources
-=======
-                            $currentNs   .= (string) $tokenValue;
->>>>>>> eventsResources
                             $currentAlias =  $tokenValue;
                             break;
                         case T_CURLY_OPEN:
@@ -524,38 +339,17 @@ final class ContextFactory
                     switch ($tokenId) {
                         case T_STRING:
                         case T_NS_SEPARATOR:
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            $currentNs   .= $tokenValue;
-=======
                             $currentNs   .= (string) $tokenValue;
->>>>>>> eventsResources
-=======
-                            $currentNs   .= (string) $tokenValue;
->>>>>>> eventsResources
                             $currentAlias = $tokenValue;
                             break;
                         case T_AS:
                             $state = 'grouped-alias';
                             break;
                         case self::T_LITERAL_USE_SEPARATOR:
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            $state                                 = 'grouped';
-                            $extractedUseStatements[$currentAlias] = $currentNs;
-                            $currentNs                             = $groupedNs;
-                            $currentAlias                          = '';
-=======
-=======
->>>>>>> eventsResources
                             $state                                          = 'grouped';
                             $extractedUseStatements[(string) $currentAlias] = $currentNs;
                             $currentNs                                      = $groupedNs;
                             $currentAlias                                   = '';
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
                             break;
                         case self::T_LITERAL_END_OF_USE:
                             $state = 'end';
@@ -571,23 +365,10 @@ final class ContextFactory
                             $currentAlias = $tokenValue;
                             break;
                         case self::T_LITERAL_USE_SEPARATOR:
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            $state                                 = 'grouped';
-                            $extractedUseStatements[$currentAlias] = $currentNs;
-                            $currentNs                             = $groupedNs;
-                            $currentAlias                          = '';
-=======
-=======
->>>>>>> eventsResources
                             $state                                          = 'grouped';
                             $extractedUseStatements[(string) $currentAlias] = $currentNs;
                             $currentNs                                      = $groupedNs;
                             $currentAlias                                   = '';
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
                             break;
                         case self::T_LITERAL_END_OF_USE:
                             $state = 'end';
@@ -605,15 +386,7 @@ final class ContextFactory
         }
 
         if ($groupedNs !== $currentNs) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $extractedUseStatements[$currentAlias] = $currentNs;
-=======
             $extractedUseStatements[(string) $currentAlias] = $currentNs;
->>>>>>> eventsResources
-=======
-            $extractedUseStatements[(string) $currentAlias] = $currentNs;
->>>>>>> eventsResources
         }
 
         return $extractedUseStatements;

@@ -10,26 +10,11 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "php": "^7.2",
-        "phpdocumentor/reflection-common": "^2.0"
-    },
-    "require-dev": {
-        "mockery/mockery": "~1",
-        "ext-tokenizer": "^7.2"
-=======
-=======
->>>>>>> eventsResources
         "php": "^7.2 || ^8.0",
         "phpdocumentor/reflection-common": "^2.0"
     },
     "require-dev": {
         "ext-tokenizer": "*"
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     },
     "autoload": {
         "psr-4": {
@@ -38,28 +23,12 @@
     },
     "autoload-dev": {
         "psr-4": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "phpDocumentor\\Reflection\\": "tests/unit"
-=======
             "phpDocumentor\\Reflection\\": ["tests/unit", "tests/benchmark"]
->>>>>>> eventsResources
-=======
-            "phpDocumentor\\Reflection\\": ["tests/unit", "tests/benchmark"]
->>>>>>> eventsResources
         }
     },
     "extra": {
         "branch-alias": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "dev-master": "1.x-dev"
-=======
             "dev-1.x": "1.x-dev"
->>>>>>> eventsResources
-=======
-            "dev-1.x": "1.x-dev"
->>>>>>> eventsResources
         }
     }
 }

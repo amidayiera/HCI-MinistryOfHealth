@@ -1,14 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return array(
-=======
 return array (
->>>>>>> eventsResources
-=======
-return array (
->>>>>>> eventsResources
   'À' => 'À',
   'Á' => 'Á',
   'Â' => 'Â',
@@ -949,12 +941,5 @@ return array (
   '𑒾' => '𑒾',
   '𑖺' => '𑖺',
   '𑖻' => '𑖻',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   '𑤸' => '𑤸',
->>>>>>> eventsResources
-=======
-  '𑤸' => '𑤸',
->>>>>>> eventsResources
 );

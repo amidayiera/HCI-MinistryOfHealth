@@ -14,34 +14,13 @@
 
 namespace League\CommonMark\Reference;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use League\CommonMark\Normalizer\TextNormalizer;
 
->>>>>>> eventsResources
-=======
-use League\CommonMark\Normalizer\TextNormalizer;
-
->>>>>>> eventsResources
 /**
  * A collection of references, indexed by label
  */
 final class ReferenceMap implements ReferenceMapInterface
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * @var ReferenceInterface[]
-     */
-    protected $references = [];
-
-    public function addReference(ReferenceInterface $reference): void
-    {
-        $key = Reference::normalizeReference($reference->getLabel());
-=======
-=======
->>>>>>> eventsResources
     /** @var TextNormalizer */
     private $normalizer;
 
@@ -59,39 +38,19 @@ final class ReferenceMap implements ReferenceMapInterface
     {
         $key = $this->normalizer->normalize($reference->getLabel());
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         $this->references[$key] = $reference;
     }
 
     public function contains(string $label): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $label = Reference::normalizeReference($label);
-=======
         $label = $this->normalizer->normalize($label);
->>>>>>> eventsResources
-=======
-        $label = $this->normalizer->normalize($label);
->>>>>>> eventsResources
 
         return isset($this->references[$label]);
     }
 
     public function getReference(string $label): ?ReferenceInterface
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $label = Reference::normalizeReference($label);
-=======
         $label = $this->normalizer->normalize($label);
->>>>>>> eventsResources
-=======
-        $label = $this->normalizer->normalize($label);
->>>>>>> eventsResources
 
         if (!isset($this->references[$label])) {
             return null;

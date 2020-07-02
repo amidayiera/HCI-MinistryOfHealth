@@ -12,14 +12,6 @@
 namespace League\CommonMark\Extension\TableOfContents;
 
 use League\CommonMark\Block\Element\ListBlock;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-final class TableOfContents extends ListBlock
-{
-=======
-=======
->>>>>>> eventsResources
 use League\CommonMark\Extension\TableOfContents\Node\TableOfContents as NewTableOfContents;
 
 if (!class_exists(NewTableOfContents::class)) {
@@ -35,8 +27,4 @@ if (false) {
     final class TableOfContents extends ListBlock
     {
     }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 }

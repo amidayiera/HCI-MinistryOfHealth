@@ -8,28 +8,13 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Traits\Macroable;
->>>>>>> eventsResources
-=======
-use Illuminate\Support\Traits\Macroable;
->>>>>>> eventsResources
 use IteratorAggregate;
 
 class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     use Macroable;
 
->>>>>>> eventsResources
-=======
-    use Macroable;
-
->>>>>>> eventsResources
     /**
      * The raw array of attributes.
      *
@@ -49,11 +34,6 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Get the first attribute's value.
      *
      * @param  mixed  $default
@@ -65,10 +45,6 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Get a given attribute from the attribute array.
      *
      * @param  string  $key
@@ -119,11 +95,6 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Filter the attributes, returning a bag of attributes that pass the filter.
      *
      * @param  callable  $callback
@@ -159,10 +130,6 @@ class ComponentAttributeBag implements ArrayAccess, Htmlable, IteratorAggregate
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Exclude the given attribute from the attribute array.
      *
      * @param  mixed|array  $keys

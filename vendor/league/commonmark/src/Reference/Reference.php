@@ -14,16 +14,8 @@
 
 namespace League\CommonMark\Reference;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use League\CommonMark\Normalizer\TextNormalizer;
 
->>>>>>> eventsResources
-=======
-use League\CommonMark\Normalizer\TextNormalizer;
-
->>>>>>> eventsResources
 final class Reference implements ReferenceInterface
 {
     /**
@@ -41,31 +33,9 @@ final class Reference implements ReferenceInterface
      */
     protected $title;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * @var array<int, array<int, string>>
-     *
-     * Source: https://github.com/symfony/polyfill-mbstring/blob/master/Mbstring.php
-     */
-    private static $caseFold = [
-        ['µ', 'ſ', "\xCD\x85", 'ς', "\xCF\x90", "\xCF\x91", "\xCF\x95", "\xCF\x96", "\xCF\xB0", "\xCF\xB1", "\xCF\xB5", "\xE1\xBA\x9B", "\xE1\xBE\xBE", "\xC3\x9F", "\xE1\xBA\x9E"],
-        ['μ', 's', 'ι',        'σ', 'β',        'θ',        'φ',        'π',        'κ',        'ρ',        'ε',        "\xE1\xB9\xA1", 'ι',            'ss',       'ss'],
-    ];
-
-    public function __construct(string $label, string $destination, string $title)
-    {
-        $this->label = self::normalizeReference($label);
-=======
     public function __construct(string $label, string $destination, string $title)
     {
         $this->label = $label;
->>>>>>> eventsResources
-=======
-    public function __construct(string $label, string $destination, string $title)
-    {
-        $this->label = $label;
->>>>>>> eventsResources
         $this->destination = $destination;
         $this->title = $title;
     }
@@ -93,26 +63,6 @@ final class Reference implements ReferenceInterface
      * @param string $string
      *
      * @return string
-<<<<<<< HEAD
-<<<<<<< HEAD
-     */
-    public static function normalizeReference(string $string): string
-    {
-        // Collapse internal whitespace to single space and remove
-        // leading/trailing whitespace
-        $string = \preg_replace('/\s+/', ' ', \trim($string));
-
-        if (!\defined('MB_CASE_FOLD')) {
-            // We're not on a version of PHP (7.3+) which has this feature
-            $string = \str_replace(self::$caseFold[0], self::$caseFold[1], $string);
-
-            return \mb_strtoupper($string, 'UTF-8');
-        }
-
-        return \mb_convert_case($string, \MB_CASE_FOLD, 'UTF-8');
-=======
-=======
->>>>>>> eventsResources
      *
      * @deprecated Use TextNormalizer::normalize() instead
      */
@@ -121,9 +71,5 @@ final class Reference implements ReferenceInterface
         @trigger_error(sprintf('%s::normlizeReference() is deprecated; use %s::normalize() instead', self::class, TextNormalizer::class), E_USER_DEPRECATED);
 
         return (new TextNormalizer())->normalize($string);
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 }

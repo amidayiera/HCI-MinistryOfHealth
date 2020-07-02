@@ -85,15 +85,7 @@ class Request
     /**
      * Request body parameters ($_POST).
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @var InputBag
-=======
      * @var InputBag|ParameterBag
->>>>>>> eventsResources
-=======
-     * @var InputBag|ParameterBag
->>>>>>> eventsResources
      */
     public $request;
 
@@ -276,15 +268,7 @@ class Request
      */
     public function initialize(array $query = [], array $request = [], array $attributes = [], array $cookies = [], array $files = [], array $server = [], $content = null)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->request = new InputBag($request);
-=======
         $this->request = new ParameterBag($request);
->>>>>>> eventsResources
-=======
-        $this->request = new ParameterBag($request);
->>>>>>> eventsResources
         $this->query = new InputBag($query);
         $this->attributes = new ParameterBag($attributes);
         $this->cookies = new InputBag($cookies);
@@ -314,19 +298,9 @@ class Request
     {
         $request = self::createRequestFromFactory($_GET, $_POST, [], $_COOKIE, $_FILES, $_SERVER);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (0 === strpos($request->headers->get('CONTENT_TYPE'), 'application/x-www-form-urlencoded')
-=======
         if ($_POST) {
             $request->request = new InputBag($_POST);
         } elseif (0 === strpos($request->headers->get('CONTENT_TYPE'), 'application/x-www-form-urlencoded')
->>>>>>> eventsResources
-=======
-        if ($_POST) {
-            $request->request = new InputBag($_POST);
-        } elseif (0 === strpos($request->headers->get('CONTENT_TYPE'), 'application/x-www-form-urlencoded')
->>>>>>> eventsResources
             && \in_array(strtoupper($request->server->get('REQUEST_METHOD', 'GET')), ['PUT', 'DELETE', 'PATCH'])
         ) {
             parse_str($request->getContent(), $data);
@@ -475,15 +449,7 @@ class Request
             $dup->query = new InputBag($query);
         }
         if (null !== $request) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $dup->request = new InputBag($request);
-=======
             $dup->request = new ParameterBag($request);
->>>>>>> eventsResources
-=======
-            $dup->request = new ParameterBag($request);
->>>>>>> eventsResources
         }
         if (null !== $attributes) {
             $dup->attributes = new ParameterBag($attributes);

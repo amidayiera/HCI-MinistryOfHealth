@@ -14,34 +14,18 @@ namespace League\CommonMark\Extension\TableOfContents;
 use League\CommonMark\ConfigurableEnvironmentInterface;
 use League\CommonMark\Event\DocumentParsedEvent;
 use League\CommonMark\Extension\ExtensionInterface;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use League\CommonMark\Extension\TableOfContents\Node\TableOfContentsPlaceholder;
->>>>>>> eventsResources
-=======
-use League\CommonMark\Extension\TableOfContents\Node\TableOfContentsPlaceholder;
->>>>>>> eventsResources
 
 final class TableOfContentsExtension implements ExtensionInterface
 {
     public function register(ConfigurableEnvironmentInterface $environment): void
     {
         $environment->addEventListener(DocumentParsedEvent::class, [new TableOfContentsBuilder(), 'onDocumentParsed'], -150);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
 
         if ($environment->getConfig('table_of_contents/position') === TableOfContentsBuilder::POSITION_PLACEHOLDER) {
             $environment->addBlockParser(new TableOfContentsPlaceholderParser(), 200);
             // If a placeholder cannot be replaced with a TOC element this renderer will ensure the parser won't error out
             $environment->addBlockRenderer(TableOfContentsPlaceholder::class, new TableOfContentsPlaceholderRenderer());
         }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 }

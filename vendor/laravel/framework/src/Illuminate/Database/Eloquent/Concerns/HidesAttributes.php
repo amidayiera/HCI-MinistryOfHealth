@@ -2,16 +2,8 @@
 
 namespace Illuminate\Database\Eloquent\Concerns;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Closure;
 
->>>>>>> eventsResources
-=======
-use Closure;
-
->>>>>>> eventsResources
 trait HidesAttributes
 {
     /**
@@ -94,11 +86,6 @@ trait HidesAttributes
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Make the given, typically hidden, attributes visible if the given truth test passes.
      *
      * @param  bool|Closure  $condition
@@ -113,10 +100,6 @@ trait HidesAttributes
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Make the given, typically visible, attributes hidden.
      *
      * @param  array|string|null  $attributes
@@ -130,11 +113,6 @@ trait HidesAttributes
 
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
 
     /**
      * Make the given, typically visible, attributes hidden if the given truth test passes.
@@ -149,8 +127,4 @@ trait HidesAttributes
 
         return value($condition) ? $this->makeHidden($attributes) : $this;
     }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 }

@@ -37,17 +37,6 @@ class ConfigurationUrlParser
             return $config;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $parsedUrl = $this->parseUrl($url);
-
-        return array_merge(
-            $config,
-            $this->getPrimaryOptions($parsedUrl),
-            $this->getQueryOptions($parsedUrl)
-=======
-=======
->>>>>>> eventsResources
         $rawComponents = $this->parseUrl($url);
 
         $decodedComponents = $this->parseStringsToNativeTypes(
@@ -58,10 +47,6 @@ class ConfigurationUrlParser
             $config,
             $this->getPrimaryOptions($decodedComponents),
             $this->getQueryOptions($rawComponents)
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         );
     }
 
@@ -154,17 +139,7 @@ class ConfigurationUrlParser
             throw new InvalidArgumentException('The database configuration URL is malformed.');
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->parseStringsToNativeTypes(
-            array_map('rawurldecode', $parsedUrl)
-        );
-=======
         return $parsedUrl;
->>>>>>> eventsResources
-=======
-        return $parsedUrl;
->>>>>>> eventsResources
     }
 
     /**

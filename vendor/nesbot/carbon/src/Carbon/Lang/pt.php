@@ -45,21 +45,12 @@ return [
     'second' => ':count segundo|:count segundos',
     'a_second' => 'alguns segundos|:count segundos',
     's' => ':counts',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
     'millisecond' => ':count milissegundo|:count milissegundos',
     'a_millisecond' => 'um milissegundo|:count milissegundos',
     'ms' => ':countms',
     'microsecond' => ':count microssegundo|:count microssegundos',
     'a_microsecond' => 'um microssegundo|:count microssegundos',
     'µs' => ':countµs',
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     'ago' => 'há :time',
     'from_now' => 'em :time',
     'after' => ':time depois',

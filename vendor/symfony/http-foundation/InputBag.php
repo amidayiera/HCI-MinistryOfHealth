@@ -36,51 +36,18 @@ final class InputBag extends ParameterBag
         $value = parent::get($key, $this);
 
         if (null !== $value && $this !== $value && !is_scalar($value) && !(\is_object($value) && method_exists($value, '__toString'))) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            trigger_deprecation('symfony/http-foundation', '5.1', 'Retrieving a non-string value from "%s()" is deprecated, and will throw a "%s" exception in Symfony 6.0, use "%s::all()" instead.', __METHOD__, BadRequestException::class, __CLASS__);
-=======
             trigger_deprecation('symfony/http-foundation', '5.1', 'Retrieving a non-string value from "%s()" is deprecated, and will throw a "%s" exception in Symfony 6.0, use "%s::all($key)" instead.', __METHOD__, BadRequestException::class, __CLASS__);
->>>>>>> eventsResources
-=======
-            trigger_deprecation('symfony/http-foundation', '5.1', 'Retrieving a non-string value from "%s()" is deprecated, and will throw a "%s" exception in Symfony 6.0, use "%s::all($key)" instead.', __METHOD__, BadRequestException::class, __CLASS__);
->>>>>>> eventsResources
         }
 
         return $this === $value ? $default : $value;
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Returns the inputs.
-     *
-     * @param string|null $key The name of the input to return or null to get them all
-     */
-    public function all(string $key = null): array
-    {
-        if (null === $key) {
-            return $this->parameters;
-        }
-
-        $value = $this->parameters[$key] ?? [];
-        if (!\is_array($value)) {
-            throw new BadRequestException(sprintf('Unexpected value for "%s" input, expecting "array", got "%s".', $key, get_debug_type($value)));
-        }
-
-        return $value;
-=======
-=======
->>>>>>> eventsResources
      * {@inheritdoc}
      */
     public function all(string $key = null): array
     {
         return parent::all($key);
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     /**

@@ -17,16 +17,8 @@ use phpDocumentor\Reflection\Type;
 
 /**
  * Value Object representing an unknown, or mixed, type.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Mixed_ implements Type
 {

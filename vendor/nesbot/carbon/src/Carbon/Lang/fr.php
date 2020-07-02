@@ -44,24 +44,12 @@ return [
     'second' => ':count seconde|:count secondes',
     'a_second' => 'quelques secondes|:count secondes',
     's' => ':count s',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'millisecond' => ':count milliseconde:count millisecondes',
-    'a_millisecond' => 'une milliseconde|:count millisecondes',
-    'ms' => ':countms',
-=======
-=======
->>>>>>> eventsResources
     'millisecond' => ':count milliseconde|:count millisecondes',
     'a_millisecond' => 'une milliseconde|:count millisecondes',
     'ms' => ':countms',
     'microsecond' => ':count microseconde|:count microsecondes',
     'a_microsecond' => 'une microseconde|:count microsecondes',
     'µs' => ':countµs',
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     'ago' => 'il y a :time',
     'from_now' => 'dans :time',
     'after' => ':time après',

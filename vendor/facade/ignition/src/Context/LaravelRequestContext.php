@@ -19,15 +19,7 @@ class LaravelRequestContext extends RequestContext
     {
         try {
             $user = $this->request->user();
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> eventsResources
-=======
-
->>>>>>> eventsResources
             if (! $user) {
                 return [];
             }

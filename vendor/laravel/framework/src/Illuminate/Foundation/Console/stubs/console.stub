@@ -33,15 +33,7 @@ class {{ class }} extends Command
     /**
      * Execute the console command.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return mixed
-=======
      * @return int
->>>>>>> eventsResources
-=======
-     * @return int
->>>>>>> eventsResources
      */
     public function handle()
     {

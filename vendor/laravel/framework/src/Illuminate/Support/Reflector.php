@@ -3,14 +3,7 @@
 namespace Illuminate\Support;
 
 use ReflectionClass;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use ReflectionNamedType;
->>>>>>> eventsResources
-=======
-use ReflectionNamedType;
->>>>>>> eventsResources
 
 class Reflector
 {
@@ -24,12 +17,6 @@ class Reflector
     {
         $type = $parameter->getType();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return ($type && ! $type->isBuiltin()) ? $type->getName() : null;
-=======
-=======
->>>>>>> eventsResources
         if (! $type instanceof ReflectionNamedType || $type->isBuiltin()) {
             return;
         }
@@ -41,10 +28,6 @@ class Reflector
         }
 
         return $name;
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     /**

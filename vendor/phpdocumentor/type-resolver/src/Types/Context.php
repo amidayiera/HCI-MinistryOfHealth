@@ -30,36 +30,18 @@ use function trim;
  *
  * @see ContextFactory::createFromClassReflector()
  * @see ContextFactory::createForNamespace()
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Context
 {
     /** @var string The current namespace. */
     private $namespace;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /** @var string[] List of namespace aliases => Fully Qualified Namespace. */
-=======
-=======
->>>>>>> eventsResources
     /**
      * @var string[] List of namespace aliases => Fully Qualified Namespace.
      * @psalm-var array<string, string>
      */
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     private $namespaceAliases;
 
     /**
@@ -68,16 +50,8 @@ final class Context
      *
      * @param string   $namespace        The namespace where this DocBlock resides in.
      * @param string[] $namespaceAliases List of namespace aliases => Fully Qualified Namespace.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
      *
      * @psalm-param array<string, string> $namespaceAliases
->>>>>>> eventsResources
-=======
-     *
-     * @psalm-param array<string, string> $namespaceAliases
->>>>>>> eventsResources
      */
     public function __construct(string $namespace, array $namespaceAliases = [])
     {
@@ -113,16 +87,8 @@ final class Context
      * the alias for the imported Namespace.
      *
      * @return string[]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
      *
      * @psalm-return array<string, string>
->>>>>>> eventsResources
-=======
-     *
-     * @psalm-return array<string, string>
->>>>>>> eventsResources
      */
     public function getNamespaceAliases() : array
     {

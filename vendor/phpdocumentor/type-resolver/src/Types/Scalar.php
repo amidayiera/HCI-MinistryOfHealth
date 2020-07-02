@@ -17,16 +17,8 @@ use phpDocumentor\Reflection\Type;
 
 /**
  * Value Object representing the 'scalar' pseudo-type, which is either a string, integer, float or boolean.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Scalar implements Type
 {

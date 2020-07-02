@@ -3,14 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  * @method static \Illuminate\Cache\TaggedCache tags(array|mixed $names)
->>>>>>> eventsResources
-=======
- * @method static \Illuminate\Cache\TaggedCache tags(array|mixed $names)
->>>>>>> eventsResources
  * @method static \Illuminate\Contracts\Cache\Lock lock(string $name, int $seconds = 0, mixed $owner = null)
  * @method static \Illuminate\Contracts\Cache\Lock restoreLock(string $name, string $owner)
  * @method static \Illuminate\Contracts\Cache\Repository  store(string|null $name = null)

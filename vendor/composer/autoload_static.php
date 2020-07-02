@@ -4,11 +4,7 @@
 
 namespace Composer\Autoload;
 
-<<<<<<< HEAD
-class ComposerStaticInit89de3535346d074ce1dc61a2f9e9d564
-=======
-class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
->>>>>>> eventsResources
+class ComposerStaticInit7f6d57596a1317f350bcee7a7b53e40d
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -17,15 +13,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-<<<<<<< HEAD
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-=======
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
@@ -40,27 +27,14 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
->>>>>>> eventsResources
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
-<<<<<<< HEAD
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
-        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
-        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-=======
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '17d016dc52a631c1e74d2eb8fdd57342' => __DIR__ . '/..' . '/laravel/helpers/src/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
->>>>>>> eventsResources
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -147,16 +121,15 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         array (
             'League\\Flysystem\\' => 17,
             'League\\CommonMark\\' => 18,
+            'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
         ),
-<<<<<<< HEAD
-=======
         'I' => 
         array (
             'Intervention\\Image\\' => 19,
+            'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\' => 11,
         ),
->>>>>>> eventsResources
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -396,21 +369,26 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
+        'Laravel\\Ui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/src',
+        ),
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
-<<<<<<< HEAD
-=======
         'Intervention\\Image\\' => 
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+        ),
+        'Illuminate\\Foundation\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/ui/auth-backend',
         ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
->>>>>>> eventsResources
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -449,11 +427,7 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         ),
         'Egulias\\EmailValidator\\' => 
         array (
-<<<<<<< HEAD
-            0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
-=======
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
->>>>>>> eventsResources
         ),
         'Dotenv\\' => 
         array (
@@ -527,7 +501,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'App\\Cevents' => __DIR__ . '/../..' . '/app/Cevents.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-<<<<<<< HEAD
         'App\\Feedback' => __DIR__ . '/../..' . '/app/Feedback.php',
         'App\\Http\\Controllers\\CeventsController' => __DIR__ . '/../..' . '/app/Http/Controllers/CeventsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -537,12 +510,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'App\\Http\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostsController.php',
         'App\\Http\\Controllers\\SendEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/SendEmailController.php',
         'App\\Http\\Controllers\\covidTrackerController' => __DIR__ . '/../..' . '/app/Http/Controllers/covidTrackerController.php',
-=======
-        'App\\Http\\Controllers\\CeventsController' => __DIR__ . '/../..' . '/app/Http/Controllers/CeventsController.php',
-        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/PagesController.php',
-        'App\\Http\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostsController.php',
->>>>>>> eventsResources
         'App\\Http\\Controllers\\vacanciesController' => __DIR__ . '/../..' . '/app/Http/Controllers/vacanciesController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -550,7 +517,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
-<<<<<<< HEAD
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
@@ -558,11 +524,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'App\\Http\\Resources\\TaskResource' => __DIR__ . '/../..' . '/app/Http/Resources/TaskResource.php',
         'App\\Mail\\SendMail' => __DIR__ . '/../..' . '/app/Mail/SendMail.php',
         'App\\News' => __DIR__ . '/../..' . '/app/News.php',
-=======
-        'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
-        'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Resources\\TaskResource' => __DIR__ . '/../..' . '/app/Http/Resources/TaskResource.php',
->>>>>>> eventsResources
         'App\\Post' => __DIR__ . '/../..' . '/app/Post.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -661,10 +622,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
-<<<<<<< HEAD
-        'Carbon\\of' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
-=======
->>>>>>> eventsResources
         'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
         'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
         'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
@@ -785,71 +742,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Dotenv\\Store\\StoreBuilder' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Store/StoreBuilder.php',
         'Dotenv\\Store\\StoreInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Store/StoreInterface.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
-<<<<<<< HEAD
-        'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailLexer.php',
-        'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailParser.php',
-        'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailValidator.php',
-        'Egulias\\EmailValidator\\Exception\\AtextAfterCFWS' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/AtextAfterCFWS.php',
-        'Egulias\\EmailValidator\\Exception\\CRLFAtTheEnd' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/CRLFAtTheEnd.php',
-        'Egulias\\EmailValidator\\Exception\\CRLFX2' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/CRLFX2.php',
-        'Egulias\\EmailValidator\\Exception\\CRNoLF' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/CRNoLF.php',
-        'Egulias\\EmailValidator\\Exception\\CharNotAllowed' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/CharNotAllowed.php',
-        'Egulias\\EmailValidator\\Exception\\CommaInDomain' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/CommaInDomain.php',
-        'Egulias\\EmailValidator\\Exception\\ConsecutiveAt' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ConsecutiveAt.php',
-        'Egulias\\EmailValidator\\Exception\\ConsecutiveDot' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ConsecutiveDot.php',
-        'Egulias\\EmailValidator\\Exception\\DomainHyphened' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DomainHyphened.php',
-        'Egulias\\EmailValidator\\Exception\\DotAtEnd' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DotAtEnd.php',
-        'Egulias\\EmailValidator\\Exception\\DotAtStart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DotAtStart.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingAT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingAT.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingATEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingATEXT.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingCTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingCTEXT.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingDTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingDTEXT.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingDomainLiteralClose' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingDomainLiteralClose.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectingQPair' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingQPair.php',
-        'Egulias\\EmailValidator\\Exception\\InvalidEmail' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/InvalidEmail.php',
-        'Egulias\\EmailValidator\\Exception\\NoDNSRecord' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/NoDNSRecord.php',
-        'Egulias\\EmailValidator\\Exception\\NoDomainPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/NoDomainPart.php',
-        'Egulias\\EmailValidator\\Exception\\NoLocalPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/NoLocalPart.php',
-        'Egulias\\EmailValidator\\Exception\\UnclosedComment' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/UnclosedComment.php',
-        'Egulias\\EmailValidator\\Exception\\UnclosedQuotedString' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/UnclosedQuotedString.php',
-        'Egulias\\EmailValidator\\Exception\\UnopenedComment' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/UnopenedComment.php',
-        'Egulias\\EmailValidator\\Parser\\DomainPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Parser/DomainPart.php',
-        'Egulias\\EmailValidator\\Parser\\LocalPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Parser/LocalPart.php',
-        'Egulias\\EmailValidator\\Parser\\Parser' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Parser/Parser.php',
-        'Egulias\\EmailValidator\\Validation\\DNSCheckValidation' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/DNSCheckValidation.php',
-        'Egulias\\EmailValidator\\Validation\\EmailValidation' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/EmailValidation.php',
-        'Egulias\\EmailValidator\\Validation\\Error\\RFCWarnings' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/Error/RFCWarnings.php',
-        'Egulias\\EmailValidator\\Validation\\Error\\SpoofEmail' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/Error/SpoofEmail.php',
-        'Egulias\\EmailValidator\\Validation\\Exception\\EmptyValidationList' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/Exception/EmptyValidationList.php',
-        'Egulias\\EmailValidator\\Validation\\MultipleErrors' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/MultipleErrors.php',
-        'Egulias\\EmailValidator\\Validation\\MultipleValidationWithAnd' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/MultipleValidationWithAnd.php',
-        'Egulias\\EmailValidator\\Validation\\NoRFCWarningsValidation' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/NoRFCWarningsValidation.php',
-        'Egulias\\EmailValidator\\Validation\\RFCValidation' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/RFCValidation.php',
-        'Egulias\\EmailValidator\\Validation\\SpoofCheckValidation' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Validation/SpoofCheckValidation.php',
-        'Egulias\\EmailValidator\\Warning\\AddressLiteral' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/AddressLiteral.php',
-        'Egulias\\EmailValidator\\Warning\\CFWSNearAt' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/CFWSNearAt.php',
-        'Egulias\\EmailValidator\\Warning\\CFWSWithFWS' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/CFWSWithFWS.php',
-        'Egulias\\EmailValidator\\Warning\\Comment' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Comment.php',
-        'Egulias\\EmailValidator\\Warning\\DeprecatedComment' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/DeprecatedComment.php',
-        'Egulias\\EmailValidator\\Warning\\DomainLiteral' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/DomainLiteral.php',
-        'Egulias\\EmailValidator\\Warning\\DomainTooLong' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/DomainTooLong.php',
-        'Egulias\\EmailValidator\\Warning\\EmailTooLong' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/EmailTooLong.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6BadChar' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6BadChar.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6ColonEnd' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6ColonEnd.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6ColonStart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6ColonStart.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6Deprecated' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6Deprecated.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6DoubleColon' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6DoubleColon.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6GroupCount' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6GroupCount.php',
-        'Egulias\\EmailValidator\\Warning\\IPV6MaxGroups' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/IPV6MaxGroups.php',
-        'Egulias\\EmailValidator\\Warning\\LabelTooLong' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/LabelTooLong.php',
-        'Egulias\\EmailValidator\\Warning\\LocalTooLong' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/LocalTooLong.php',
-        'Egulias\\EmailValidator\\Warning\\NoDNSMXRecord' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/NoDNSMXRecord.php',
-        'Egulias\\EmailValidator\\Warning\\ObsoleteDTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/ObsoleteDTEXT.php',
-        'Egulias\\EmailValidator\\Warning\\QuotedPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedPart.php',
-        'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/QuotedString.php',
-        'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/TLD.php',
-        'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
-=======
         'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailLexer.php',
         'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailParser.php',
         'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/src/EmailValidator.php',
@@ -913,7 +805,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
->>>>>>> eventsResources
         'Facade\\FlareClient\\Api' => __DIR__ . '/..' . '/facade/flare-client-php/src/Api.php',
         'Facade\\FlareClient\\Concerns\\HasContext' => __DIR__ . '/..' . '/facade/flare-client-php/src/Concerns/HasContext.php',
         'Facade\\FlareClient\\Concerns\\UsesTime' => __DIR__ . '/..' . '/facade/flare-client-php/src/Concerns/UsesTime.php',
@@ -1558,11 +1449,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'GuzzleHttp\\TransferStats' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransferStats.php',
         'GuzzleHttp\\UriTemplate' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/UriTemplate.php',
         'GuzzleHttp\\Utils' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Utils.php',
-<<<<<<< HEAD
-        'GuzzleHttp\\and' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Utils.php',
-        'GuzzleHttp\\is' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Utils.php',
-=======
->>>>>>> eventsResources
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1642,8 +1528,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Highlight\\RegExMatch' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/RegExMatch.php',
         'Highlight\\RegExUtils' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/RegExUtils.php',
         'Highlight\\Terminators' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/Terminators.php',
-<<<<<<< HEAD
-=======
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
         'Illuminate\\Auth\\Access\\HandlesAuthorization' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',
@@ -2025,7 +1909,15 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Illuminate\\Foundation\\Application' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Application.php',
         'Illuminate\\Foundation\\Auth\\Access\\Authorizable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php',
         'Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php',
+        'Illuminate\\Foundation\\Auth\\AuthenticatesUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/AuthenticatesUsers.php',
+        'Illuminate\\Foundation\\Auth\\ConfirmsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ConfirmsPasswords.php',
+        'Illuminate\\Foundation\\Auth\\RedirectsUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RedirectsUsers.php',
+        'Illuminate\\Foundation\\Auth\\RegistersUsers' => __DIR__ . '/..' . '/laravel/ui/auth-backend/RegistersUsers.php',
+        'Illuminate\\Foundation\\Auth\\ResetsPasswords' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ResetsPasswords.php',
+        'Illuminate\\Foundation\\Auth\\SendsPasswordResetEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/SendsPasswordResetEmails.php',
+        'Illuminate\\Foundation\\Auth\\ThrottlesLogins' => __DIR__ . '/..' . '/laravel/ui/auth-backend/ThrottlesLogins.php',
         'Illuminate\\Foundation\\Auth\\User' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Auth/User.php',
+        'Illuminate\\Foundation\\Auth\\VerifiesEmails' => __DIR__ . '/..' . '/laravel/ui/auth-backend/VerifiesEmails.php',
         'Illuminate\\Foundation\\Bootstrap\\BootProviders' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php',
         'Illuminate\\Foundation\\Bootstrap\\HandleExceptions' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php',
         'Illuminate\\Foundation\\Bootstrap\\LoadConfiguration' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php',
@@ -2637,12 +2529,20 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Intervention\\Image\\Point' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Point.php',
         'Intervention\\Image\\Response' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Response.php',
         'Intervention\\Image\\Size' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Size.php',
->>>>>>> eventsResources
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Laravel\\Ui\\AuthCommand' => __DIR__ . '/..' . '/laravel/ui/src/AuthCommand.php',
+        'Laravel\\Ui\\AuthRouteMethods' => __DIR__ . '/..' . '/laravel/ui/src/AuthRouteMethods.php',
+        'Laravel\\Ui\\ControllersCommand' => __DIR__ . '/..' . '/laravel/ui/src/ControllersCommand.php',
+        'Laravel\\Ui\\Presets\\Bootstrap' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Bootstrap.php',
+        'Laravel\\Ui\\Presets\\Preset' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Preset.php',
+        'Laravel\\Ui\\Presets\\React' => __DIR__ . '/..' . '/laravel/ui/src/Presets/React.php',
+        'Laravel\\Ui\\Presets\\Vue' => __DIR__ . '/..' . '/laravel/ui/src/Presets/Vue.php',
+        'Laravel\\Ui\\UiCommand' => __DIR__ . '/..' . '/laravel/ui/src/UiCommand.php',
+        'Laravel\\Ui\\UiServiceProvider' => __DIR__ . '/..' . '/laravel/ui/src/UiServiceProvider.php',
         'League\\CommonMark\\Block\\Element\\AbstractBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractBlock.php',
         'League\\CommonMark\\Block\\Element\\AbstractStringContainerBlock' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/AbstractStringContainerBlock.php',
         'League\\CommonMark\\Block\\Element\\BlockQuote' => __DIR__ . '/..' . '/league/commonmark/src/Block/Element/BlockQuote.php',
@@ -2776,10 +2676,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsGeneratorInterface' => __DIR__ . '/..' . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsGeneratorInterface.php',
         'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsPlaceholderParser' => __DIR__ . '/..' . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php',
         'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsPlaceholderRenderer' => __DIR__ . '/..' . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php',
-<<<<<<< HEAD
-        'League\\CommonMark\\Extension\\TableOfContents\\has' => __DIR__ . '/..' . '/league/commonmark/src/Extension/TableOfContents/TableOfContents.php',
-=======
->>>>>>> eventsResources
         'League\\CommonMark\\Extension\\Table\\Table' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Table/Table.php',
         'League\\CommonMark\\Extension\\Table\\TableCell' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Table/TableCell.php',
         'League\\CommonMark\\Extension\\Table\\TableCellRenderer' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Table/TableCellRenderer.php',
@@ -3131,10 +3027,7 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\SolutionsRepositories\\NullSolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
-<<<<<<< HEAD
-=======
         'Opis\\Closure\\Analyzer' => __DIR__ . '/..' . '/opis/closure/src/Analyzer.php',
->>>>>>> eventsResources
         'Opis\\Closure\\ClosureContext' => __DIR__ . '/..' . '/opis/closure/src/ClosureContext.php',
         'Opis\\Closure\\ClosureScope' => __DIR__ . '/..' . '/opis/closure/src/ClosureScope.php',
         'Opis\\Closure\\ClosureStream' => __DIR__ . '/..' . '/opis/closure/src/ClosureStream.php',
@@ -4546,10 +4439,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Symfony\\Component\\HttpFoundation\\InputBag' => __DIR__ . '/..' . '/symfony/http-foundation/InputBag.php',
         'Symfony\\Component\\HttpFoundation\\IpUtils' => __DIR__ . '/..' . '/symfony/http-foundation/IpUtils.php',
         'Symfony\\Component\\HttpFoundation\\JsonResponse' => __DIR__ . '/..' . '/symfony/http-foundation/JsonResponse.php',
-<<<<<<< HEAD
-        'Symfony\\Component\\HttpFoundation\\Locale' => __DIR__ . '/..' . '/symfony/http-foundation/Request.php',
-=======
->>>>>>> eventsResources
         'Symfony\\Component\\HttpFoundation\\ParameterBag' => __DIR__ . '/..' . '/symfony/http-foundation/ParameterBag.php',
         'Symfony\\Component\\HttpFoundation\\RedirectResponse' => __DIR__ . '/..' . '/symfony/http-foundation/RedirectResponse.php',
         'Symfony\\Component\\HttpFoundation\\Request' => __DIR__ . '/..' . '/symfony/http-foundation/Request.php',
@@ -4739,11 +4628,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'Symfony\\Component\\HttpKernel\\RebootableInterface' => __DIR__ . '/..' . '/symfony/http-kernel/RebootableInterface.php',
         'Symfony\\Component\\HttpKernel\\TerminableInterface' => __DIR__ . '/..' . '/symfony/http-kernel/TerminableInterface.php',
         'Symfony\\Component\\HttpKernel\\UriSigner' => __DIR__ . '/..' . '/symfony/http-kernel/UriSigner.php',
-<<<<<<< HEAD
-        'Symfony\\Component\\HttpKernel\\names' => __DIR__ . '/..' . '/symfony/http-kernel/Kernel.php',
-        'Symfony\\Component\\HttpKernel\\null' => __DIR__ . '/..' . '/symfony/http-kernel/Kernel.php',
-=======
->>>>>>> eventsResources
         'Symfony\\Component\\Mime\\Address' => __DIR__ . '/..' . '/symfony/mime/Address.php',
         'Symfony\\Component\\Mime\\BodyRendererInterface' => __DIR__ . '/..' . '/symfony/mime/BodyRendererInterface.php',
         'Symfony\\Component\\Mime\\CharacterStream' => __DIR__ . '/..' . '/symfony/mime/CharacterStream.php',
@@ -5128,10 +5012,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'phpDocumentor\\Reflection\\Fqsen' => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src/Fqsen.php',
         'phpDocumentor\\Reflection\\FqsenResolver' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/FqsenResolver.php',
         'phpDocumentor\\Reflection\\Location' => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src/Location.php',
-<<<<<<< HEAD
-        'phpDocumentor\\Reflection\\Name' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-=======
->>>>>>> eventsResources
         'phpDocumentor\\Reflection\\Project' => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src/Project.php',
         'phpDocumentor\\Reflection\\ProjectFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src/ProjectFactory.php',
         'phpDocumentor\\Reflection\\Type' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Type.php',
@@ -5157,10 +5037,6 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'phpDocumentor\\Reflection\\Types\\Nullable' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Nullable.php',
         'phpDocumentor\\Reflection\\Types\\Object_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Object_.php',
         'phpDocumentor\\Reflection\\Types\\Parent_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Parent_.php',
-<<<<<<< HEAD
-        'phpDocumentor\\Reflection\\Types\\Reflection' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
-=======
->>>>>>> eventsResources
         'phpDocumentor\\Reflection\\Types\\Resource_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Resource_.php',
         'phpDocumentor\\Reflection\\Types\\Scalar' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Scalar.php',
         'phpDocumentor\\Reflection\\Types\\Self_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Self_.php',
@@ -5169,31 +5045,16 @@ class ComposerStaticInit165be6f4171751404e29cb72ba58de9f
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\True_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/True_.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
-<<<<<<< HEAD
-        'phpDocumentor\\Reflection\\Types\\to' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
-        'phpDocumentor\\Reflection\\null' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-        'phpDocumentor\\Reflection\\nullThe' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-        'phpDocumentor\\Reflection\\nullnull' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-        'phpDocumentor\\Reflection\\stringnull' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-=======
->>>>>>> eventsResources
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-<<<<<<< HEAD
-            $loader->prefixLengthsPsr4 = ComposerStaticInit89de3535346d074ce1dc61a2f9e9d564::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit89de3535346d074ce1dc61a2f9e9d564::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit89de3535346d074ce1dc61a2f9e9d564::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit89de3535346d074ce1dc61a2f9e9d564::$classMap;
-=======
-            $loader->prefixLengthsPsr4 = ComposerStaticInit165be6f4171751404e29cb72ba58de9f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit165be6f4171751404e29cb72ba58de9f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit165be6f4171751404e29cb72ba58de9f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit165be6f4171751404e29cb72ba58de9f::$classMap;
->>>>>>> eventsResources
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7f6d57596a1317f350bcee7a7b53e40d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7f6d57596a1317f350bcee7a7b53e40d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7f6d57596a1317f350bcee7a7b53e40d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7f6d57596a1317f350bcee7a7b53e40d::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -47,18 +47,9 @@ return [
     'millisecond' => ':count millisecondo|:count millisecondi',
     'a_millisecond' => 'un millisecondo|:count millisecondi',
     'ms' => ':countms',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     'microsecond' => ':count microsecondo|:count microsecondi',
     'a_microsecond' => 'un microsecondo|:count microsecondi',
     'µs' => ':countµs',
->>>>>>> eventsResources
-=======
-    'microsecond' => ':count microsecondo|:count microsecondi',
-    'a_microsecond' => 'un microsecondo|:count microsecondi',
-    'µs' => ':countµs',
->>>>>>> eventsResources
     'ago' => ':time fa',
     'from_now' => function ($time) {
         return (preg_match('/^[0-9].+$/', $time) ? 'tra' : 'in')." $time";

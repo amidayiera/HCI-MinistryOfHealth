@@ -7,20 +7,8 @@
     phpVersion="7.3"
 >
     <projectFiles>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <directory name="tests/static-analysis" />
-        <ignoreFiles>
-            <directory name="vendor" />
-        </ignoreFiles>
-=======
         <directory name="bin" />
         <directory name="tests/static-analysis" />
->>>>>>> eventsResources
-=======
-        <directory name="bin" />
-        <directory name="tests/static-analysis" />
->>>>>>> eventsResources
     </projectFiles>
 
 </psalm>

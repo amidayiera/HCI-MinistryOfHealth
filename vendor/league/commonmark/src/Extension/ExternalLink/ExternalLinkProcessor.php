@@ -17,20 +17,11 @@ use League\CommonMark\Inline\Element\Link;
 
 final class ExternalLinkProcessor
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
     public const APPLY_NONE = '';
     public const APPLY_ALL = 'all';
     public const APPLY_EXTERNAL = 'external';
     public const APPLY_INTERNAL = 'internal';
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     /** @var EnvironmentInterface */
     private $environment;
 
@@ -64,14 +55,7 @@ final class ExternalLinkProcessor
 
                 if (self::hostMatches($host, $internalHosts)) {
                     $link->data['external'] = false;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     $this->applyRelAttribute($link, false);
->>>>>>> eventsResources
-=======
-                    $this->applyRelAttribute($link, false);
->>>>>>> eventsResources
                     continue;
                 }
 
@@ -85,15 +69,7 @@ final class ExternalLinkProcessor
     {
         $link->data['external'] = true;
         $link->data['attributes'] = $link->getData('attributes', []);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $link->data['attributes']['rel'] = 'noopener noreferrer';
-=======
         $this->applyRelAttribute($link, true);
->>>>>>> eventsResources
-=======
-        $this->applyRelAttribute($link, true);
->>>>>>> eventsResources
 
         if ($openInNewWindow) {
             $link->data['attributes']['target'] = '_blank';
@@ -104,11 +80,6 @@ final class ExternalLinkProcessor
         }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
     private function applyRelAttribute(Link $link, bool $isExternal): void
     {
         $rel = [];
@@ -135,10 +106,6 @@ final class ExternalLinkProcessor
         $link->data['attributes']['rel'] = \implode(' ', $rel);
     }
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     /**
      * @param string $host
      * @param mixed  $compareTo

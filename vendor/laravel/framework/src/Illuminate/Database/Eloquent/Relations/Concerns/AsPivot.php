@@ -121,16 +121,8 @@ trait AsPivot
         $this->touchOwners();
 
         return tap($this->getDeleteQuery()->delete(), function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             $this->exists = false;
 
->>>>>>> eventsResources
-=======
-            $this->exists = false;
-
->>>>>>> eventsResources
             $this->fireModelEvent('deleted', false);
         });
     }

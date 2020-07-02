@@ -18,16 +18,8 @@ It is written in PHP (PHP 7+) and can work without "mbstring", "iconv" or any ot
 The benefit of Portable ASCII is that it is easy to use, easy to bundle.
 
 The project based on ...
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 + Sean M. Burke's work (https://metacpan.org/pod/Text::Unidecode)
 + Tomaz Solc's work (https://pypi.org/project/Unidecode/)
->>>>>>> eventsResources
-=======
-+ Sean M. Burke's work (https://metacpan.org/pod/Text::Unidecode)
-+ Tomaz Solc's work (https://pypi.org/project/Unidecode/)
->>>>>>> eventsResources
 + Portable UTF-8 work (https://github.com/voku/portable-utf8) 
 + Daniel St. Jules's work (https://github.com/danielstjules/Stringy) 
 + Johnny Broadway's work (https://github.com/jbroadway/urlify)
@@ -124,15 +116,7 @@ var_dump($array['ru']['б']); // 'b'
 - `bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `array``
-=======
 - `array`
->>>>>>> eventsResources
-=======
-- `array`
->>>>>>> eventsResources
 
 --------
 
@@ -149,15 +133,7 @@ var_dump($array['b']); // ['β', 'б', 'ဗ', 'ბ', 'ب']
 - `bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `array <p>An array of replacements.</p>``
-=======
 - `array <p>An array of replacements.</p>`
->>>>>>> eventsResources
-=======
-- `array <p>An array of replacements.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -178,25 +154,11 @@ echo $array['orig'][$tmpKey]; // 'ё'
 - `string $language [optional] <p>Language of the source string e.g.: en, de_at, or de-ch.
 (default is 'en') | ASCII::*_LANGUAGE_CODE</p>`
 - `bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>`
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `bool $asOrigReplaceArray [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
-array</p>`
-
-**Return:**
-- `- `array <p>An array of replacements.</p>``
-=======
-=======
->>>>>>> eventsResources
 - `bool $asOrigReplaceArray [optional] <p>TRUE === return {orig: string[], replace: string[]}
 array</p>`
 
 **Return:**
 - `array <p>An array of replacements.</p>`
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 
 --------
 
@@ -212,25 +174,11 @@ echo $array['orig'][$tmpKey]; // '၌'
 
 **Parameters:**
 - `bool $replace_extra_symbols [optional] <p>Add some more replacements e.g. "£" with " pound ".</p>`
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `bool $asOrigReplaceArray [optional] <p>TRUE === return thr {orig: string[], replace: string[]}
-array</p>`
-
-**Return:**
-- `- `array <p>An array of replacements.</p>``
-=======
-=======
->>>>>>> eventsResources
 - `bool $asOrigReplaceArray [optional] <p>TRUE === return {orig: string[], replace: string[]}
 array</p>`
 
 **Return:**
 - `array <p>An array of replacements.</p>`
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 
 --------
 
@@ -252,15 +200,7 @@ e.g.: "…"
 characters e.g.: "\0"</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A clean UTF-8 string.</p>``
-=======
 - `string <p>A clean UTF-8 string.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A clean UTF-8 string.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -272,15 +212,7 @@ Get all languages from the constants "ASCII::.*LANGUAGE_CODE".
 __nothing__
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string[]``
-=======
 - `string[]`
->>>>>>> eventsResources
-=======
-- `string[]`
->>>>>>> eventsResources
 
 --------
 
@@ -296,23 +228,10 @@ ASCII::is_ascii('白'); // false
 - `string $str <p>The string to check.</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `bool <p>
-<strong>true</strong> if it is ASCII<br>
-<strong>false</strong> otherwise
-</p>``
-=======
-=======
->>>>>>> eventsResources
 - `bool <p>
 <strong>true</strong> if it is ASCII<br>
 <strong>false</strong> otherwise
 </p>`
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 
 --------
 
@@ -330,15 +249,7 @@ ASCII::normalize_msword('„Abcdef…”'); // '"Abcdef..."'
 - `string $str <p>The string to be normalized.</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A string with normalized characters for commonly used chars in Word documents.</p>``
-=======
 - `string <p>A string with normalized characters for commonly used chars in Word documents.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A string with normalized characters for commonly used chars in Word documents.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -357,15 +268,7 @@ ASCII::normalize_whitespace("abc-\xc2\xa0-öäü-\xe2\x80\xaf-\xE2\x80\xAC", tru
 bidirectional text chars.</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A string with normalized whitespace.</p>``
-=======
 - `string <p>A string with normalized whitespace.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A string with normalized whitespace.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -383,15 +286,7 @@ copy&past from https://github.com/bcit-ci/CodeIgniter/blob/develop/system/core/C
 - `string $replacement`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string``
-=======
 - `string`
->>>>>>> eventsResources
-=======
-- `string`
->>>>>>> eventsResources
 
 --------
 
@@ -423,15 +318,7 @@ at the same time. | NULL === auto-setting, depended on the
 language</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A string that contains only ASCII characters.</p>``
-=======
 - `string <p>A string that contains only ASCII characters.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A string that contains only ASCII characters.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -450,15 +337,7 @@ simply replaced with hyphen otherwise.</p>`
 - `string $fallback_char`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A string that contains only safe characters for a filename.</p>``
-=======
 - `string <p>A string that contains only safe characters for a filename.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A string that contains only safe characters for a filename.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -484,15 +363,7 @@ pound ".</p>`
 chars.</p>`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A string that has been converted to an URL slug.</p>``
-=======
 - `string <p>A string that has been converted to an URL slug.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A string that has been converted to an URL slug.</p>`
->>>>>>> eventsResources
 
 --------
 
@@ -513,15 +384,7 @@ But you can also use NULL to keep the unknown chars.</p>`
 - `bool $strict [optional] <p>Use "transliterator_transliterate()" from PHP-Intl`
 
 **Return:**
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `- `string <p>A String that contains only ASCII characters.</p>``
-=======
 - `string <p>A String that contains only ASCII characters.</p>`
->>>>>>> eventsResources
-=======
-- `string <p>A String that contains only ASCII characters.</p>`
->>>>>>> eventsResources
 
 --------
 

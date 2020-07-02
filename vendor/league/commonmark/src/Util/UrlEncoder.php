@@ -14,16 +14,8 @@
 
 namespace League\CommonMark\Util;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use League\CommonMark\Exception\UnexpectedEncodingException;
 
->>>>>>> eventsResources
-=======
-use League\CommonMark\Exception\UnexpectedEncodingException;
-
->>>>>>> eventsResources
 final class UrlEncoder
 {
     /** @var string[] */
@@ -38,23 +30,12 @@ final class UrlEncoder
 
         $result = '';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        /** @var string[] $chars */
-        $chars = \preg_split('//u', $uri, -1, \PREG_SPLIT_NO_EMPTY);
-=======
-=======
->>>>>>> eventsResources
         $chars = \preg_split('//u', $uri, -1, \PREG_SPLIT_NO_EMPTY);
 
         if (!\is_array($chars) || !\mb_check_encoding($uri, 'UTF-8')) {
             throw new UnexpectedEncodingException('Unexpected encoding - UTF-8 or ASCII was expected');
         }
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         $l = \count($chars);
         for ($i = 0; $i < $l; $i++) {
             $code = $chars[$i];

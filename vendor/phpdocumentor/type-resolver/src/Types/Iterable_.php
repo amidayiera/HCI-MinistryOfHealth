@@ -15,16 +15,8 @@ namespace phpDocumentor\Reflection\Types;
 
 /**
  * Value Object representing iterable type
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  *
  * @psalm-immutable
->>>>>>> eventsResources
-=======
- *
- * @psalm-immutable
->>>>>>> eventsResources
  */
 final class Iterable_ extends AbstractList
 {

@@ -161,12 +161,6 @@ class Dispatcher implements DispatcherContract
     {
         $subscriber = $this->resolveSubscriber($subscriber);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $subscriber->subscribe($this);
-=======
-=======
->>>>>>> eventsResources
         $events = $subscriber->subscribe($this);
 
         if (is_array($events)) {
@@ -176,10 +170,6 @@ class Dispatcher implements DispatcherContract
                 }
             }
         }
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
     }
 
     /**
@@ -379,19 +369,10 @@ class Dispatcher implements DispatcherContract
             return $this->createClassListener($listener, $wildcard);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
         if (is_array($listener) && isset($listener[0]) && is_string($listener[0])) {
             return $this->createClassListener($listener, $wildcard);
         }
 
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
         return function ($event, $payload) use ($listener, $wildcard) {
             if ($wildcard) {
                 return $listener($event, $payload);
@@ -424,32 +405,14 @@ class Dispatcher implements DispatcherContract
     /**
      * Create the class based event callable.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param  string  $listener
-=======
      * @param  array|string  $listener
->>>>>>> eventsResources
-=======
-     * @param  array|string  $listener
->>>>>>> eventsResources
      * @return callable
      */
     protected function createClassCallable($listener)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        [$class, $method] = $this->parseClassCallable($listener);
-=======
         [$class, $method] = is_array($listener)
                             ? $listener
                             : $this->parseClassCallable($listener);
->>>>>>> eventsResources
-=======
-        [$class, $method] = is_array($listener)
-                            ? $listener
-                            : $this->parseClassCallable($listener);
->>>>>>> eventsResources
 
         if ($this->handlerShouldBeQueued($class)) {
             return $this->createQueuedHandlerCallable($class, $method);
@@ -540,19 +503,9 @@ class Dispatcher implements DispatcherContract
             $listener->connection ?? null
         );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $queue = $listener->queue ?? null;
-=======
         $queue = method_exists($listener, 'viaQueue')
                     ? $listener->viaQueue()
                     : $listener->queue ?? null;
->>>>>>> eventsResources
-=======
-        $queue = method_exists($listener, 'viaQueue')
-                    ? $listener->viaQueue()
-                    : $listener->queue ?? null;
->>>>>>> eventsResources
 
         isset($listener->delay)
                     ? $connection->laterOn($queue, $listener->delay, $job)

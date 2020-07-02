@@ -13,18 +13,9 @@ declare(strict_types=1);
 
 namespace phpDocumentor\Reflection;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 /**
  * @psalm-immutable
  */
->>>>>>> eventsResources
-=======
-/**
- * @psalm-immutable
- */
->>>>>>> eventsResources
 interface Type
 {
     /**

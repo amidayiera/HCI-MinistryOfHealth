@@ -10,7 +10,6 @@ return array(
     'App\\Cevents' => $baseDir . '/app/Cevents.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
-<<<<<<< HEAD
     'App\\Feedback' => $baseDir . '/app/Feedback.php',
     'App\\Http\\Controllers\\CeventsController' => $baseDir . '/app/Http/Controllers/CeventsController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
@@ -20,12 +19,6 @@ return array(
     'App\\Http\\Controllers\\PostsController' => $baseDir . '/app/Http/Controllers/PostsController.php',
     'App\\Http\\Controllers\\SendEmailController' => $baseDir . '/app/Http/Controllers/SendEmailController.php',
     'App\\Http\\Controllers\\covidTrackerController' => $baseDir . '/app/Http/Controllers/covidTrackerController.php',
-=======
-    'App\\Http\\Controllers\\CeventsController' => $baseDir . '/app/Http/Controllers/CeventsController.php',
-    'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
-    'App\\Http\\Controllers\\PagesController' => $baseDir . '/app/Http/Controllers/PagesController.php',
-    'App\\Http\\Controllers\\PostsController' => $baseDir . '/app/Http/Controllers/PostsController.php',
->>>>>>> eventsResources
     'App\\Http\\Controllers\\vacanciesController' => $baseDir . '/app/Http/Controllers/vacanciesController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
@@ -33,7 +26,6 @@ return array(
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
-<<<<<<< HEAD
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
@@ -41,11 +33,6 @@ return array(
     'App\\Http\\Resources\\TaskResource' => $baseDir . '/app/Http/Resources/TaskResource.php',
     'App\\Mail\\SendMail' => $baseDir . '/app/Mail/SendMail.php',
     'App\\News' => $baseDir . '/app/News.php',
-=======
-    'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
-    'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
-    'App\\Http\\Resources\\TaskResource' => $baseDir . '/app/Http/Resources/TaskResource.php',
->>>>>>> eventsResources
     'App\\Post' => $baseDir . '/app/Post.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
@@ -144,10 +131,6 @@ return array(
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
-<<<<<<< HEAD
-    'Carbon\\of' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
-=======
->>>>>>> eventsResources
     'Collective\\Html\\Componentable' => $vendorDir . '/laravelcollective/html/src/Componentable.php',
     'Collective\\Html\\Eloquent\\FormAccessible' => $vendorDir . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
     'Collective\\Html\\FormBuilder' => $vendorDir . '/laravelcollective/html/src/FormBuilder.php',
@@ -268,71 +251,6 @@ return array(
     'Dotenv\\Store\\StoreBuilder' => $vendorDir . '/vlucas/phpdotenv/src/Store/StoreBuilder.php',
     'Dotenv\\Store\\StoreInterface' => $vendorDir . '/vlucas/phpdotenv/src/Store/StoreInterface.php',
     'Dotenv\\Validator' => $vendorDir . '/vlucas/phpdotenv/src/Validator.php',
-<<<<<<< HEAD
-    'Egulias\\EmailValidator\\EmailLexer' => $vendorDir . '/egulias/email-validator/EmailValidator/EmailLexer.php',
-    'Egulias\\EmailValidator\\EmailParser' => $vendorDir . '/egulias/email-validator/EmailValidator/EmailParser.php',
-    'Egulias\\EmailValidator\\EmailValidator' => $vendorDir . '/egulias/email-validator/EmailValidator/EmailValidator.php',
-    'Egulias\\EmailValidator\\Exception\\AtextAfterCFWS' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/AtextAfterCFWS.php',
-    'Egulias\\EmailValidator\\Exception\\CRLFAtTheEnd' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/CRLFAtTheEnd.php',
-    'Egulias\\EmailValidator\\Exception\\CRLFX2' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/CRLFX2.php',
-    'Egulias\\EmailValidator\\Exception\\CRNoLF' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/CRNoLF.php',
-    'Egulias\\EmailValidator\\Exception\\CharNotAllowed' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/CharNotAllowed.php',
-    'Egulias\\EmailValidator\\Exception\\CommaInDomain' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/CommaInDomain.php',
-    'Egulias\\EmailValidator\\Exception\\ConsecutiveAt' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ConsecutiveAt.php',
-    'Egulias\\EmailValidator\\Exception\\ConsecutiveDot' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ConsecutiveDot.php',
-    'Egulias\\EmailValidator\\Exception\\DomainHyphened' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/DomainHyphened.php',
-    'Egulias\\EmailValidator\\Exception\\DotAtEnd' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/DotAtEnd.php',
-    'Egulias\\EmailValidator\\Exception\\DotAtStart' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/DotAtStart.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingAT' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingAT.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingATEXT' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingATEXT.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingCTEXT' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingCTEXT.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingDTEXT' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingDTEXT.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingDomainLiteralClose' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingDomainLiteralClose.php',
-    'Egulias\\EmailValidator\\Exception\\ExpectingQPair' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/ExpectingQPair.php',
-    'Egulias\\EmailValidator\\Exception\\InvalidEmail' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/InvalidEmail.php',
-    'Egulias\\EmailValidator\\Exception\\NoDNSRecord' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/NoDNSRecord.php',
-    'Egulias\\EmailValidator\\Exception\\NoDomainPart' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/NoDomainPart.php',
-    'Egulias\\EmailValidator\\Exception\\NoLocalPart' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/NoLocalPart.php',
-    'Egulias\\EmailValidator\\Exception\\UnclosedComment' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/UnclosedComment.php',
-    'Egulias\\EmailValidator\\Exception\\UnclosedQuotedString' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/UnclosedQuotedString.php',
-    'Egulias\\EmailValidator\\Exception\\UnopenedComment' => $vendorDir . '/egulias/email-validator/EmailValidator/Exception/UnopenedComment.php',
-    'Egulias\\EmailValidator\\Parser\\DomainPart' => $vendorDir . '/egulias/email-validator/EmailValidator/Parser/DomainPart.php',
-    'Egulias\\EmailValidator\\Parser\\LocalPart' => $vendorDir . '/egulias/email-validator/EmailValidator/Parser/LocalPart.php',
-    'Egulias\\EmailValidator\\Parser\\Parser' => $vendorDir . '/egulias/email-validator/EmailValidator/Parser/Parser.php',
-    'Egulias\\EmailValidator\\Validation\\DNSCheckValidation' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/DNSCheckValidation.php',
-    'Egulias\\EmailValidator\\Validation\\EmailValidation' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/EmailValidation.php',
-    'Egulias\\EmailValidator\\Validation\\Error\\RFCWarnings' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/Error/RFCWarnings.php',
-    'Egulias\\EmailValidator\\Validation\\Error\\SpoofEmail' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/Error/SpoofEmail.php',
-    'Egulias\\EmailValidator\\Validation\\Exception\\EmptyValidationList' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/Exception/EmptyValidationList.php',
-    'Egulias\\EmailValidator\\Validation\\MultipleErrors' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/MultipleErrors.php',
-    'Egulias\\EmailValidator\\Validation\\MultipleValidationWithAnd' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/MultipleValidationWithAnd.php',
-    'Egulias\\EmailValidator\\Validation\\NoRFCWarningsValidation' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/NoRFCWarningsValidation.php',
-    'Egulias\\EmailValidator\\Validation\\RFCValidation' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/RFCValidation.php',
-    'Egulias\\EmailValidator\\Validation\\SpoofCheckValidation' => $vendorDir . '/egulias/email-validator/EmailValidator/Validation/SpoofCheckValidation.php',
-    'Egulias\\EmailValidator\\Warning\\AddressLiteral' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/AddressLiteral.php',
-    'Egulias\\EmailValidator\\Warning\\CFWSNearAt' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/CFWSNearAt.php',
-    'Egulias\\EmailValidator\\Warning\\CFWSWithFWS' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/CFWSWithFWS.php',
-    'Egulias\\EmailValidator\\Warning\\Comment' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/Comment.php',
-    'Egulias\\EmailValidator\\Warning\\DeprecatedComment' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/DeprecatedComment.php',
-    'Egulias\\EmailValidator\\Warning\\DomainLiteral' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/DomainLiteral.php',
-    'Egulias\\EmailValidator\\Warning\\DomainTooLong' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/DomainTooLong.php',
-    'Egulias\\EmailValidator\\Warning\\EmailTooLong' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/EmailTooLong.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6BadChar' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6BadChar.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6ColonEnd' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6ColonEnd.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6ColonStart' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6ColonStart.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6Deprecated' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6Deprecated.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6DoubleColon' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6DoubleColon.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6GroupCount' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6GroupCount.php',
-    'Egulias\\EmailValidator\\Warning\\IPV6MaxGroups' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/IPV6MaxGroups.php',
-    'Egulias\\EmailValidator\\Warning\\LabelTooLong' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/LabelTooLong.php',
-    'Egulias\\EmailValidator\\Warning\\LocalTooLong' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/LocalTooLong.php',
-    'Egulias\\EmailValidator\\Warning\\NoDNSMXRecord' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/NoDNSMXRecord.php',
-    'Egulias\\EmailValidator\\Warning\\ObsoleteDTEXT' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/ObsoleteDTEXT.php',
-    'Egulias\\EmailValidator\\Warning\\QuotedPart' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/QuotedPart.php',
-    'Egulias\\EmailValidator\\Warning\\QuotedString' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/QuotedString.php',
-    'Egulias\\EmailValidator\\Warning\\TLD' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/TLD.php',
-    'Egulias\\EmailValidator\\Warning\\Warning' => $vendorDir . '/egulias/email-validator/EmailValidator/Warning/Warning.php',
-=======
     'Egulias\\EmailValidator\\EmailLexer' => $vendorDir . '/egulias/email-validator/src/EmailLexer.php',
     'Egulias\\EmailValidator\\EmailParser' => $vendorDir . '/egulias/email-validator/src/EmailParser.php',
     'Egulias\\EmailValidator\\EmailValidator' => $vendorDir . '/egulias/email-validator/src/EmailValidator.php',
@@ -396,7 +314,6 @@ return array(
     'Egulias\\EmailValidator\\Warning\\QuotedString' => $vendorDir . '/egulias/email-validator/src/Warning/QuotedString.php',
     'Egulias\\EmailValidator\\Warning\\TLD' => $vendorDir . '/egulias/email-validator/src/Warning/TLD.php',
     'Egulias\\EmailValidator\\Warning\\Warning' => $vendorDir . '/egulias/email-validator/src/Warning/Warning.php',
->>>>>>> eventsResources
     'Facade\\FlareClient\\Api' => $vendorDir . '/facade/flare-client-php/src/Api.php',
     'Facade\\FlareClient\\Concerns\\HasContext' => $vendorDir . '/facade/flare-client-php/src/Concerns/HasContext.php',
     'Facade\\FlareClient\\Concerns\\UsesTime' => $vendorDir . '/facade/flare-client-php/src/Concerns/UsesTime.php',
@@ -1041,11 +958,6 @@ return array(
     'GuzzleHttp\\TransferStats' => $vendorDir . '/guzzlehttp/guzzle/src/TransferStats.php',
     'GuzzleHttp\\UriTemplate' => $vendorDir . '/guzzlehttp/guzzle/src/UriTemplate.php',
     'GuzzleHttp\\Utils' => $vendorDir . '/guzzlehttp/guzzle/src/Utils.php',
-<<<<<<< HEAD
-    'GuzzleHttp\\and' => $vendorDir . '/guzzlehttp/guzzle/src/Utils.php',
-    'GuzzleHttp\\is' => $vendorDir . '/guzzlehttp/guzzle/src/Utils.php',
-=======
->>>>>>> eventsResources
     'Hamcrest\\Arrays\\IsArray' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
     'Hamcrest\\Arrays\\IsArrayContaining' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
     'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1125,8 +1037,6 @@ return array(
     'Highlight\\RegExMatch' => $vendorDir . '/scrivo/highlight.php/Highlight/RegExMatch.php',
     'Highlight\\RegExUtils' => $vendorDir . '/scrivo/highlight.php/Highlight/RegExUtils.php',
     'Highlight\\Terminators' => $vendorDir . '/scrivo/highlight.php/Highlight/Terminators.php',
-<<<<<<< HEAD
-=======
     'Illuminate\\Auth\\Access\\AuthorizationException' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
     'Illuminate\\Auth\\Access\\Gate' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
     'Illuminate\\Auth\\Access\\HandlesAuthorization' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',
@@ -1508,7 +1418,15 @@ return array(
     'Illuminate\\Foundation\\Application' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Application.php',
     'Illuminate\\Foundation\\Auth\\Access\\Authorizable' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php',
     'Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php',
+    'Illuminate\\Foundation\\Auth\\AuthenticatesUsers' => $vendorDir . '/laravel/ui/auth-backend/AuthenticatesUsers.php',
+    'Illuminate\\Foundation\\Auth\\ConfirmsPasswords' => $vendorDir . '/laravel/ui/auth-backend/ConfirmsPasswords.php',
+    'Illuminate\\Foundation\\Auth\\RedirectsUsers' => $vendorDir . '/laravel/ui/auth-backend/RedirectsUsers.php',
+    'Illuminate\\Foundation\\Auth\\RegistersUsers' => $vendorDir . '/laravel/ui/auth-backend/RegistersUsers.php',
+    'Illuminate\\Foundation\\Auth\\ResetsPasswords' => $vendorDir . '/laravel/ui/auth-backend/ResetsPasswords.php',
+    'Illuminate\\Foundation\\Auth\\SendsPasswordResetEmails' => $vendorDir . '/laravel/ui/auth-backend/SendsPasswordResetEmails.php',
+    'Illuminate\\Foundation\\Auth\\ThrottlesLogins' => $vendorDir . '/laravel/ui/auth-backend/ThrottlesLogins.php',
     'Illuminate\\Foundation\\Auth\\User' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/User.php',
+    'Illuminate\\Foundation\\Auth\\VerifiesEmails' => $vendorDir . '/laravel/ui/auth-backend/VerifiesEmails.php',
     'Illuminate\\Foundation\\Bootstrap\\BootProviders' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php',
     'Illuminate\\Foundation\\Bootstrap\\HandleExceptions' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php',
     'Illuminate\\Foundation\\Bootstrap\\LoadConfiguration' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php',
@@ -2120,12 +2038,20 @@ return array(
     'Intervention\\Image\\Point' => $vendorDir . '/intervention/image/src/Intervention/Image/Point.php',
     'Intervention\\Image\\Response' => $vendorDir . '/intervention/image/src/Intervention/Image/Response.php',
     'Intervention\\Image\\Size' => $vendorDir . '/intervention/image/src/Intervention/Image/Size.php',
->>>>>>> eventsResources
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'Laravel\\Tinker\\ClassAliasAutoloader' => $vendorDir . '/laravel/tinker/src/ClassAliasAutoloader.php',
     'Laravel\\Tinker\\Console\\TinkerCommand' => $vendorDir . '/laravel/tinker/src/Console/TinkerCommand.php',
     'Laravel\\Tinker\\TinkerCaster' => $vendorDir . '/laravel/tinker/src/TinkerCaster.php',
     'Laravel\\Tinker\\TinkerServiceProvider' => $vendorDir . '/laravel/tinker/src/TinkerServiceProvider.php',
+    'Laravel\\Ui\\AuthCommand' => $vendorDir . '/laravel/ui/src/AuthCommand.php',
+    'Laravel\\Ui\\AuthRouteMethods' => $vendorDir . '/laravel/ui/src/AuthRouteMethods.php',
+    'Laravel\\Ui\\ControllersCommand' => $vendorDir . '/laravel/ui/src/ControllersCommand.php',
+    'Laravel\\Ui\\Presets\\Bootstrap' => $vendorDir . '/laravel/ui/src/Presets/Bootstrap.php',
+    'Laravel\\Ui\\Presets\\Preset' => $vendorDir . '/laravel/ui/src/Presets/Preset.php',
+    'Laravel\\Ui\\Presets\\React' => $vendorDir . '/laravel/ui/src/Presets/React.php',
+    'Laravel\\Ui\\Presets\\Vue' => $vendorDir . '/laravel/ui/src/Presets/Vue.php',
+    'Laravel\\Ui\\UiCommand' => $vendorDir . '/laravel/ui/src/UiCommand.php',
+    'Laravel\\Ui\\UiServiceProvider' => $vendorDir . '/laravel/ui/src/UiServiceProvider.php',
     'League\\CommonMark\\Block\\Element\\AbstractBlock' => $vendorDir . '/league/commonmark/src/Block/Element/AbstractBlock.php',
     'League\\CommonMark\\Block\\Element\\AbstractStringContainerBlock' => $vendorDir . '/league/commonmark/src/Block/Element/AbstractStringContainerBlock.php',
     'League\\CommonMark\\Block\\Element\\BlockQuote' => $vendorDir . '/league/commonmark/src/Block/Element/BlockQuote.php',
@@ -2259,10 +2185,6 @@ return array(
     'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsGeneratorInterface' => $vendorDir . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsGeneratorInterface.php',
     'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsPlaceholderParser' => $vendorDir . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderParser.php',
     'League\\CommonMark\\Extension\\TableOfContents\\TableOfContentsPlaceholderRenderer' => $vendorDir . '/league/commonmark/src/Extension/TableOfContents/TableOfContentsPlaceholderRenderer.php',
-<<<<<<< HEAD
-    'League\\CommonMark\\Extension\\TableOfContents\\has' => $vendorDir . '/league/commonmark/src/Extension/TableOfContents/TableOfContents.php',
-=======
->>>>>>> eventsResources
     'League\\CommonMark\\Extension\\Table\\Table' => $vendorDir . '/league/commonmark/src/Extension/Table/Table.php',
     'League\\CommonMark\\Extension\\Table\\TableCell' => $vendorDir . '/league/commonmark/src/Extension/Table/TableCell.php',
     'League\\CommonMark\\Extension\\Table\\TableCellRenderer' => $vendorDir . '/league/commonmark/src/Extension/Table/TableCellRenderer.php',
@@ -2614,10 +2536,7 @@ return array(
     'NunoMaduro\\Collision\\Provider' => $vendorDir . '/nunomaduro/collision/src/Provider.php',
     'NunoMaduro\\Collision\\SolutionsRepositories\\NullSolutionsRepository' => $vendorDir . '/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php',
     'NunoMaduro\\Collision\\Writer' => $vendorDir . '/nunomaduro/collision/src/Writer.php',
-<<<<<<< HEAD
-=======
     'Opis\\Closure\\Analyzer' => $vendorDir . '/opis/closure/src/Analyzer.php',
->>>>>>> eventsResources
     'Opis\\Closure\\ClosureContext' => $vendorDir . '/opis/closure/src/ClosureContext.php',
     'Opis\\Closure\\ClosureScope' => $vendorDir . '/opis/closure/src/ClosureScope.php',
     'Opis\\Closure\\ClosureStream' => $vendorDir . '/opis/closure/src/ClosureStream.php',
@@ -4029,10 +3948,6 @@ return array(
     'Symfony\\Component\\HttpFoundation\\InputBag' => $vendorDir . '/symfony/http-foundation/InputBag.php',
     'Symfony\\Component\\HttpFoundation\\IpUtils' => $vendorDir . '/symfony/http-foundation/IpUtils.php',
     'Symfony\\Component\\HttpFoundation\\JsonResponse' => $vendorDir . '/symfony/http-foundation/JsonResponse.php',
-<<<<<<< HEAD
-    'Symfony\\Component\\HttpFoundation\\Locale' => $vendorDir . '/symfony/http-foundation/Request.php',
-=======
->>>>>>> eventsResources
     'Symfony\\Component\\HttpFoundation\\ParameterBag' => $vendorDir . '/symfony/http-foundation/ParameterBag.php',
     'Symfony\\Component\\HttpFoundation\\RedirectResponse' => $vendorDir . '/symfony/http-foundation/RedirectResponse.php',
     'Symfony\\Component\\HttpFoundation\\Request' => $vendorDir . '/symfony/http-foundation/Request.php',
@@ -4222,11 +4137,6 @@ return array(
     'Symfony\\Component\\HttpKernel\\RebootableInterface' => $vendorDir . '/symfony/http-kernel/RebootableInterface.php',
     'Symfony\\Component\\HttpKernel\\TerminableInterface' => $vendorDir . '/symfony/http-kernel/TerminableInterface.php',
     'Symfony\\Component\\HttpKernel\\UriSigner' => $vendorDir . '/symfony/http-kernel/UriSigner.php',
-<<<<<<< HEAD
-    'Symfony\\Component\\HttpKernel\\names' => $vendorDir . '/symfony/http-kernel/Kernel.php',
-    'Symfony\\Component\\HttpKernel\\null' => $vendorDir . '/symfony/http-kernel/Kernel.php',
-=======
->>>>>>> eventsResources
     'Symfony\\Component\\Mime\\Address' => $vendorDir . '/symfony/mime/Address.php',
     'Symfony\\Component\\Mime\\BodyRendererInterface' => $vendorDir . '/symfony/mime/BodyRendererInterface.php',
     'Symfony\\Component\\Mime\\CharacterStream' => $vendorDir . '/symfony/mime/CharacterStream.php',
@@ -4611,10 +4521,6 @@ return array(
     'phpDocumentor\\Reflection\\Fqsen' => $vendorDir . '/phpdocumentor/reflection-common/src/Fqsen.php',
     'phpDocumentor\\Reflection\\FqsenResolver' => $vendorDir . '/phpdocumentor/type-resolver/src/FqsenResolver.php',
     'phpDocumentor\\Reflection\\Location' => $vendorDir . '/phpdocumentor/reflection-common/src/Location.php',
-<<<<<<< HEAD
-    'phpDocumentor\\Reflection\\Name' => $vendorDir . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-=======
->>>>>>> eventsResources
     'phpDocumentor\\Reflection\\Project' => $vendorDir . '/phpdocumentor/reflection-common/src/Project.php',
     'phpDocumentor\\Reflection\\ProjectFactory' => $vendorDir . '/phpdocumentor/reflection-common/src/ProjectFactory.php',
     'phpDocumentor\\Reflection\\Type' => $vendorDir . '/phpdocumentor/type-resolver/src/Type.php',
@@ -4640,10 +4546,6 @@ return array(
     'phpDocumentor\\Reflection\\Types\\Nullable' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Nullable.php',
     'phpDocumentor\\Reflection\\Types\\Object_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Object_.php',
     'phpDocumentor\\Reflection\\Types\\Parent_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Parent_.php',
-<<<<<<< HEAD
-    'phpDocumentor\\Reflection\\Types\\Reflection' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
-=======
->>>>>>> eventsResources
     'phpDocumentor\\Reflection\\Types\\Resource_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Resource_.php',
     'phpDocumentor\\Reflection\\Types\\Scalar' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Scalar.php',
     'phpDocumentor\\Reflection\\Types\\Self_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Self_.php',
@@ -4652,13 +4554,5 @@ return array(
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\True_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/True_.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
-<<<<<<< HEAD
-    'phpDocumentor\\Reflection\\Types\\to' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
-    'phpDocumentor\\Reflection\\null' => $vendorDir . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-    'phpDocumentor\\Reflection\\nullThe' => $vendorDir . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-    'phpDocumentor\\Reflection\\nullnull' => $vendorDir . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-    'phpDocumentor\\Reflection\\stringnull' => $vendorDir . '/phpdocumentor/type-resolver/src/TypeResolver.php',
-=======
->>>>>>> eventsResources
     'voku\\helper\\ASCII' => $vendorDir . '/voku/portable-ascii/src/voku/helper/ASCII.php',
 );

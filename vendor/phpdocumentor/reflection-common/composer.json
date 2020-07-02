@@ -11,15 +11,7 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "php": ">=7.1"
-=======
         "php": "^7.2 || ^8.0"
->>>>>>> eventsResources
-=======
-        "php": "^7.2 || ^8.0"
->>>>>>> eventsResources
     },
     "autoload" : {
       "psr-4" : {
@@ -30,15 +22,7 @@
     },
     "extra": {
         "branch-alias": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "dev-master": "2.x-dev"
-=======
             "dev-2.x": "2.x-dev"
->>>>>>> eventsResources
-=======
-            "dev-2.x": "2.x-dev"
->>>>>>> eventsResources
         }
     }
 }

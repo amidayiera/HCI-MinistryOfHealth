@@ -68,11 +68,6 @@ class PolicyMakeCommand extends GeneratorCommand
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> eventsResources
      * Get the model for the guard's user provider.
      *
      * @return string|null
@@ -89,10 +84,6 @@ class PolicyMakeCommand extends GeneratorCommand
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
      * Replace the model for the given stub.
      *
      * @param  string  $stub
@@ -185,14 +176,7 @@ class PolicyMakeCommand extends GeneratorCommand
     {
         return [
             ['model', 'm', InputOption::VALUE_OPTIONAL, 'The model that the policy applies to'],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             ['guard', 'g', InputOption::VALUE_OPTIONAL, 'The guard that the policy relies on'],
->>>>>>> eventsResources
-=======
-            ['guard', 'g', InputOption::VALUE_OPTIONAL, 'The guard that the policy relies on'],
->>>>>>> eventsResources
         ];
     }
 }
