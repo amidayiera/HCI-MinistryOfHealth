@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> eventsResources
-=======
->>>>>>> eventsResources
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -1906,8 +1899,6 @@ module.exports = {
 
 /***/ }),
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -34079,8 +34070,7 @@ return jQuery;
       });
       return source;
     }()), { 'chain': false });
-=======
-/***/ "./node_modules/lodash/lodash.js":
+/***/ "./node_modules/lodash/lodash.js";
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
   \***************************************/
@@ -53434,12 +53424,10 @@ return jQuery;
 
     /**
      * Gets the first element of `array`.
->>>>>>> eventsResources
      *
      * @static
      * @memberOf _
      * @since 0.1.0
-<<<<<<< HEAD
      * @category Lang
      * @param {*} value The value to check.
      * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
@@ -53484,7 +53472,6 @@ return jQuery;
      *
      * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
      * classified as numbers, use the `_.isFinite` method.
-=======
      * @alias first
      * @category Array
      * @param {Array} array The array to query.
@@ -53538,12 +53525,10 @@ return jQuery;
 
     /**
      * Gets all but the last element of `array`.
->>>>>>> eventsResources
      *
      * @static
      * @memberOf _
      * @since 0.1.0
-<<<<<<< HEAD
      * @category Lang
      * @param {*} value The value to check.
      * @returns {boolean} Returns `true` if `value` is a number, else `false`.
@@ -53632,7 +53617,6 @@ return jQuery;
      *
      * **Note:** This method is based on
      * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
-=======
      * @category Array
      * @param {Array} array The array to query.
      * @returns {Array} Returns the slice of `array`.
@@ -53712,12 +53696,10 @@ return jQuery;
      * which is invoked to compare elements of `arrays`. The order and references
      * of result values are determined by the first array. The comparator is
      * invoked with two arguments: (arrVal, othVal).
->>>>>>> eventsResources
      *
      * @static
      * @memberOf _
      * @since 4.0.0
-<<<<<<< HEAD
      * @category Lang
      * @param {*} value The value to check.
      * @returns {boolean} Returns `true` if `value` is a safe integer, else `false`.
@@ -54076,7 +54058,6 @@ return jQuery;
 
     /**
      * Converts `value` to a number.
-=======
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [comparator] The comparator invoked per element.
@@ -54478,12 +54459,10 @@ return jQuery;
      * This method is like `_.sortedIndex` except that it accepts `iteratee`
      * which is invoked for `value` and each element of `array` to compute their
      * sort ranking. The iteratee is invoked with one argument: (value).
->>>>>>> eventsResources
      *
      * @static
      * @memberOf _
      * @since 4.0.0
-<<<<<<< HEAD
      * @category Lang
      * @param {*} value The value to process.
      * @returns {number} Returns the number.
@@ -54583,7 +54562,6 @@ return jQuery;
     /**
      * Converts `value` to a string. An empty string is returned for `null`
      * and `undefined` values. The sign of `-0` is preserved.
-=======
      * @category Array
      * @param {Array} array The sorted array to inspect.
      * @param {*} value The value to evaluate.
@@ -54658,7 +54636,6 @@ return jQuery;
      * This method is like `_.sortedLastIndex` except that it accepts `iteratee`
      * which is invoked for `value` and each element of `array` to compute their
      * sort ranking. The iteratee is invoked with one argument: (value).
->>>>>>> eventsResources
      *
      * @static
      * @memberOf _
@@ -54681,14 +54658,10 @@ return jQuery;
     function toString(value) {
       return value == null ? '' : baseToString(value);
     }
->>>>>>> eventsResources
 
     /*------------------------------------------------------------------------*/
 
     /**
-<<<<<<< HEAD
-     * The semantic version number.
-     *
      * @static
      * @memberOf _
      * @type {string}
@@ -57569,11 +57542,7 @@ Popper.Defaults = Defaults;
 //# sourceMappingURL=popper.js.map
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-=======
-=======
-     * @category Array
      * @param {Array} array The sorted array to inspect.
-     * @param {*} value The value to evaluate.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
      * @returns {number} Returns the index at which `value` should be inserted
      *  into `array`.
@@ -62101,13 +62070,10 @@ Popper.Defaults = Defaults;
     /*------------------------------------------------------------------------*/
 
     /**
->>>>>>> eventsResources
      * Assigns own enumerable string keyed properties of source objects to the
      * destination object. Source objects are applied from left to right.
-     * Subsequent sources overwrite property assignments of previous sources.
      *
      * **Note:** This method mutates `object` and is loosely based on
-     * [`Object.assign`](https://mdn.io/Object/assign).
      *
      * @static
      * @memberOf _

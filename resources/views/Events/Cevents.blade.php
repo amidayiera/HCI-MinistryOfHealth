@@ -1,3 +1,6 @@
+@extends('includes.navbar')
+
+@section('content')
 @include('messages.messages')
 <html>
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -87,3 +90,4 @@ Whether you present or not at a conference, you still have the upper hand of adv
     </main>
 </html>
 
+@endsection

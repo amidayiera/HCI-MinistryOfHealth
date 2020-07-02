@@ -57,7 +57,12 @@
                     <a class="nav-link" href="/covidTracker">Covid 19</a>
                 </li> <li class="nav-item">
                     <a class="nav-link" href="/vacancies">Vacancies</a>
+                </li> </li> <li class="nav-item">
+                    <a class="nav-link" href="/Cevents">Events</a>
                 </li>
+            </li> <li class="nav-item">
+                <a class="nav-link" href="/resources">Resources</a>
+            </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/healthcarelocations">Health care</a>
                 </li>

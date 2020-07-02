@@ -13843,3 +13843,21 @@ DETAIL:  Failing row contains (null, Concern as cases of Covid-19 rises  Nairobi
 #49 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/server.php(21): require_once('/Applications/M...')
 #50 {main}
 "} 
+[2020-07-02 11:22:21] local.ERROR: Command "vue" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"vue\" is not defined. at /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find('vue')
+#1 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-07-02 11:22:38] local.ERROR: Command "ui" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"ui\" is not defined. at /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find('ui')
+#1 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Applications/MAMP/htdocs/HCI-MinistryOfHealth/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

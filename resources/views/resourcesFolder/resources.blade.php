@@ -1,5 +1,6 @@
 
-@extends('layouts.app')
+@extends('includes.navbar')
+
 @section('content')
     <h1 class='text-center'>RESOURCES</h1>
     @if(count($posts) > 0)
