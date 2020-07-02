@@ -59,7 +59,7 @@
         </section>
                 <section class="jobs__available">
                 @if(count($vacancies)<1)
-                <div clas="u-center-text">
+                <div class="u-center-text">
                     <h3 class="heading-tertiary u-margin-bottom-small lineWord">No vacancies currently</h3>
 
                 </div>
@@ -74,9 +74,9 @@
 
 
                 <div class="row ">
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $vacancy->title }} <br> Vacancy posted on {{ $vacancy->created_at}}</h3><br>
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $vacancy->hospital}}</h3>
-                    <p class="paragraph">{{
+                    <h3 class="heading-tertiary u-margin-bottom-small" > {{ $vacancy->title }} <br> <i>Vacancy posted on {{ $vacancy->created_at}}</i></h3>
+                    <!--<h3 class="heading-tertiary u-margin-bottom-small" > {{ $vacancy->hospital}}</h3>-->
+                    <p class="paragraph" style="color: cornflowerblue;">{{
                     $vacancy->description }}</p>
                 </div>
                 @endforeach

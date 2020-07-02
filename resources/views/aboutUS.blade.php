@@ -1,11 +1,34 @@
 @extends('includes.navbar')
 
 @section('content')
+@include('messages.messages')
+<html>
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{{-- <div class="jumbotron  jumbotron-fluid" >
+        <link rel="stylesheet" href="css/app.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+</head>
+<header class="header">
+        <div class="header__logo-box">
+            <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
+        </div>
+        <div class="header__text-box">
+        <h1 class="heading-primary">
+        <span class="heading-primary--main">MOH</span>
+        <br>
+        <span class="heading-primary--sub">About The Ministry</span>
+        </h1>
+        <a href="#" class="btn btn--white btn--animated">About Us</a>
+    </div>
+    </header>
+    <main>
+<!--{{-- <div class="jumbotron  jumbotron-fluid" >
 <div class="container-fluid">
   <img class="background" src="{{ url('/images/health3.jpg') }}" alt="Health" width="1000" height="300">
-  <div class="bottom-cente    <h3><b>About The Ministry</b></h3>
+  <div class="bottom-center    <h3><b>About The Ministry</b></h3>
       <h4 style="color:#fff;"><b>REPUBLIC OF KENYA</b></h4>
     </div>
     </div>
@@ -15,7 +38,7 @@
   <div id="aboutUsPage">
     <h1 class="landingPageTitle text-uppercase align-text-bottom">about the ministry</h1>
   </div>
-</div>
+</div>-->
 
 <div class="container mt-4">
   <h1 class="lineWord">About us</h1>
@@ -275,6 +298,6 @@
 </div>
 </div>
   </div>
-
+    </main>
 
         @endsection

@@ -20,6 +20,7 @@
         <div class="header__text-box">
         <h1 class="heading-primary">
         <span class="heading-primary--main">MOH</span>
+        <br>
         <span class="heading-primary--sub">See Available Events</span>
         </h1>
         <a href="#" class="btn btn--white btn--animated">Events</a>
@@ -73,12 +74,13 @@ Whether you present or not at a conference, you still have the upper hand of adv
                 @foreach($events as $events)
 
 
-                <div class="row ">
-
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->description }} <br> Event posted on {{ $events->created_at}}</h3><br>
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->locaion}}</h3>
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->time}}</h3>
-                    <h3 class="heading-tertiary u-margin-bottom-small"> {{ $events->date}}</h3>
+                <div class="column">
+                    <br>
+                    <h3 class="heading-tertiary u-margin-bottom-small" style="color: red;"> {{ $events->description }}</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small" > <i> Event posted on: {{ $events->created_at}}</i></h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small" > <i> Location:</i> {{ $events->location}} </h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small"> <i>  Start-Time: {{ $events->time}} <i></h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small" style="color: cornflowerblue;"> <i>Date:</i> {{ $events->date}} <br></h3>
                     <h3><a href= " {{ route('file-download',[$events->id]) }}" class="btn btn-info btn-sm">More details</a></h3>
 
                 </div>
