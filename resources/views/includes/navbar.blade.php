@@ -26,13 +26,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script-->
 
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
         
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         {{-- <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/feedback.css')}}" rel="stylesheet" type="text/css">
         <link href="{{ asset('css/aboutUs.css')}}" rel="stylesheet" type="text/css">
         <link href="{{ asset('css/landingPage.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/covid.css') }}" rel="stylesheet" type="text/css" >
+
 
     </head>
     
@@ -46,18 +49,45 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item acitve">
+               <!-- <li class="nav-item active">
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
+                <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home <span class="sr-only">(current)</span></a>
+                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/">Home</a>
+                  <a class="dropdown-item" href="/aboutUs">About Us</a>
+                  </div>
+               </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">News</a>
+                    <a class="nav-link" href="/covidTracker">Covid-19</a>
                 </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="/vacancies">Vacancies</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="/Cevents" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Events <span class="sr-only">(current)</span></a>
+                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/Cevents">Events</a>
+                  <a class="dropdown-item" href="/resources">Posts</a>
+                  </div>
+               </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="/Cevents">Events</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/resources">Resources</a>
+             </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="/healthcarelocations">Health care</a>
                 </li>
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" href="/aboutUs">About Us</a>
-                </li>
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="/feedback">Feedback</a>
                 </li>
@@ -103,7 +133,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-23581568-13');
 	</script>
    
