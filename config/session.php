@@ -93,10 +93,18 @@ return [
     |--------------------------------------------------------------------------
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eventsResources
+=======
+>>>>>>> eventsResources
     | When using the "apc", "memcached", or "dynamodb" session drivers you may
     | list a cache store that should be used for these sessions. This value
     | must match with one of the application's configured cache "stores".
     |
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
     | While using one of the framework's cache driven session backends you may
     | list a cache store that should be used for these sessions. This value
@@ -105,6 +113,10 @@ return [
     | Affects: "apc", "dynamodb", "memcached", "redis"
     |
 >>>>>>> Contact_form
+=======
+>>>>>>> eventsResources
+=======
+>>>>>>> eventsResources
     */
 
     'store' => env('SESSION_STORE', null),

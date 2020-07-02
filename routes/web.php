@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\vacanciesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,3 +40,10 @@ Route::get('/healthcarelocations','PagesController@healthcarelocations');
 //Covid Tracker
 
 Route::get('/covidTracker', 'covidTrackerController@index');
+
+Route::resource('/', 'vacanciesController');
+Route::get('/Cevents','CeventsController@index');
+Route::get('/Cevents','CeventsController@allevents');
+Route::get('/resources', 'PostsController@index');
+
+Route::get('{id}/file-download',['as'=>'file-download','uses'=>'CeventsController@download']);

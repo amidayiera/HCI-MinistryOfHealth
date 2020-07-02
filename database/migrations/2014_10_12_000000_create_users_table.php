@@ -14,8 +14,14 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->id();
             $table->string('name');
+=======
+>>>>>>> eventsResources
+            $table->bigIncrements('id');
+
+            $table->string('hospital');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -33,4 +39,9 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('users');
     }
+<<<<<<< HEAD
+
 }
+=======
+}
+>>>>>>> eventsResources

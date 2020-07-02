@@ -32,6 +32,13 @@
   background-attachment: fixed;
   border: none;
 }
+.card {
+  border: 1px solid #ffffff;
+}
+.card .card-deck .card-body {
+  border: 1px solid #ffffff !important;
+  /* background-color: #f7f7f7 !important; */
+}
 .management{
   margin-top: 30px;
   text-align: center;
@@ -47,8 +54,10 @@
 }
 .accordion{
   margin-top: 20px;
-  margin-left: 250px;
+  margin-left: 180px;
   margin-right: 250px;
+  width: 600px;
+  line-height: 2em;
 }
 .card-title{
   color: darkblue;
@@ -57,4 +66,36 @@
 .my-4{
   color:black;
   border-width: 2px;
+}
+
+.lineWord {
+  overflow: hidden;
+  color: darkblue;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lineWord:before,
+.lineWord:after {
+  background-color:darkblue;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.lineWord:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.lineWord:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.btn {
+  color: black;
 }

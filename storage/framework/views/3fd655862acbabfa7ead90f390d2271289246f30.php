@@ -13,7 +13,11 @@
 
      }
  </style>
- 
+ <script>
+     $('.carousel').carousel({
+         interval: 5000
+     })
+ </script>
   <div id="demo" class="carousel slide" data-ride="carousel">
   <!-- The slideshow -->
  <div class="carousel-inner">
@@ -71,7 +75,7 @@
     Et netus et malesuada fames ac turpis egestas integer.</p>
     </div>
     </div>
-
+  </div>
 
   <div class="card-deck">
   <div class="card">
@@ -115,4 +119,4 @@
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('includes.navBar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/landingPage.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('includes.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/landingPage.blade.php ENDPATH**/ ?>
