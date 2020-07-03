@@ -51,8 +51,8 @@
 
 <div class="container">
 
-    <div class="card-deck">
-        <div class="card mt">
+    <div class="card-deck center">
+        <div class="card"  style="width: 15rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_news3.jpg') }}" alt="News Icon">
             <div class="card-body">
                 <h3 class="card-title">News</h3>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"  style="width: 15rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_guidelines3.png') }}" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Health care guidelines</h3>
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"  style="width: 15rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_location.png') }}" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Health care locations</h3>
@@ -85,11 +85,11 @@
         </div>
     </div>
 
-    <div class="card-deck">
-        <div class="card">
+    <div class="card-deck center">
+        <div class="card"  style="width: 10rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_events.png') }}" alt="Card image cap">
             <div class="card-body">
-                <h3 class="card-title">Events</h3>
+                <h3 class="card-title">Events and posts</h3>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Enim lobortis scelerisque fermentum dui faucibus in.
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"  style="width: 15rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_aboutUs.png') }}" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">About us</h3>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"  style="width: 15rem;">
             <img class="card-img-top" src="{{ asset('images/landingPage_feedback4.png') }}" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Feedback</h3>

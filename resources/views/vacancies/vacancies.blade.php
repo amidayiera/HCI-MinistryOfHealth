@@ -4,6 +4,7 @@
 
 @include('messages.messages')
 <html>
+
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -14,6 +15,24 @@
 
 
         <!-- Styles --></head>
+        <div class="container center">
+            <ul>
+              <li class="animatedArrow">
+                <a class="animated-arrow" href="/">
+                  <span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">
+                      Back To Main Page
+                    </span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul></div>
     <header class="header">
         {{-- <div class="header__logo-box">
             <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
@@ -23,10 +42,10 @@
         <span class="heading-primary--main">placements</span>
         <span class="heading-primary--sub">find your perfect career</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Apply now</a>
+        <a href="#applyNow" class="btn btn--white btn--animated">Apply now</a>
     </div>
     </header>
-    <main>
+    <main class="container">
         <section class="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -46,7 +65,7 @@
                         Candidates have higher success in their application when their experience strongly matched to the job requirement, and have a clearly drafted CV.
                         applications are read by real humans who are familiar with all the avaible vacancies, not just the one you applied for. This increases your chances of success</p>
 
-                    <a href="#" class="btn-text">See more &rarr;</a>
+                    {{-- <a href="#" class="btn-text">See more &rarr;</a> --}}
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
@@ -57,6 +76,7 @@
                 </div>
             </div>
         </section>
+
                 <section class="jobs__available">
                 @if(count($vacancies)<1)
                 <div class="u-center-text">
@@ -91,9 +111,9 @@
         @endif
             <div class="row">
 
-                <div class="book">
+                <div class="book" id="applyNow">
                     <div class="book__form">
-
+                        <div >
                         <form id='form1' action="{{action('vacanciesController@store')}}" method="POST" class="form" enctype="multipart/form-data">
                             <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                             <div class="u-margin-bottom-medium">
@@ -129,7 +149,7 @@
                                 <label for="dropdown" class="form__label">choose vacancy:</label>
                             </div>
 
-                    <div class="form-group">
+                        <div class="form-group">
                             <div class="form__group u-margin-top-small">
                                 <input class="form__input" type="file" name='cv'  id="file" required />
                                 <label for="file" class="form__label">Curriculum Vitae(CV)</label>
@@ -138,21 +158,12 @@
                             </div>
 
 
-
-
                             <div class="form__group form__group-btn u-margin-top-small">
                               <a href="javascript:{}" onclick="document.getElementById('form1').submit(); return false;" class="btn btn--green btn--animated" id="form-submit">SUBMIT</a>
                             </div>
                         </form>
 
-
-
-
-
-
-
-
-
+                    </div>
                     </div>
 
                 </div>
@@ -197,9 +208,7 @@
                     <figure class="story__shape">
                         <img src="img/nat-9.jpg" alt="person on a tour" class="story__image">
                         <figcaption class="story__caption">
-
                             just brian
-
                         </figcaption>
                     </figure>
                     <div class="story__text">
@@ -211,11 +220,30 @@
                         </p>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-bottom-small">
+                {{-- <div class="u-center-text u-margin-bottom-small">
                     <a href="#" class="btn-text">See more &rarr;</a>
-                </div>
+                </div> --}}
         </section>
     </main>
+    <br><br>
+<div class="container center">
+    <ul>
+      <li class="animatedArrow">
+        <a class="animated-arrow" href="/">
+          <span class="the-arrow -left">
+            <span class="shaft"></span>
+          </span>
+          <span class="main">
+            <span class="text">
+              Back To Main Page
+            </span>
+            <span class="the-arrow -right">
+              <span class="shaft"></span>
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul></div>
 </html>
 
 {{-- @endsection --}}

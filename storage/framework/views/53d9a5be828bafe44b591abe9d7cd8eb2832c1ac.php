@@ -1,14 +1,35 @@
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('messages.messages', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<html>
+    <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+        <link rel="stylesheet" href="css/app.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+</head>
+<header class="header">
+        
+        <div class="header__text-box">
+        <h3 class="heading-primary">
+        <span class="heading-primary--main">ABOUT US</span>
+        <br>
+        
+        </h1>
+        
+    </div>
+    </header>
+    <main>
+<!--
 <div class="backgroundImage aboutUsImage">
   <div id="aboutUsPage">
     <h1 class="landingPageTitle text-uppercase align-text-bottom">about the ministry</h1>
   </div>
-</div>
+</div>-->
 
 <div class="container mt-4">
-  <h1 class="lineWord">About us</h1>
+  
   <div class="row justify-content-center">
         <div class="col-auto mb-3">
  
@@ -26,7 +47,7 @@
   <img src="<?php echo e(url('/images/mission1.png')); ?>" class="card-img-top" alt="mission">
     <div class="card-body">
       <h5 class="card-title"style="text-align: center;">MISSION</h5>
-      <p class="card-text">To build a progressive, responsive and sustainable health care system for accelerated attainment of the highest standard of health to all Kenyans.</p>
+      <p class="card-text">To build a progressive, responsive and sustainable health care system.</p>
     </div>
   </div>
   </div>
@@ -265,7 +286,7 @@
 </div>
 </div>
   </div>
-
+    </main>
 
         <?php $__env->stopSection(); ?>
 

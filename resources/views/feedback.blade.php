@@ -44,7 +44,7 @@
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
                   <label class="custom-control-label" for="customCheck1">Remember Me.</label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">SEND</button>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" style="color: white;" type="submit">SEND</button>
                <!-- <div class="text-center">
                   <a class="small" href="#">Forgot password?</a></div>-->
               </form>

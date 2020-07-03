@@ -14,19 +14,19 @@
 
         <!-- Styles --></head>
     <header class="header">
-        <div class="header__logo-box">
+        {{-- <div class="header__logo-box">
             <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
-        </div>
+        </div> --}}
         <div class="header__text-box">
         <h1 class="heading-primary">
         <span class="heading-primary--main">MOH</span>
         <br>
         <span class="heading-primary--sub">See Available Events</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Events</a>
+        <a href="#events" class="btn btn--white btn--animated">Events</a>
     </div>
     </header>
-    <main>
+    <main class="container">
         <section class="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -59,9 +59,10 @@ Whether you present or not at a conference, you still have the upper hand of adv
                 </div>
         </section>
                 <section class="jobs__available">
+                    <div id="events">
                 @if(count($events)<1)
                 <div clas="u-center-text">
-                    <h3 class="heading-tertiary u-margin-bottom-small">No Events currently</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small lineWord">No Events currently</h3>
 
                 </div>
 
@@ -86,6 +87,7 @@ Whether you present or not at a conference, you still have the upper hand of adv
                 </div>
                 @endforeach
                 @endif
+            </div>
                 </section>
 
 

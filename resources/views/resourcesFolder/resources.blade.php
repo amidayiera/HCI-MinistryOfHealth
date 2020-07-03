@@ -13,16 +13,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 </head>
 <header class="header">
-        <div class="header__logo-box">
+        {{-- <div class="header__logo-box">
             <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
-        </div>
+        </div> --}}
         <div class="header__text-box">
         <h1 class="heading-primary">
         <span class="heading-primary--main">MOH</span>
         <br>
         <span class="heading-primary--sub">VIEW POSTS</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">POSTS</a>
+        {{-- <a href="#" class="btn btn--white btn--animated">POSTS</a> --}}
     </div>
     </header>
     <main>

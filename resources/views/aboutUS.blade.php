@@ -12,16 +12,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 </head>
 <header class="header">
-        <div class="header__logo-box">
+        {{-- <div class="header__logo-box">
             <img src="/img/logokenya.png" alt="kenya logo" class="header__logo"/>
-        </div>
+        </div> --}}
         <div class="header__text-box">
-        <h1 class="heading-primary">
-        <span class="heading-primary--main">MOH</span>
+        <h3 class="heading-primary">
+        <span class="heading-primary--main">ABOUT US</span>
         <br>
-        <span class="heading-primary--sub">About The Ministry</span>
+        {{-- <span class="heading-primary--sub">About the Ministry Of Kenya</span> --}}
         </h1>
-        <a href="#" class="btn btn--white btn--animated">About Us</a>
+        {{-- <a href="#" class="btn btn--white btn--animated">About Us</a> --}}
     </div>
     </header>
     <main>
@@ -41,7 +41,7 @@
 </div>-->
 
 <div class="container mt-4">
-  <h1 class="lineWord">About us</h1>
+  {{-- <h1 class="lineWord">About us</h1> --}}
   <div class="row justify-content-center">
         <div class="col-auto mb-3">
  
@@ -59,7 +59,7 @@
   <img src="{{ url('/images/mission1.png') }}" class="card-img-top" alt="mission">
     <div class="card-body">
       <h5 class="card-title"style="text-align: center;">MISSION</h5>
-      <p class="card-text">To build a progressive, responsive and sustainable health care system for accelerated attainment of the highest standard of health to all Kenyans.</p>
+      <p class="card-text">To build a progressive, responsive and sustainable health care system.</p>
     </div>
   </div>
   </div>

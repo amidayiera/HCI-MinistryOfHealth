@@ -13,12 +13,12 @@ body {
     background-size: cover;
     height: 100vh;
 }
-.landingPageImage{
+.covidPageImage{
     background-image: 
    /* linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), */
    /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);
    */
-    url('/images/landingPage_background7.jpg');
+    url('/images/covid.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -41,7 +41,7 @@ body {
 .py-4 {
     padding-top: 0.5em !important;
 }
-.landingPageTitle {
+.covidPageTitle {
     font-size: 70px;
     word-spacing: 100vw;
    /* top: 50%;
@@ -55,12 +55,12 @@ body {
       rgba(0, 0, 0, 0.2)
     ),
     /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/cheese-curds.jpg);*/
-    url('/images/health2.jpg');
+    url('/images/covid2.jpg');
   background-size: cover;
   height: 84vh;
 }
 
-.landingPageTitle {
+.covidPageTitle {
     font-size: 60px;
     word-spacing: 100vw;
     position: absolute;
@@ -120,6 +120,9 @@ hr.green {
 
 .card-deck {
     margin: 50px 0 20px 0;
+
+    /* width: 865px; */
+
 
 }
 .card {

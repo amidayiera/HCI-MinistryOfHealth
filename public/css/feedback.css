@@ -3,15 +3,17 @@
     --input-padding-y: 0.75rem;
   }
   
-  .login,
-  .image {
-    min-height: 100vh;
+  .login {
+    min-height: 80vh;
   }
   
   .bg-image {
    /* background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');*/
-   background-image:   url('/images/mohlogo1.png');;
-   /* background-size: cover;*/
+   background-image:   url('/images/feedbackIcon.png');
+   height: 500px;
+   width: 300px;
+   background-size: contain;
+   margin-top: 80px;
     background-position: center;
    background-repeat:no-repeat ;
   

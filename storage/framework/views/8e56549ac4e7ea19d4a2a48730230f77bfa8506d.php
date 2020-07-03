@@ -34,6 +34,8 @@
         <link href="<?php echo e(asset('css/aboutUs.css')); ?>" rel="stylesheet" type="text/css">
         <link href="<?php echo e(asset('css/landingPage.css')); ?>" rel="stylesheet" type="text/css" >
         <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css" >
+        <link href="<?php echo e(asset('css/covid.css')); ?>" rel="stylesheet" type="text/css" >
+
 
     </head>
     
@@ -45,31 +47,47 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item acitve">
+               <!-- <li class="nav-item active">
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
+                <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home <span class="sr-only">(current)</span></a>
+                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/">Home</a>
+                  <a class="dropdown-item" href="/aboutUs">About Us</a>
+                  </div>
+               </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">News</a>
+                    <a class="nav-link" href="/covidTracker">Covid-19</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/covidTracker">Covid 19</a>
-                </li> <li class="nav-item">
+               <li class="nav-item">
                     <a class="nav-link" href="/vacancies">Vacancies</a>
-                </li> </li> <li class="nav-item">
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="/Cevents" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Events <span class="sr-only">(current)</span></a>
+                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/Cevents">Events</a>
+                  <a class="dropdown-item" href="/resources">Posts</a>
+                  </div>
+               </li>
+                <!--<li class="nav-item">
                     <a class="nav-link" href="/Cevents">Events</a>
                 </li>
-            </li> <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="/resources">Resources</a>
-            </li>
+             </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="/healthcarelocations">Health care</a>
                 </li>
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" href="/aboutUs">About Us</a>
-                </li>
+                </li>-->
                 <li class="nav-item">
                     <a class="nav-link" href="/feedback">Feedback</a>
                 </li>
@@ -115,7 +133,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-23581568-13');
 	</script>
    
@@ -163,5 +180,4 @@
               </footer>
         </div>
     </body>
-</html>
-<?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/includes/navbar.blade.php ENDPATH**/ ?>
+</html><?php /**PATH /Applications/MAMP/htdocs/HCI-MinistryOfHealth/resources/views/includes/navbar.blade.php ENDPATH**/ ?>

@@ -19,8 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="../vendor/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="../css/util.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" >
-     <link rel="icon" href="../images/mohlogo1.png" type="image/png">
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS >
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -111,7 +109,7 @@
       
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
       <script src='js/script.js' type="text/javascript"></script> 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKAhwePRH671Ksb8qC2T74rsxU27L1jyE&libraries=places"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkwI_0cQatRfacMb769So3VaGb2YrWPA8&libraries=places"></script>
       <link rel="stylesheet" href="{{asset('css/app.css')}}">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
       <script src="vendor/jquery/jquery-3.2.1.min.js"></script>

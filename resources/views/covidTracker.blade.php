@@ -4,15 +4,21 @@
 
 <section class="content">
 
-<div class="container-fluid">
+{{-- <div class="container"> --}}
 
-<h2 style="color:cornflowerblue;  text-align:center;" >STAY HOME, STAY SAFE!!!</h2>
 
-<div >
+<div class="backgroundImage covidPageImage">
+    <div id="covidPage">
+      <h1 class="covidPageTitle text-uppercase align-text-bottom">COVID-19 GUIDELINES</h1>
+    </div>
+  </div>
+{{-- <div >
 <img src="{{ url('/images/covid.jpg') }}" class="mx-auto d-block" alt="Covid">
-</div>
-
-<h3 style="color:cornflowerblue;  text-align:center;" ><U>COVID-19 GUIDELINES</U></h3>
+</div> --}}
+<div class="container">
+<br>
+{{-- <h3 style="color:cornflowerblue;  text-align:center;" ><U>COVID-19 GUIDELINES</U></h3> --}}
+<h2 style="color:#e20000;  text-align:center; letter-spacing:1rem;" >STAY HOME, STAY SAFE !!!</h2>
 
 <div class="accordion" id="accordionExample">
   {{-- <div class ="container"> --}}
@@ -20,7 +26,8 @@
     <div class="card-header accordionTitle" id="headingOne">
       <h2 class="mb-0">
         <button class="text-uppercase btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <b>SYMPTOMS</b>
+        <b>A. SYMPTOMS</b>
+        {{-- <hr> --}}
         </button>
       </h2>
     </div>
@@ -29,7 +36,7 @@
       <div class="card-body text-center">
        <p>
        <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
-        <hr>
+        {{-- <hr> --}}
         <p>Most common symptoms:</p>
         <ul>
         <li>*Fever</li>
@@ -54,14 +61,15 @@
     <div class="card-header accordionTitle" id="headingTwo">
       <h2 class="mb-0">
         <button class="text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <b>PREVENTION</b>
+        <b>B. PREVENTION</b>
+        {{-- <hr> --}}
       </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body text-center">
       <p>Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.</p>
-        <hr>
+        {{-- <hr> --}}
         <p>To prevent the spread of COVID-19:</p>
         <ul>
         <li> > Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
@@ -80,11 +88,13 @@
       </div>
     </div>
   </div>
+  
   <div class="card">
     <div class="card-header accordionTitle" id="headingThree">
       <h2 class="mb-0">
         <button class="text-uppercase btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <b>TREATMENTS</b>
+        <b>C. TREATMENTS</b>
+        {{-- <hr> --}}
       </button>
       </h2>
     </div>
@@ -92,7 +102,7 @@
       <div class="card-body text-center">
       <p>
       <p>To date, there are no specific vaccines or medicines for COVID-19. Treatments are under investigation, and will be tested through clinical trials. World Health Organization</p>
-        <hr>
+        {{-- <hr> --}}
         <h5>Self Care</h5>
         <p>If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.</p>
         <p>Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible.</p>
@@ -107,7 +117,11 @@
   </div>
 </div>
 </div>
-<h3 style="text-align: center; color:cornflowerblue;">KENYA COVID-19 STATISTICS</h3>
+<div class="container">
+  <br><br>
+<h3 style="text-align: center; color:black;"" class="lineWord">KENYA COVID-19 STATISTICS</h3>
+
+<br><br>
 
 <div style="border: 1px solid blue;">
 <input type="text" id="myInput"
@@ -124,7 +138,7 @@
 </div>
 
 <div class="card-body">
-        <div class="table-responsive">
+        <div class="table-responsive center">
             <table class="table">
               <thead class="text-primary">
                 <th>Date</th>
@@ -145,6 +159,7 @@
             </table>
         </div>
       </div>
+</div>
 </div>
 
 <script>
